@@ -1,6 +1,6 @@
 {
   "name": "kiejo-studio",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "Jacob Bryant's (Kiejo Studio) space on the internet for his graphic design portfolio",
   "repository": "https://github.com/jacobdb03/kiejo-studio",
   "homepage": "https://new.jacobbryant.design/",
@@ -16,8 +16,8 @@
     "shx": "^0.4.0"
   },
   "scripts": {
-    "start": "parcel ./portfolio/index.html --open",
-    "build": "parcel build ./portfolio/index.html --public-url ./ --no-source-maps",
+    "start": "parcel portfolio/index.html --open",
+    "build": "parcel build portfolio/index.html --public-url",
     "clean": "shx rm -rf dist .parcel-cache .cache",
     "predeploy": "yarn clean && yarn build && shx cp CNAME dist/",
     "deploy": "node .parcel-scripts/updateVer.js && gh-pages -d dist -f -m \"$(node -p \"require('./package.json').version\")\"",
