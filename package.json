@@ -1,6 +1,6 @@
 {
   "name": "kiejo-studio",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Jacob Bryant's (Kiejo Studio) space on the internet for his graphic design portfolio",
   "repository": "https://github.com/jacobdb03/kiejo-studio",
   "homepage": "https://new.jacobbryant.design/",
@@ -19,11 +19,11 @@
     "build": "parcel build ./portfolio/index.html --public-url ./ --no-source-maps",
     "clean": "rm -rf dist .parcel-cache .cache",
     "predeploy": "yarn clean && yarn build && shx cp CNAME dist/",
-    "deploy": "rm -rf node_modules/.cache/gh-pages && node .parcel-scripts/updateVer.js && gh-pages -d dist -f -m \"$(node -p \"require('./package.json').version\")\"",
-    "postversion": "git push origin main --tags",
-    "version-up": "yarn version --patch --no-git-tag-version",
-    "version-minor": "yarn version --minor",
-    "version-major": "yarn version --major "
+    "deploy": "rm -rf node_modules/.cache/gh-pages && V=$(node -p \"require('./package.json').version\") && git add . && git commit -m \"v$V\" && git push origin main && gh-pages -d dist -f -m \"v$V\"",
+    "version-up": "node .parcel-scripts/updateVer.js && yarn deploy",
+    "version-minor": "yarn version --minor && yarn deploy",
+    "version-major": "yarn version --major && yarn deploy",
+    "postversion": "git push origin main --tags"
   },
   "dependencies": {
     "blurhash": "^2.0.5",
