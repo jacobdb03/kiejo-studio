@@ -12,7 +12,7 @@ yarn-error.log*
 # Editor files
 .zed/
 
-# Custom package scripts
+# Custom scripts
 .parcel-scripts/
 
 # Personal files
