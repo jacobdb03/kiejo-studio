@@ -1,8 +1,9 @@
 {
   "name": "kiejo-studio",
-  "version": "5.0.0",
+  "version": "5.0.2",
   "description": "Jacob Bryant's (Kiejo Studio) space on the internet for his graphic design portfolio",
   "repository": "https://github.com/jacobdb03/kiejo-studio",
+  "homepage": "https://new.jacobbryant.design/",
   "author": "Jacob Bryant",
   "license": "MIT",
   "private": false,
@@ -11,17 +12,18 @@
     "gh-pages": "^6.3.0",
     "parcel": "^2.16.3",
     "postcss": "^8.5.6",
-    "posthtml-include": "^2.0.1"
+    "posthtml-include": "^2.0.1",
+    "shx": "^0.4.0"
   },
   "scripts": {
     "start": "parcel ./portfolio/index.html --open",
-    "build": "parcel build ./portfolio/index.html",
-    "clean": "rm -rf dist .parcel-cache && rm -rf dist .cache",
-    "predeploy": "yarn clean && yarn build",
-    "updateVer": "node .parcel-scripts/updateVer.js",
+    "build": "parcel build ./portfolio/index.html --public-url ./",
+    "clean": "shx rm -rf dist .parcel-cache .cache",
+    "predeploy": "yarn clean && yarn build && shx cp CNAME dist/",
+    "deploy": "node .parcel-scripts/updateVer.js && gh-pages -d dist -f",
     "version-up": "yarn version --patch --no-git-tag-version",
-    "version-minor": "yarn version --minor --no-git-tag-version",
-    "version-major": "yarn version --major --no-git-tag-version"
+    "version-minor": "yarn version --minor",
+    "version-major": "yarn version --major "
   },
   "dependencies": {
     "blurhash": "^2.0.5",
