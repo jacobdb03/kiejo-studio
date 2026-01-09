@@ -1,6 +1,6 @@
 {
   "name": "kiejo-studio",
-  "version": "5.0.2",
+  "version": "5.0.0",
   "description": "Jacob Bryant's (Kiejo Studio) space on the internet for his graphic design portfolio",
   "repository": "https://github.com/jacobdb03/kiejo-studio",
   "homepage": "https://new.jacobbryant.design/",
@@ -9,7 +9,6 @@
   "private": false,
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",
-    "gh-pages": "^6.3.0",
     "parcel": "^2.16.3",
     "postcss": "^8.5.6",
     "posthtml-include": "^2.0.1",
@@ -29,6 +28,7 @@
   "dependencies": {
     "blurhash": "^2.0.5",
     "depcheck": "^1.4.7",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.14.2"
   }
 }
