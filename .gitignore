@@ -20,10 +20,7 @@ NotesToSelf.md
 
 # Macbook files
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
+Thumbs.db
 
 # Environment Variables
 .env
