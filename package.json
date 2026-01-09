@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "parcel ./portfolio/index.html --open",
-    "build": "parcel ./build portfolio/index.html --public-url ./",
+    "build": "parcel build ./portfolio/index.html --public-url ./",
     "clean": "shx rm -rf dist .parcel-cache .cache",
     "predeploy": "yarn clean && yarn build && shx cp CNAME dist/",
     "deploy": "node .parcel-scripts/updateVer.js && gh-pages -d dist -f -m \"$(node -p \"require('./package.json').version\")\"",
