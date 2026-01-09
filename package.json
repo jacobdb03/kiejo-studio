@@ -20,10 +20,8 @@
     "clean": "rm -rf dist .parcel-cache .cache",
     "predeploy": "yarn clean && yarn build && shx cp CNAME dist/",
     "deploy": "rm -rf node_modules/.cache/gh-pages && V=$(node -p \"require('./package.json').version\") && git add . && git commit -m \"v$V\" && git push origin main && gh-pages -d dist -f -m \"v$V\"",
-    "version-up": "node .parcel-scripts/updateVer.js && yarn deploy",
-    "version-minor": "yarn version --minor && yarn deploy",
-    "version-major": "yarn version --major && yarn deploy",
-    "postversion": "git push origin main --tags"
+    "patch": "node .parcel-scripts/updateVer.js && yarn deploy",
+    "release": "yarn version --minor && yarn deploy"
   },
   "dependencies": {
     "blurhash": "^2.0.5",
