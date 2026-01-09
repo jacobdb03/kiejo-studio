@@ -1,8 +1,8 @@
 # Parcel files
-.parcel-cache/
-.cahce/
 node_modules/
 dist/
+.parcel-cache/
+.cache/
 
 # Log files
 npm-debug.log*
