@@ -1,0 +1,31 @@
+{
+  "name": "kiejo-studio",
+  "version": "5.0.0",
+  "description": "Jacob Bryant's (Kiejo Studio) space on the internet for his graphic design portfolio",
+  "repository": "https://github.com/jacobdb03/kiejo-studio",
+  "author": "Jacob Bryant",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.3",
+    "postcss": "^8.5.6",
+    "posthtml-include": "^2.0.1"
+  },
+  "scripts": {
+    "start": "parcel ./portfolio/index.html --open",
+    "build": "parcel build ./portfolio/index.html",
+    "clean": "rm -rf dist .parcel-cache && rm -rf dist .cache",
+    "predeploy": "yarn clean && yarn build",
+    "updateVer": "node .parcel-scripts/updateVer.js",
+    "version-up": "yarn version --patch --no-git-tag-version",
+    "version-minor": "yarn version --minor --no-git-tag-version",
+    "version-major": "yarn version --major --no-git-tag-version"
+  },
+  "dependencies": {
+    "blurhash": "^2.0.5",
+    "depcheck": "^1.4.7",
+    "gsap": "^3.14.2"
+  }
+}

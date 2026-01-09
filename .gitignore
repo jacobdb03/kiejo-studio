@@ -1,0 +1,32 @@
+# Parcel files
+.parcel-cache/
+.cahce/
+node_modules/
+dist/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor files
+.zed/
+
+# Custom package scripts
+.parcel-scripts/
+
+# Personal files
+NotesToSelf.md
+
+# Macbook files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Environment Variables
+.env
+.env.local
+*.pem
+*.key
