@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+    --font-sans: "Outfit", ui-sans-serif, system-ui;
+
+    --color-k-blue: #2560e0;
+    --color-k-white: #eff1f3;
+    --color-k-black: #0e161b;
+}
+
+@layer base {
+    html {
+        @apply font-sans antialiased;
+    }
+
+    body {
+        margin: 10rem;
+    }
+}

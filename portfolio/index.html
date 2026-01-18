@@ -1,17 +1,20 @@
 <!doctype html>
 <html>
     <head>
-        <!--Header Data-->
-        <include src="./components/header.html"></include>
-
-        <!--Links and scripts-->
-        <link href="./styles.css" type="text/css" rel="stylesheet" />
+        <include src="./partials/header.html" locals='{"home": "./"}'></include>
     </head>
 
-    <body>
-        <p class="text-3xl font-bold underline">TestTest</p>
-        <h1>NEW TEST</h1>
-
-        <p></p>
+    <body class="bg-gray-100">
+        <div class="w-md h-fit mb-10">
+            <h1 class="font-black text-9xl text-k-blue leading-24">
+                Jacob Bryant.
+            </h1>
+        </div>
+        <div class="flex flex-wrap space-x-5 w-full h-fit">
+            <include
+                src="./partials/tempButton.html"
+                locals='{"href": "./projects/index.html", "text": "Projects"}'
+            ></include>
+        </div>
     </body>
 </html>
