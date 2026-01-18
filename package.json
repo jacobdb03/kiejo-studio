@@ -21,12 +21,14 @@
     "predeploy": "yarn clean && yarn build && shx cp CNAME dist/",
     "deploy": "rm -rf node_modules/.cache/gh-pages && V=$(node -p \"require('./package.json').version\") && git add . && git commit -m \"v$V\" && git push origin main && gh-pages -d dist -f -m \"v$V\"",
     "patch": "node .parcel-scripts/updateVer.js && yarn deploy",
-    "release": "yarn version --minor && yarn deploy"
+    "release": "yarn version --minor && yarn deploy",
+    "gitUpdate": "git add . && git commit -m \"v$V\" && git push origin main"
   },
   "dependencies": {
     "blurhash": "^2.0.5",
     "depcheck": "^1.4.7",
     "gh-pages": "^6.3.0",
-    "gsap": "^3.14.2"
+    "gsap": "^3.14.2",
+    "sharp": "^0.34.5"
   }
 }
