@@ -25,6 +25,7 @@
     "gitUpdate": "V=$(node -p \"require('./package.json').version\") && git add . && git commit -m \"v$V\" && git push origin main"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.23",
     "blurhash": "^2.0.5",
     "depcheck": "^1.4.7",
     "gh-pages": "^6.3.0",
