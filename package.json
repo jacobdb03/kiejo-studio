@@ -1,6 +1,6 @@
 {
   "name": "kiejo-studio",
-  "version": "5.0.8",
+  "version": "5.0.9",
   "description": "Jacob Bryant's (Kiejo Studio) space on the internet for his graphic design portfolio",
   "repository": "https://github.com/jacobdb03/kiejo-studio",
   "homepage": "https://kiejo.studio/",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@mischnic/parcel-namer-preserve-structure": "^0.2.0",
     "@tailwindcss/postcss": "^4.1.18",
     "parcel": "^2.16.3",
     "postcss": "^8.5.6",

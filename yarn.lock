@@ -333,6 +333,15 @@
     "@lezer/lr" "^1.0.0"
     json5 "^2.2.1"
 
+"@mischnic/parcel-namer-preserve-structure@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@mischnic/parcel-namer-preserve-structure/-/parcel-namer-preserve-structure-0.2.0.tgz#a759564ce7e1e77cc1a8a39a01aaed0078d85d5b"
+  integrity sha512-HyFgRnNrJburBRYNhAt0XM/cvAzxIRFEe9abQD7PT34tXVGW8VxJOrGPkiFE770280ygQZYh6/+B3fuj+0YLzQ==
+  dependencies:
+    "@parcel/diagnostic" "^2.0.0"
+    "@parcel/plugin" "^2.0.0"
+    nullthrows "^1.1.1"
+
 "@msgpackr-extract/msgpackr-extract-darwin-arm64@3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-darwin-arm64/-/msgpackr-extract-darwin-arm64-3.0.3.tgz#9edec61b22c3082018a79f6d1c30289ddf3d9d11"
@@ -498,7 +507,7 @@
     nullthrows "^1.1.1"
     semver "^7.7.1"
 
-"@parcel/diagnostic@2.16.3":
+"@parcel/diagnostic@2.16.3", "@parcel/diagnostic@^2.0.0":
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/@parcel/diagnostic/-/diagnostic-2.16.3.tgz#e402872fbf517b381518b2add857b940a3af87db"
   integrity sha512-NBoGGFMqOmbs8i0zGVwTeU0alQ0BkEZe894zAb5jEBQqsRBPmdqogwmARsT4Ix2bN1QBco4o0gn9kBtalFC6IQ==
@@ -707,7 +716,7 @@
   dependencies:
     "@parcel/plugin" "2.16.3"
 
-"@parcel/plugin@2.16.3":
+"@parcel/plugin@2.16.3", "@parcel/plugin@^2.0.0":
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.16.3.tgz#844bfe6f841ab200c52f46ef6e970e2cdf1122bd"
   integrity sha512-w4adN/E2MBbNzUwuGWcUkilrf7B6eQThPRdgiw2awIY0/t0C1gN/hhBfUeWt7vt0WcvWlXcyR/OGzU/r0nPteA==
