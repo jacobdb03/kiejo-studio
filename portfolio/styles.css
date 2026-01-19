@@ -15,5 +15,6 @@
 
     body {
         margin: 10rem;
+        background-color: var(--color-k-white);
     }
 }

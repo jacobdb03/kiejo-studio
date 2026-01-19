@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <include src="./partials/header.html" locals='{"home": "./"}'></include>
-        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <include src="partials/header.html"></include>
     </head>
 
-    <body class="bg-gray-100">
+    <body>
         <div class="w-md h-fit mb-10">
             <h1 class="font-black text-9xl text-k-blue leading-24">
                 Jacob Bryant.
@@ -14,7 +13,7 @@
         <div class="flex flex-wrap space-x-5 w-full h-fit">
             <include
                 src="partials/tempButton.html"
-                locals='{"href": "./projects/index.html", "text": "Projects"}'
+                locals='{"href": "projects/index.html", "text": "Projects"}'
             ></include>
         </div>
     </body>

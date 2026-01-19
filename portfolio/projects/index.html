@@ -1,52 +1,46 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <include
-            src="./partials/header.html"
-            locals='{"home": "../"}'
-        ></include>
-        <link rel="stylesheet" type="text/css" href="../styles.css" />
+        <include src="partials/header.html"></include>
     </head>
     <body>
         <div class="flex flex-wrap space-x-5 w-full h-fit">
             <include
-                src="./partials/tempButton.html"
-                locals='{"href": "./pluckedIdentity/index.html", "text": "Plucked"}'
+                src="partials/tempButton.html"
+                locals='{"href": "pluckedIdentity/index.html", "text": "Plucked"}'
+            ></include>
+            <include
+                src="partials/tempButton.html"
+                locals='{"href": "ombreIdentity/index.html", "text": "Ombrē"}'
+            ></include>
+            <include
+                src="partials/tempButton.html"
+                locals='{"href": "tastebudsIdentity/index.html", "text": "Tastebuds"}'
             ></include>
             <include
                 src="./partials/tempButton.html"
-                locals='{"href": "./ombreIdentity/index.html", "text": "Ombrē"}'
+                locals='{"href": "pluckedIdentity/index.html", "text": "Plucked"}'
             ></include>
             <include
                 src="./partials/tempButton.html"
-                locals='{"href": "./tastebudsIdentity/index.html", "text": "Tastebuds"}'
-            ></include>
-            <!--
-            <include
-                src="./partials/tempButton.html"
-                locals='{"href": "/pluckedIdentity/index.html", "text": "Plucked"}'
+                locals='{"href": "ombreIdentity/index.html", "text": "Ombrē"}'
             ></include>
             <include
                 src="./partials/tempButton.html"
-                locals='{"href": "/ombreIdentity/index.html", "text": "Ombrē"}'
+                locals='{"href": "tastebudsIdentity/index.html", "text": "Tastebuds"}'
             ></include>
             <include
                 src="./partials/tempButton.html"
-                locals='{"href": "/tastebudsIdentity/index.html", "text": "Tastebuds"}'
+                locals='{"href": "pluckedIdentity/index.html", "text": "Plucked"}'
             ></include>
             <include
                 src="./partials/tempButton.html"
-                locals='{"href": "/pluckedIdentity/index.html", "text": "Plucked"}'
+                locals='{"href": "ombreIdentity/index.html", "text": "Ombrē"}'
             ></include>
             <include
                 src="./partials/tempButton.html"
-                locals='{"href": "/ombreIdentity/index.html", "text": "Ombrē"}'
+                locals='{"href": "tastebudsIdentity/index.html", "text": "Tastebuds"}'
             ></include>
-            <include
-                src="./partials/tempButton.html"
-                locals='{"href": "/tastebudsIdentity/index.html", "text": "Tastebuds"}'
-            ></include>
-            -->
         </div>
     </body>
 </html>
