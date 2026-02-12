@@ -9,28 +9,8 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
   const footerTarget: HTMLElement[] = gsap.utils.toArray(".ani-navLink");
   const navTarget = ".ani-navExpand";
   const titleTarget = ".ani-navTitle";
-
-  gsap.set(titleTarget, {
-    fontSize: "inherit",
-    fontWeight: "inherit",
-  });
-
-  gsap.set(footerTarget, {
-    fontSize: "inherit",
-    color: "inherit",
-    height: "inherit",
-    width: "inherit",
-    padding: "inherit",
-  });
-
-  gsap.set(navTarget, {
-    scaleY: 1,
-    scaleX: 1,
-    borderRadius: "auto",
-    transformOrigin: "center",
-    height: "inherit",
-    width: "auto",
-  });
+  const title1Target = ".ani-navTitle1";
+  const title2Target = ".ani-navTitle2";
 
   // TEXT INTRO ANIMATION
   textTarget.forEach((child: HTMLElement, i) =>
@@ -38,14 +18,14 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
     gsap.from(child, {
       x: -20,
       opacity: 0,
-      ease: "elastic.out(0.5,0.3)",
-      delay: (0.5 + i) * 0.1,
+      ease: "elastic.out(0.2,0.18)",
+      delay: (0.5 + i) * 0.15,
     }),
   );
 
-  // TEXT TITLE TO FOOTER ANIMATIONS
+  // TITLE IMAGE TO FOOTER ANIMATIONS
   if (ScrollTrigger.isTouch === 0) {
-    gsap.to(titleTarget, {
+    gsap.to([titleTarget, title1Target, title2Target], {
       scrollTrigger: {
         trigger: "body",
         start: "98% bottom",
@@ -53,29 +33,67 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
 
         onEnter: () => {
           gsap.to(titleTarget, {
-            fontSize: "10rem",
-            fontWeight: 900,
-            padding: "1.5rem",
+            height: "38vh",
+            alignSelf: "end",
 
+            duration: 0.4,
+            delay: 0.3,
+            ease: "elastic.out(0.2,0.18)",
+          });
+          gsap.to(title1Target, {
+            height: 0,
+            flexShrink: 0,
+
+            duration: 0.3,
             delay: 0.25,
             ease: "elastic.out(0.2,0.18)",
+          });
+          gsap.to(title2Target, {
+            height: "40vh",
+            alignSelf: "start",
+            flexShrink: 1,
+
+            duration: 0.6,
+            delay: 0.2,
+            ease: "elastic.out(0.12,0.18)",
           });
         },
         onLeaveBack: () => {
           gsap.fromTo(
             titleTarget,
+            { height: "38vh", alignSelf: "end" },
             {
-              fontSize: "10rem",
-              fontWeight: 900,
-              padding: "1.5rem",
+              height: "2rem",
+              alignSelf: "center",
+
+              duration: 0.4,
+              delay: 0.3,
+              ease: "elastic.out(0.12,0.18)",
             },
+          );
+          gsap.fromTo(
+            title1Target,
+            { height: 0, flexShrink: 0 },
             {
-              fontSize: "inherit",
-              padding: 0,
+              height: "100%",
+              flexShrink: 1,
+
+              duration: 0.3,
+              delay: 0.25,
+              ease: "elastic.out(0.05,0.18)",
+            },
+          );
+          gsap.fromTo(
+            title2Target,
+            { height: "40vh", alignSelf: "end", flexShrink: 1 },
+            {
+              height: 0,
+              alignSelf: "center",
+              flexShrink: 0,
 
               duration: 0.6,
-              delay: 0.25,
-              ease: "elastic.out(0.2,0.18)",
+              delay: 0.2,
+              ease: "elastic.out(0.12,0.18)",
             },
           );
         },
@@ -95,8 +113,11 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
           onEnter: () => {
             gsap.to(child, {
               color: colour.klBlue,
-              fontSize: "3rem",
-              padding: "1.5rem",
+              alignSelf: "end",
+              fontSize: "2rem",
+              justifySelf: "start",
+              flexWrap: "wrap",
+
               ease: "elastic.out(0.2,0.18)",
               delay: 0.25 + i * 0.05,
             });
@@ -105,6 +126,7 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
             gsap.fromTo(
               child,
               {
+                alignSelf: "end",
                 color: colour.klBlue,
                 fontSize: "3rem",
                 padding: "1.5rem",
@@ -112,6 +134,7 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
               {
                 color: colour.kWhite,
                 fontSize: "inherit",
+                alignSelf: "center",
                 padding: 0,
 
                 duration: 0.6,
@@ -164,27 +187,26 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
 
         onEnter: () => {
           gsap.to(navTarget, {
-            y: "1vh",
-            height: "90vh",
             width: "auto",
+            height: "100%",
+
             borderRadius: 30,
             duration: 0.6,
-            ease: "elastic.inOut(1,1)",
+            ease: "elastic.inOut(1, 1)",
           });
         },
 
         onLeaveBack: () => {
           gsap.fromTo(
             navTarget,
-            { y: "1vh", height: "90vh", borderRadius: 30 },
+            { borderRadius: 30, height: "95vh" },
             {
-              y: 0,
               width: "60vw",
-              height: 0,
               borderRadius: 100,
-              duration: 0.6,
+              height: 0,
 
-              ease: "elastic.inOut(0.2, 0.18)",
+              duration: 0.6,
+              ease: "elastic.inOut(1, 1)",
             },
           );
         },
