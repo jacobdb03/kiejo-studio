@@ -1,45 +1,56 @@
-<div class="navbar sticky mx-8 top-8 z-10 h-[94vh]">
+<div class="sticky mx-8 top-8 z-10 md:h-[93.5vh]">
     <div
-        class="bg-kBlue rounded-[4rem] justify-start md:flex max-w-480 mx-auto h-0 py-10 px-16 text-kWhite font-medium ani-navExpand"
+        class="bg-kBlue rounded-[4rem] flex flex-row justify-start max-w-360 mx-auto py-8 px-16 text-kWhite font-medium md:flex ani-navExpand"
     >
         <div
-            class="basis-1/2 h-8 flex md:justify-start self-center pt-2 ani-textBump ani-navTitle"
+            class="flex basis-3/4 pt-2.5 self-center md:justify-start ani-textBump ani-navTitle"
         >
             <img
                 href="index.html"
                 src="dev-globalAssets/JacobBryant_LandscapeLogo.svg"
-                class="h-full ani-navTitle1"
-                alt="JacobBryant"
-            />
-            <img
-                href="index.html"
-                src="dev-globalAssets/JacobBryant_StackedLogo.svg"
-                class="h-0 ani-navTitle2"
+                class="h-8"
                 alt="JacobBryant"
             />
         </div>
 
         <div
-            class="basis-1/8 flex md:justify-end self-center pt-0.5 ani-textBump ani-navLink"
+            class="flex max-w-none basis-1/4 justify-end pt-2.5 md:max-w-0 md:overflow-hidden ani-navLink"
         >
-            <a href="page-projects/index.html" class="hover:font-Bold">Work</a>
-        </div>
-        <div
-            class="basis-1/8 flex md:justify-end self-center pt-0.5 ani-textBump ani-navLink"
-        >
-            <a href="page-about/index.html" class="hover:font-bold">Story</a>
-        </div>
-        <div
-            class="basis-1/8 flex md:justify-end self-center pt-0.5 ani-textBump ani-navLink"
-        >
-            <a href="page-contact/index.html" class="hover:font-bold"
-                >Contact</a
+            <a
+                href="javascript:void(0)"
+                class="ani-textBump ani-gsapHover"
+                id="cus-overflowMenu"
+                >///</a
             >
         </div>
+
         <div
-            class="basis-1/8 flex md:justify-end self-center pt-0.5 ani-textBump ani-navLink"
+            class="flex max-w-0 overflow-hidden self-center pt-1.5 md:basis-1/2 md:max-w-none md:justify-between ani-navLink"
         >
-            <a href="page-store/index.html" class="hover:font-bold">Store</a>
+            <a
+                href="page-projects/index.html"
+                class="ani-textBump ani-gsapHover"
+                >Work</a
+            >
+            <a href="page-about/index.html" class="ani-textBump ani-gsapHover"
+                >Story</a
+            >
+            <a href="page-contact/index.html" class="ani-textBump ani-gsapHover"
+                >Contact</a
+            >
+            <a href="page-store/index.html" class="ani-textBump ani-gsapHover"
+                >Store</a
+            >
         </div>
+    </div>
+
+    <div
+        id="overflowNavbar"
+        class="flex flex-col max-w-360 my-10 mx-auto py-8 px-16 text-kWhite text-7xl font-bold"
+    >
+        <a href="page-projects/index.html" class="ani-gsapHover">Work</a>
+        <a href="page-about/index.html" class="ani-gsapHover">Story</a>
+        <a href="page-contact/index.html" class="ani-gsapHover">Contact</a>
+        <a href="page-store/index.html" class="ani-gsapHover">Store</a>
     </div>
 </div>

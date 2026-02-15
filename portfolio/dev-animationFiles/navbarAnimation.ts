@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
   const footerTarget: HTMLElement[] = gsap.utils.toArray(".ani-navLink");
   const navTarget = ".ani-navExpand";
   const titleTarget = ".ani-navTitle";
-  const title1Target = ".ani-navTitle1";
-  const title2Target = ".ani-navTitle2";
+  const hoverLinks = document.querySelectorAll(".ani-gsapHover");
 
   // TEXT INTRO ANIMATION
   textTarget.forEach((child: HTMLElement, i) =>
@@ -23,194 +22,114 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
     }),
   );
 
+  // HOVER LINKS ANIMATIONS
+
+  hoverLinks.forEach((link) => {
+    link.addEventListener("mouseenter", () => {
+      gsap.to(link, {
+        fontWeight: 900,
+        duration: 0.2,
+        ease: "power2.out",
+      });
+    });
+
+    link.addEventListener("mouseleave", () => {
+      gsap.to(link, {
+        fontWeight: 700,
+        duration: 0.2,
+        ease: "power2.out",
+      });
+    });
+  });
+
+  let watchMedia = gsap.matchMedia();
+
   // TITLE IMAGE TO FOOTER ANIMATIONS
-  if (ScrollTrigger.isTouch === 0) {
-    gsap.to([titleTarget, title1Target, title2Target], {
+  watchMedia.add("(min-width: 48rem)", () => {
+    gsap.to(titleTarget, {
+      duration: 0.2,
+      ease: "elastic.out(0.2,0.18)",
       scrollTrigger: {
         trigger: "body",
         start: "98% bottom",
         end: "100% bottom",
-
-        onEnter: () => {
-          gsap.to(titleTarget, {
-            height: "38vh",
-            alignSelf: "end",
-
-            duration: 0.4,
-            delay: 0.3,
-            ease: "elastic.out(0.2,0.18)",
-          });
-          gsap.to(title1Target, {
-            height: 0,
-            flexShrink: 0,
-
-            duration: 0.3,
-            delay: 0.25,
-            ease: "elastic.out(0.2,0.18)",
-          });
-          gsap.to(title2Target, {
-            height: "40vh",
-            alignSelf: "start",
-            flexShrink: 1,
-
-            duration: 0.6,
-            delay: 0.2,
-            ease: "elastic.out(0.12,0.18)",
-          });
-        },
-        onLeaveBack: () => {
-          gsap.fromTo(
-            titleTarget,
-            { height: "38vh", alignSelf: "end" },
-            {
-              height: "2rem",
-              alignSelf: "center",
-
-              duration: 0.4,
-              delay: 0.3,
-              ease: "elastic.out(0.12,0.18)",
-            },
-          );
-          gsap.fromTo(
-            title1Target,
-            { height: 0, flexShrink: 0 },
-            {
-              height: "100%",
-              flexShrink: 1,
-
-              duration: 0.3,
-              delay: 0.25,
-              ease: "elastic.out(0.05,0.18)",
-            },
-          );
-          gsap.fromTo(
-            title2Target,
-            { height: "40vh", alignSelf: "end", flexShrink: 1 },
-            {
-              height: 0,
-              alignSelf: "center",
-              flexShrink: 0,
-
-              duration: 0.6,
-              delay: 0.2,
-              ease: "elastic.out(0.12,0.18)",
-            },
-          );
-        },
+        toggleActions: "play none reverse none",
       },
     });
-  }
+  });
 
   // TEXT LINKS TO FOOTER ANIMATIONS
-  if (ScrollTrigger.isTouch === 0) {
+  watchMedia.add("(min-width: 48rem)", () => {
     footerTarget.forEach((child: HTMLElement, i) => {
       gsap.to(child, {
+        color: colour.klBlue,
+        delay: 0.2,
+        duration: 0.6,
+        ease: "elastic.out(0.2,0.18)",
         scrollTrigger: {
           trigger: "body",
           start: "98% bottom",
           end: "100% bottom",
-
-          onEnter: () => {
-            gsap.to(child, {
-              color: colour.klBlue,
-              alignSelf: "end",
-              fontSize: "2rem",
-              justifySelf: "start",
-              flexWrap: "wrap",
-
-              ease: "elastic.out(0.2,0.18)",
-              delay: 0.25 + i * 0.05,
-            });
-          },
-          onLeaveBack: () => {
-            gsap.fromTo(
-              child,
-              {
-                alignSelf: "end",
-                color: colour.klBlue,
-                fontSize: "3rem",
-                padding: "1.5rem",
-              },
-              {
-                color: colour.kWhite,
-                fontSize: "inherit",
-                alignSelf: "center",
-                padding: 0,
-
-                duration: 0.6,
-                delay: 0.25,
-                ease: "elastic.out(0.2,0.18)",
-              },
-            );
-          },
+          toggleActions: "play none reverse none",
         },
       });
     });
-  }
+  });
 
   // NAVBAR BOX ANIMATIONS
-  if (ScrollTrigger.isTouch === 0) {
-    // NAV ANIMATION 01 — At 10% down the page (to the end) -> shrink nav width
-    gsap.to(navTarget, {
-      scrollTrigger: {
-        trigger: "body",
-        start: "10% top",
-        end: "98% bottom",
+  watchMedia.add("(min-width: 64rem)", () => {
+    // NAV ANIMATION 01 — 10% down → shrink to 60vw (reverses back to 100% at top)
+    ScrollTrigger.create({
+      trigger: "body",
+      start: "10% top",
+      end: "98% bottom",
+      onEnter: () =>
+        gsap.to(navTarget, {
+          width: "60vw",
+          height: "8vh",
+          duration: 0.6,
+          ease: "elastic.inOut(1,1)",
+        }),
+      onLeaveBack: () =>
+        gsap.to(navTarget, {
+          width: "auto",
+          height: "auto",
+          duration: 0.6,
+          ease: "elastic.inOut(1,1)",
+        }),
+    });
+  });
 
-        onEnter: () => {
+  watchMedia.add("(min-width: 48rem)", () => {
+    // NAV ANIMATION 02 — Bottom 2% → expand to footer (reverses back to 60vw)
+    ScrollTrigger.create({
+      trigger: "body",
+      start: "98% bottom",
+      end: "100% bottom",
+      onEnter: () =>
+        gsap.to(navTarget, {
+          width: "auto",
+          height: "100%",
+          duration: 0.6,
+          ease: "elastic.inOut(1,1)",
+        }),
+      onLeaveBack: () => {
+        if (window.matchMedia("(max-width: 64rem)").matches) {
           gsap.to(navTarget, {
-            width: "60vw",
+            width: "auto",
+            height: "auto",
             duration: 0.6,
             ease: "elastic.inOut(1,1)",
           });
-        },
-        onLeaveBack: () => {
-          gsap.fromTo(
-            navTarget,
-            { width: "60vw" },
-            {
-              width: "auto",
-              duration: 0.6,
-              ease: "elastic.inOut(1,1)",
-            },
-          );
-        },
-      },
-    });
-
-    // NAV ANIMATION 02 — At Bopttom of page -> Animate to footer
-    gsap.to(navTarget, {
-      scrollTrigger: {
-        trigger: "body",
-        start: "98% bottom",
-        end: "100% bottom ",
-
-        onEnter: () => {
+        } else {
           gsap.to(navTarget, {
-            width: "auto",
-            height: "100%",
-
-            borderRadius: 30,
+            width: "60vw",
+            height: "8vh",
             duration: 0.6,
-            ease: "elastic.inOut(1, 1)",
+            ease: "elastic.inOut(1,1)",
           });
-        },
-
-        onLeaveBack: () => {
-          gsap.fromTo(
-            navTarget,
-            { borderRadius: 30, height: "95vh" },
-            {
-              width: "60vw",
-              borderRadius: 100,
-              height: 0,
-
-              duration: 0.6,
-              ease: "elastic.inOut(1, 1)",
-            },
-          );
-        },
+        }
       },
     });
-  }
+  });
 });
