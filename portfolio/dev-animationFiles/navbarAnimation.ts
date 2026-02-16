@@ -1,5 +1,5 @@
-import { gsap } from "./gsapSetup";
-import { ScrollTrigger } from "./gsapSetup";
+import { gsap } from "../dev-scriptFiles/gsapSetup";
+import { ScrollTrigger } from "../dev-scriptFiles/gsapSetup";
 import { colour } from "../dev-scriptFiles/styleSetup";
 
 // Check content has loaded on the page
