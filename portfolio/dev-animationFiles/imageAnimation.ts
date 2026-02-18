@@ -42,7 +42,6 @@ function writeBlurhashImages() {
 }
 
 function animateImageIn(target: Element) {
-  console.log(target);
   if (target)
     gsap.fromTo(
       target,
@@ -83,7 +82,8 @@ function checkImageOnScreen() {
   });
 }
 
+writeBlurhashImages();
+
 document.addEventListener("DOMContentLoaded", () => {
-  writeBlurhashImages();
   checkImageOnScreen();
 });

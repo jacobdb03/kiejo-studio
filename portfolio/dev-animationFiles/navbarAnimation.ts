@@ -12,18 +12,17 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
   const hoverLinks = document.querySelectorAll(".ani-gsapHover");
 
   // TEXT INTRO ANIMATION
-  textTarget.forEach((child: HTMLElement, i) =>
-    // Find each child in the array
+  textTarget.forEach((child: HTMLElement, i) => {
     gsap.from(child, {
       x: -20,
       opacity: 0,
+      duration: 1,
       ease: "elastic.out(0.2,0.18)",
-      delay: (0.5 + i) * 0.15,
-    }),
-  );
+      delay: (2.5 + i) * 0.15,
+    });
+  });
 
   // HOVER LINKS ANIMATIONS
-
   hoverLinks.forEach((link) => {
     link.addEventListener("mouseenter", () => {
       gsap.to(link, {

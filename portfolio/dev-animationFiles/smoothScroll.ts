@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
 
   imageTarget.forEach((item: HTMLElement, i) => {
     const setSpeed = parseFloat(item.getAttribute("imgScrollSpeed") || "0");
+    item.style.animationDelay = `${i * 0.1}s`;
     smoother.effects(item, {
-      speed: i + setSpeed,
+      speed: 0.75 + setSpeed,
     });
   });
 });
