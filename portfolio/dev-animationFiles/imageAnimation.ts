@@ -41,8 +41,8 @@ function writeBlurhashImages() {
   });
 }
 
-function animateImageIn(target: Element) {
-  if (target)
+function animateImageIn(target: HTMLImageElement) {
+  if (target.complete && target.naturalHeight > 0 && target.naturalWidth > 0) {
     gsap.fromTo(
       target,
       {
@@ -57,18 +57,27 @@ function animateImageIn(target: Element) {
         ease: "power2.out",
       },
     );
+  }
 }
 
 function checkImageOnScreen() {
   canvasArray.forEach((item) => {
     const observer = new IntersectionObserver(
-      (entries: IntersectionObserverEntry[]) => {
+      (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const img = (entry.target as HTMLElement).querySelector(
-              "img",
-            ) as HTMLImageElement;
-            if (img) animateImageIn(img);
+            const img = entry.target.querySelector("img") as HTMLImageElement;
+            if (img && img.complete && img.naturalHeight > 0) {
+              // Fully loaded + visible = animate now
+              animateImageIn(img);
+            } else if (img) {
+              // Image visible but not loaded - wait for load
+              const onLoad = () => {
+                img.removeEventListener("load", onLoad);
+                animateImageIn(img);
+              };
+              img.addEventListener("load", onLoad);
+            }
             observer.unobserve(entry.target);
           }
         });
