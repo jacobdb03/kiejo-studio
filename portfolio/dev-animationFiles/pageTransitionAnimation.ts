@@ -1,6 +1,8 @@
 import { gsap } from "../dev-scriptFiles/gsapSetup";
 import { colour } from "../dev-scriptFiles/styleSetup";
 
+console.log("True 0");
+
 const linkTarget: HTMLLinkElement[] = gsap.utils.toArray(
   document.querySelectorAll("a"),
 );
@@ -9,16 +11,13 @@ const transitionBox = ".ani-transitionCircle";
 
 const pageTransitionExcluded = document.querySelector(
   ".cus-pageTransitionExcluded",
-);
+) as HTMLDivElement;
 
-const currentPageColor = window.matchMedia("(prefers-color-scheme: dark)")
-  .matches
-  ? colour.kBlack || "#000000"
-  : colour.kWhite;
+const currentPageColor = colour.kWhite;
 
 linkTarget.forEach((item) => {
   item.addEventListener("click", (e) => {
-    if (!pageTransitionExcluded) {
+    if (pageTransitionExcluded) {
       e.preventDefault();
 
       gsap.fromTo(

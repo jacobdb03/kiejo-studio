@@ -87,11 +87,11 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
       containerTarget.classList.remove("top-10");
       containerTarget.classList.add("top-4");
 
-      navTarget.classList.remove("text-xl", "py-8", "px-16", "max-w-360");
-      navTarget.classList.add("text-xs", "py-4", "px-8", "max-w-96");
+      navTarget.classList.remove("text-xl", "py-8", "px-16");
+      navTarget.classList.add("text-xs", "py-4", "px-8", "w-96");
 
-      titleTarget.classList.remove();
-      titleTarget.classList.add();
+      titleTarget.classList.add("flex-3");
+      titleTarget.classList.remove("flex-5");
 
       titleTarget.querySelector("a")?.classList.remove();
       titleTarget.querySelector("a")?.classList.add("flex-0");
@@ -121,8 +121,8 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
       containerTarget.classList.add("top-10");
       containerTarget.classList.remove("top-4");
 
-      navTarget.classList.add("text-xl", "py-8", "px-16", "max-w-360");
-      navTarget.classList.remove("text-xs", "py-4", "px-8", "max-w-96");
+      navTarget.classList.add("text-xl", "py-8", "px-16");
+      navTarget.classList.remove("text-xs", "py-4", "px-8", "w-96");
 
       titleTarget.classList.add("flex-5");
       titleTarget.classList.remove("flex-3");
