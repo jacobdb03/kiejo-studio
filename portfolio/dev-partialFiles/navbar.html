@@ -2,35 +2,31 @@
     class="fixed flex rounded-full inset-x-0 mt-[-4] z-20 bg-kBlue w-1 h-1 mx-auto ani-transitionCircle"
 ></div>
 
-<div class="fixed inset-x-0 z-10 top-8 mx-8 md:h-[93.5vh]">
+<div class="fixed inset-x-0 z-10 top-10 mx-32 ani-navContainer">
     <div
-        class="bg-kBlue rounded-[4rem] flex flex-row justify-start max-w-360 mx-auto py-8 px-16 text-kWhite font-medium md:flex ani-navExpand"
+        class="bg-kBlue rounded-[4rem] flex flex-row justify-between overflow-hidden max-w-360 text-xl mx-auto py-8 px-16 text-kWhite font-bold ani-navExpand ani-textBump"
     >
         <div
-            class="flex basis-3/4 pt-2.5 self-center md:justify-start ani-textBump ani-navTitle"
+            class="flex flex-5 pt-2.5 order-1 self-center ani-navTitle ani-textBump"
         >
-            <a href="/portfolio/index.html">
+            <a href="/portfolio/index.html" class="">
                 <img
                     src="/portfolio/dev-globalAssets/JacobBryant_LandscapeLogo.svg"
-                    class="h-8"
+                    class="h-8 ani-imageExclude"
                     alt="JacobBryant"
+                />
+            </a>
+            <a href="/portfolio/index.html" class="ani-navLogo flex-0">
+                <img
+                    src="/portfolio/dev-globalAssets/logomark_white.svg"
+                    class="h-6 ani-imageExclude"
+                    alt="JLogo"
                 />
             </a>
         </div>
 
         <div
-            class="flex max-w-none basis-1/4 justify-end pt-2.5 md:max-w-0 md:overflow-hidden ani-navLink"
-        >
-            <a
-                href="javascript:void(0)"
-                class="ani-textBump ani-gsapHover"
-                id="cus-overflowMenu"
-                >///</a
-            >
-        </div>
-
-        <div
-            class="flex max-w-0 overflow-hidden self-center pt-1.5 md:basis-1/2 md:max-w-none md:justify-between ani-navLink"
+            class="flex order-2 max-w-0 overflow-hidden self-center pt-1.5 md:max-w-none md:flex-3 md:justify-between ani-navLink"
         >
             <a
                 href="/portfolio/page-projects/index.html"
@@ -53,11 +49,22 @@
                 >Store</a
             >
         </div>
+
+        <div
+            class="flex order-2 basis-1/4 justify-end self-center pt-1 md:max-w-0 md:overflow-hidden ani-navLink cus-pageTransitionExcluded"
+        >
+            <a
+                href="javascript:void(0)"
+                class="ani-textBump ani-gsapHover"
+                id="cus-overflowMenu"
+                >///</a
+            >
+        </div>
     </div>
 
     <div
         id="overflowNavbar"
-        class="flex flex-col max-w-360 my-5 mx-auto px-5 text-kWhite text-[25vw] leading-[15vh] font-bold"
+        class="flex flex-col my-5 mx-auto px-5 text-kWhite text-[25vw] leading-[15vh] font-bold"
     >
         <a
             href="/portfolio/page-projects/index.html"

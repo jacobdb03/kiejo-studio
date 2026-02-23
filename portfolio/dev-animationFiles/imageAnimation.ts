@@ -14,6 +14,7 @@ function writeBlurhashImages() {
 
     const imageToLoad = item?.querySelector("img") as HTMLImageElement;
     if (!imageToLoad) return;
+    else if (imageToLoad.classList.contains("ani-imageExclude")) return;
     else imageArray.push(imageToLoad);
 
     const divImageHash = imageToLoad.getAttribute("hash-data");

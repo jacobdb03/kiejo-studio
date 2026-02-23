@@ -1,5 +1,4 @@
-import { gsap } from "../dev-scriptFiles/gsapSetup";
-import { ScrollTrigger } from "../dev-scriptFiles/gsapSetup";
+import { gsap, ScrollTrigger, Flip } from "../dev-scriptFiles/gsapSetup";
 import { colour } from "../dev-scriptFiles/styleSetup";
 
 // Check content has loaded on the page
@@ -7,8 +6,12 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
   // Declare variables from navbar.html to be animated
   const textTarget: HTMLElement[] = gsap.utils.toArray(".ani-textBump");
   const footerTarget: HTMLElement[] = gsap.utils.toArray(".ani-navLink");
-  const navTarget = ".ani-navExpand";
-  const titleTarget = ".ani-navTitle";
+  const containerTarget = document.querySelector(
+    ".ani-navContainer",
+  ) as HTMLDivElement;
+  const navTarget = document.querySelector(".ani-navExpand") as HTMLDivElement;
+  const titleTarget = document.querySelector(".ani-navTitle") as HTMLDivElement;
+  const logoTarget = document.querySelector(".ani-navLogo") as HTMLDivElement;
   const hoverLinks = document.querySelectorAll(".ani-gsapHover");
 
   // TEXT INTRO ANIMATION
@@ -41,94 +44,195 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
     });
   });
 
-  let watchMedia = gsap.matchMedia();
+  // let watchMedia = gsap.matchMedia();
 
-  // TITLE IMAGE TO FOOTER ANIMATIONS
-  watchMedia.add("(min-width: 48rem)", () => {
-    gsap.to(titleTarget, {
-      duration: 0.2,
-      ease: "elastic.out(0.2,0.18)",
-      scrollTrigger: {
-        trigger: "body",
-        start: "98% bottom",
-        end: "100% bottom",
-        toggleActions: "play none reverse none",
-      },
-    });
-  });
+  // // TITLE IMAGE TO FOOTER ANIMATIONS
+  // watchMedia.add("(min-width: 48rem)", () => {
+  //   gsap.to(titleTarget, {
+  //     duration: 0.2,
+  //     ease: "elastic.out(0.2,0.18)",
+  //     scrollTrigger: {
+  //       trigger: "body",
+  //       start: "98% bottom",
+  //       end: "100% bottom",
+  //       toggleActions: "play none reverse none",
+  //     },
+  //   });
+  // });
 
-  // TEXT LINKS TO FOOTER ANIMATIONS
-  watchMedia.add("(min-width: 48rem)", () => {
-    footerTarget.forEach((child: HTMLElement, i) => {
-      gsap.to(child, {
-        color: colour.klBlue,
-        delay: 0.2,
+  // // NAVBAR BOX ANIMATIONS
+  // gsap.from(navTarget, {
+  //   width: 0,
+
+  //   ease: "elastic.out(0.2, 0.18)",
+  // });
+
+  // NAV ANIMATION 01 — 10% down → shrink to 60vw (reverses back to 100% at top)
+  ScrollTrigger.create({
+    trigger: "body",
+    scroller: "#smooth-wrapper",
+    start: "10% top",
+    end: "98% bottom",
+
+    onEnter: () => {
+      const shrunkState = Flip.getState([
+        containerTarget,
+        navTarget,
+        titleTarget,
+        titleTarget.querySelector("a"),
+        logoTarget,
+        footerTarget[0],
+      ]);
+
+      containerTarget.classList.remove("top-10");
+      containerTarget.classList.add("top-4");
+
+      navTarget.classList.remove("text-xl", "py-8", "px-16", "max-w-360");
+      navTarget.classList.add("text-xs", "py-4", "px-8", "max-w-96");
+
+      titleTarget.classList.remove();
+      titleTarget.classList.add();
+
+      titleTarget.querySelector("a")?.classList.remove();
+      titleTarget.querySelector("a")?.classList.add("flex-0");
+
+      logoTarget.classList.remove("flex-0");
+      logoTarget.classList.add();
+
+      footerTarget[0].classList.remove("md:flex-3");
+      footerTarget[0].classList.add("md:flex-5");
+
+      Flip.from(shrunkState, {
         duration: 0.6,
-        ease: "elastic.out(0.2,0.18)",
-        scrollTrigger: {
-          trigger: "body",
-          start: "98% bottom",
-          end: "100% bottom",
-          toggleActions: "play none reverse none",
-        },
+        ease: "elastic.out(0.12,0.18)",
       });
-    });
+    },
+
+    onLeaveBack: () => {
+      const shrunkState = Flip.getState([
+        containerTarget,
+        navTarget,
+        titleTarget,
+        titleTarget.querySelector("a"),
+        logoTarget,
+        footerTarget[0],
+      ]);
+
+      containerTarget.classList.add("top-10");
+      containerTarget.classList.remove("top-4");
+
+      navTarget.classList.add("text-xl", "py-8", "px-16", "max-w-360");
+      navTarget.classList.remove("text-xs", "py-4", "px-8", "max-w-96");
+
+      titleTarget.classList.add("flex-5");
+      titleTarget.classList.remove("flex-3");
+
+      titleTarget.querySelector("a")?.classList.add();
+      titleTarget.querySelector("a")?.classList.remove("flex-0");
+
+      logoTarget.classList.add("flex-0");
+      logoTarget.classList.remove();
+
+      footerTarget[0].classList.add("md:flex-3");
+      footerTarget[0].classList.remove("md:flex-5");
+
+      Flip.from(shrunkState, {
+        duration: 0.6,
+        ease: "elastic.out(0.12,0.18)",
+      });
+    },
   });
 
-  // NAVBAR BOX ANIMATIONS
-  watchMedia.add("(min-width: 64rem)", () => {
-    // NAV ANIMATION 01 — 10% down → shrink to 60vw (reverses back to 100% at top)
-    ScrollTrigger.create({
-      trigger: "body",
-      start: "10% top",
-      end: "98% bottom",
-      onEnter: () =>
-        gsap.to(navTarget, {
-          width: "60vw",
-          height: "8vh",
-          duration: 0.6,
-          ease: "elastic.inOut(1,1)",
-        }),
-      onLeaveBack: () =>
-        gsap.to(navTarget, {
-          width: "auto",
-          height: "auto",
-          duration: 0.6,
-          ease: "elastic.inOut(1,1)",
-        }),
-    });
-  });
+  // NAV ANIMATION 02 — Bottom 2% → expand to footer (reverses back to 60vw)
+  ScrollTrigger.create({
+    trigger: "body",
+    scroller: "#smooth-wrapper",
+    start: "98% bottom",
+    end: "100% bottom",
 
-  watchMedia.add("(min-width: 48rem)", () => {
-    // NAV ANIMATION 02 — Bottom 2% → expand to footer (reverses back to 60vw)
-    ScrollTrigger.create({
-      trigger: "body",
-      start: "98% bottom",
-      end: "100% bottom",
-      onEnter: () =>
-        gsap.to(navTarget, {
-          width: "auto",
-          height: "100%",
-          duration: 0.6,
-          ease: "elastic.inOut(1,1)",
-        }),
-      onLeaveBack: () => {
-        if (window.matchMedia("(max-width: 64rem)").matches) {
-          gsap.to(navTarget, {
-            width: "auto",
-            height: "auto",
-            duration: 0.6,
-            ease: "elastic.inOut(1,1)",
-          });
-        } else {
-          gsap.to(navTarget, {
-            width: "60vw",
-            height: "8vh",
-            duration: 0.6,
-            ease: "elastic.inOut(1,1)",
-          });
-        }
-      },
-    });
+    onEnter: () => {
+      const footerState = Flip.getState([
+        containerTarget,
+        navTarget,
+        titleTarget,
+        titleTarget.querySelector("a"),
+        logoTarget,
+        footerTarget[0],
+      ]);
+
+      containerTarget.classList.add();
+      containerTarget.classList.remove();
+
+      navTarget.classList.add();
+      navTarget.classList.remove();
+
+      titleTarget.classList.add();
+      titleTarget.classList.remove();
+
+      titleTarget.querySelector("a")?.classList.add();
+      titleTarget.querySelector("a")?.classList.remove();
+
+      logoTarget.classList.add();
+      logoTarget.classList.remove();
+
+      footerTarget[0].classList.add();
+      footerTarget[0].classList.remove();
+
+      Flip.from(footerState, {
+        duration: 0.7,
+        ease: "elastic.out(0.12,0.18)",
+      });
+    },
+
+    onLeaveBack: () => {
+      const footerState = Flip.getState([
+        containerTarget,
+        navTarget,
+        titleTarget,
+        titleTarget.querySelector("a"),
+        logoTarget,
+        footerTarget[0],
+      ]);
+
+      Flip.from(footerState, {
+        duration: 0.7,
+        ease: "elastic.out(0.12, 0.18)",
+      });
+    },
   });
 });
+
+//   const targets = [
+//     titleTarget,
+//     navTarget,
+//     titleTargetImg,
+//     footerTarget,
+//     titleTarget,
+//   ];
+
+//   if (
+//     window.location.pathname === "/index.html" ||
+//     window.location.pathname === "/"
+//   ) {
+//     targets.forEach((target) => {
+//       gsap.to(target, {
+//         opacity: 1,
+//         duration: 1,
+//         scrollTrigger: {
+//           trigger: "body",
+//           start: "top 100vh ",
+//           end: "top 200vh ",
+//           onEnter: () => {
+//             console.log("true");
+//           },
+
+//           onLeave: () => {
+//             (console.log("false"), homeScreenAnimations());
+//           },
+//         },
+//       });
+//     });
+//   } else {
+//     console.log("other");
+//     homeScreenAnimations();
+//   }

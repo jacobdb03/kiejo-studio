@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+    <head>
+        <include src="dev-partialFiles/header.html"></include>
+    </head>
+
+    <body>
+        <include src="dev-partialFiles/navbar.html"></include>
+
+        <!-- GSAP SmoothScroll Wrappers -->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- Page Header with background image -->
+                <div
+                    class="relative flex flex-col justify-end items-start h-screen w-full overflow-hidden"
+                >
+                    <img
+                        class="absolute inset-0 w-full h-full object-cover z-0"
+                        src="assets/pageTease.jpeg"
+                        alt="Page Tease"
+                    />
+                    <div
+                        class="absolute inset-0 bg-kBlack opacity-40 z-10"
+                    ></div>
+                    <div
+                        class="relative z-20 flex flex-col justify-end items-start ml-12 pb-20 max-w-2xl"
+                    >
+                        <div class="flex flex-row flex-wrap">
+                            <h3 class="tag text-kWhite border-kWhite">
+                                February 2024
+                            </h3>
+                            <h3 class="tag text-kWhite border-kWhite">
+                                Concept Project
+                            </h3>
+                        </div>
+                        <h1 class="title text-kWhite">Biophilia.</h1>
+                        <h3
+                            class="font-light mt-4 text-base leading-relaxed text-kWhite"
+                        >
+                            Definition: A hypothetical human tendency to
+                            interact or be closely associated with other forms
+                            of life in nature. A desire or tendency to commune
+                            with nature. This exhibition displayed the beauty
+                            and movement of the growth of plants and exaggerate
+                            the calm they can help us to feel.
+                        </h3>
+                        <div class="flex flex-row flex-wrap mt-4">
+                            <p class="tag text-kWhite border-kWhite">
+                                Event Identity
+                            </p>
+                            <p class="tag text-kWhite border-kWhite">Motion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biophilia intro -->
+                <div class="flex flex-col w-full mt-72 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">Biophilia</h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        An exhibition on our connection to plants — Using a
+                        branding style that feels alive.
+                    </p>
+                </div>
+
+                <div
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <video
+                        class="absolute rounded-2xl w-full h-full object-cover"
+                        controls
+                        preload="auto"
+                        poster="assets/animationPoster1.jpg"
+                    >
+                        <source
+                            src="assets/Promotional Animation.mp4"
+                            type="video/mp4"
+                        />
+                        Promotional Animation
+                    </video>
+                </div>
+
+                <!-- Posters -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">Posters</h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Made using abstract shapes with unique patterns.
+                    </p>
+                </div>
+
+                <div
+                    data-speed="1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/Poster2.jpeg"
+                        alt="Biophilia Exhibition Poster 2"
+                        hash-data=""
+                    />
+                </div>
+
+                <div
+                    data-speed="0.9"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/mockup3.jpeg"
+                        alt="Biophilia Poster Mockup"
+                        hash-data=""
+                    />
+                </div>
+
+                <!-- At the exhibition -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        At the exhibition
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        How the branding is seen at the event.
+                    </p>
+                </div>
+
+                <div
+                    data-speed="1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 21/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/wall1.jpeg"
+                        alt="Exhibition wall art"
+                        hash-data=""
+                    />
+                </div>
+
+                <div
+                    data-speed="0.9"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/leaflet1.jpeg"
+                        alt="Leaflet Mockup"
+                        hash-data=""
+                    />
+                </div>
+
+                <div
+                    data-speed="1.1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/SeedPackets.jpg"
+                        alt="Seed mockup"
+                        hash-data=""
+                    />
+                </div>
+
+                <!-- Digital Posters -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        Digital Posters
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Making the system come alive and grow like a plant.
+                    </p>
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-start">
+                    <div class="flex flex-col flex-3 gap-4">
+                        <p class="text-kBlack font-light leading-relaxed">
+                            This project explored the creation of a full
+                            identity for an exhibition called Biophilia, which
+                            explored the connection between plants and people
+                            and the human need for nature in their daily lives.
+                            Creating a full identity allowed me to explore a
+                            response across multiple touchpoints, which
+                            encouraged the design to continue growing through
+                            more applications.
+                        </p>
+                        <p class="text-kBlack font-light leading-relaxed">
+                            Being a longer project, it allowed me to learn about
+                            the process and lifecycle of a bigger project.
+                            Finally, it allowed me to continue developing new
+                            technologies and abstract methods of communication.
+                        </p>
+                    </div>
+                    <div
+                        data-speed="1"
+                        class="relative flex-3 cus-blurContainer cus-scrollImage"
+                        style="aspect-ratio: 9/16"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <video
+                            class="absolute rounded-2xl w-full h-full object-cover"
+                            poster="assets/animationPoster2.jpg"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/Digital Poster 1.mp4"
+                                type="video/mp4"
+                            />
+                            Digital Poster 1
+                        </video>
+                    </div>
+                    <div
+                        data-speed="0.9"
+                        class="relative flex-4 cus-blurContainer cus-scrollImage"
+                        style="aspect-ratio: 4/3"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <video
+                            class="absolute rounded-2xl w-full h-full object-cover"
+                            poster="assets/animationPoster3.jpg"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/Digital Poster 2.mp4"
+                                type="video/mp4"
+                            />
+                            Digital Poster 2
+                        </video>
+                    </div>
+                </div>
+
+                <!-- In the real world -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        In the real world
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Billboards in the real world advertising the event.
+                    </p>
+                </div>
+
+                <div
+                    data-speed="1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 21/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/mockup2.jpeg"
+                        alt="Biophilia Billboard 1"
+                        hash-data=""
+                    />
+                </div>
+
+                <div
+                    data-speed="0.9"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 21/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/mockup1.jpeg"
+                        alt="Biophilia Billboard 2"
+                        hash-data=""
+                    />
+                </div>
+
+                <div
+                    data-speed="1.1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 21/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/mockup4.jpeg"
+                        alt="Biophilia Billboard 3"
+                        hash-data=""
+                    />
+                </div>
+
+                <div class="h-64"></div>
+            </div>
+        </div>
+    </body>
+</html>

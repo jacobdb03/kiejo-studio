@@ -6,5 +6,91 @@
 
     <body>
         <include src="dev-partialFiles/navbar.html"></include>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.dev/svgjs"
+                    viewBox="0 0 800 800"
+                    opacity="1"
+                >
+                    <defs>
+                        <filter
+                            id="bbblurry-filter"
+                            x="-100%"
+                            y="-100%"
+                            width="400%"
+                            height="400%"
+                            filterUnits="objectBoundingBox"
+                            primitiveUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB"
+                        >
+                            <feGaussianBlur
+                                stdDeviation="59"
+                                x="0%"
+                                y="0%"
+                                width="100%"
+                                height="100%"
+                                in="SourceGraphic"
+                                edgeMode="none"
+                                result="blur"
+                            ></feGaussianBlur>
+                        </filter>
+                    </defs>
+                    <g filter="url(#bbblurry-filter)">
+                        <ellipse
+                            rx="141.5"
+                            ry="140.5"
+                            cx="99.36623018446244"
+                            cy="89.54868890041809"
+                            fill="#152229"
+                        ></ellipse>
+                        <ellipse
+                            rx="141.5"
+                            ry="140.5"
+                            cx="68.13667855048772"
+                            cy="596.8357610816754"
+                            fill="#152229"
+                        ></ellipse>
+                        <ellipse
+                            rx="141.5"
+                            ry="140.5"
+                            cx="374.3351405478272"
+                            cy="209.98687684244828"
+                            fill="#2560e0"
+                        ></ellipse>
+                        <ellipse
+                            rx="141.5"
+                            ry="140.5"
+                            cx="185.4894209624623"
+                            cy="377.1206382835537"
+                            fill="hsla(226, 82%, 25%, 1.00)"
+                        ></ellipse>
+                        <ellipse
+                            rx="141.5"
+                            ry="140.5"
+                            cx="314.96277424478836"
+                            cy="339.97728315456754"
+                            fill="#2560e0"
+                        ></ellipse>
+                        <ellipse
+                            rx="141.5"
+                            ry="140.5"
+                            cx="836.126046582026"
+                            cy="789.1750570711171"
+                            fill="#2c50c8"
+                        ></ellipse>
+                    </g>
+                </svg>
+
+                <div class="flex h-screen justify-center"></div>
+                <div class="flex h-screen justify-center"></div>
+
+                <div class="flex h-screen justify-center"></div>
+            </div>
+        </div>
     </body>
 </html>

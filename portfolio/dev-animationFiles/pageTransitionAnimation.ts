@@ -7,6 +7,10 @@ const linkTarget: HTMLLinkElement[] = gsap.utils.toArray(
 
 const transitionBox = ".ani-transitionCircle";
 
+const pageTransitionExcluded = document.querySelector(
+  ".cus-pageTransitionExcluded",
+);
+
 const currentPageColor = window.matchMedia("(prefers-color-scheme: dark)")
   .matches
   ? colour.kBlack || "#000000"
@@ -14,26 +18,28 @@ const currentPageColor = window.matchMedia("(prefers-color-scheme: dark)")
 
 linkTarget.forEach((item) => {
   item.addEventListener("click", (e) => {
-    e.preventDefault();
+    if (!pageTransitionExcluded) {
+      e.preventDefault();
 
-    gsap.fromTo(
-      transitionBox,
-      {
-        scale: 1,
-        zIndex: 20,
-        backgroundColor: colour.kBlue,
-      },
-      {
-        scale: 800,
-        duration: 1,
-        backgroundColor: currentPageColor,
-        ease: "expo.inOut",
-        onComplete: () => {
-          sessionStorage.setItem("navigatedFromLink", "true");
-          window.location.href = item.href;
+      gsap.fromTo(
+        transitionBox,
+        {
+          scale: 1,
+          zIndex: 20,
+          backgroundColor: colour.kBlue,
         },
-      },
-    );
+        {
+          scale: 800,
+          duration: 1,
+          backgroundColor: currentPageColor,
+          ease: "expo.inOut",
+          onComplete: () => {
+            sessionStorage.setItem("navigatedFromLink", "true");
+            window.location.href = item.href;
+          },
+        },
+      );
+    }
   });
 });
 

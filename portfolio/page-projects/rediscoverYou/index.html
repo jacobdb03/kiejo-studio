@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+    <head>
+        <include src="dev-partialFiles/header.html"></include>
+    </head>
+
+    <body>
+        <include src="dev-partialFiles/navbar.html"></include>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- Page Header -->
+                <div
+                    class="relative flex flex-col justify-end items-start h-screen w-full overflow-hidden"
+                >
+                    <img
+                        class="absolute inset-0 w-full h-full object-cover z-0"
+                        style="object-position: top"
+                        src="assets/PageTease.jpg"
+                        alt="Page Tease"
+                    />
+                    <div
+                        class="absolute inset-0 bg-kBlack opacity-40 z-10"
+                    ></div>
+                    <div
+                        class="relative z-20 flex flex-col justify-end items-start ml-12 pb-20 max-w-2xl"
+                    >
+                        <div class="flex flex-row flex-wrap">
+                            <h3 class="tag text-kWhite border-kWhite">
+                                January 2024
+                            </h3>
+                            <h3 class="tag text-kWhite border-kWhite">
+                                Concept Project
+                            </h3>
+                        </div>
+                        <h1 class="title text-kWhite">Rediscover You.</h1>
+                        <h3
+                            class="font-light mt-4 text-base leading-relaxed text-kWhite"
+                        >
+                            Working on a team with two others, we created the
+                            following campaign using miniature figures and AI
+                            generated art to conquer loneliness using John
+                            Lewis' tone of voice.
+                        </h3>
+                        <div class="flex flex-row flex-wrap mt-4">
+                            <p class="tag text-kWhite border-kWhite">
+                                Campaign Identity
+                            </p>
+                            <p class="tag text-kWhite border-kWhite">
+                                Branding
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Extra page header -->
+                    <div
+                        class="absolute z-20 right-12 bottom-20 flex flex-col items-end flex-wrap max-w-xs text-right"
+                    >
+                        <p class="text-kWhite font-medium text-3xl w-full mb-2">
+                            Creatives
+                        </p>
+                        <a
+                            target="_blank"
+                            href="https://cassielouise.com/"
+                            class="tag text-kWhite border-kWhite"
+                            >Cassie Muskett</a
+                        >
+                        <p class="tag text-kWhite border-kWhite">Emma Hopkin</p>
+                        <p class="tag text-kWhite border-kWhite">
+                            Jacob Bryant
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Campaign video -->
+                <div class="flex flex-col w-full mt-72 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        The campaign video.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Click below to find out how this project is helping
+                        older people feel less lonely.
+                    </p>
+                </div>
+
+                <div
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <video
+                        class="absolute rounded-2xl w-full h-full object-cover"
+                        controls
+                        preload="auto"
+                        poster="assets/animationThumb.jpeg"
+                        playsinline
+                    >
+                        <source
+                            src="assets/campaignAnimation.mp4"
+                            type="video/mp4"
+                        />
+                        Campaign Animation
+                    </video>
+                </div>
+
+                <!-- Billboards -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        The billboards.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Using a miniature world to make a big difference.
+                    </p>
+                </div>
+
+                <div
+                    data-speed="1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/horizontal1.jpeg"
+                        alt="Horizontal Billboard 1"
+                        hash-data=""
+                    />
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4">
+                    <div
+                        data-speed="1"
+                        class="relative flex-4 cus-blurContainer cus-scrollImage"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/mockup3.jpeg"
+                            alt="Billboard mockup 1"
+                            hash-data=""
+                        />
+                    </div>
+                    <div
+                        data-speed="0.9"
+                        class="relative flex-3 cus-blurContainer cus-scrollImage"
+                        style="aspect-ratio: 20/18"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/mockup4.jpeg"
+                            alt="Billboard mockup 2"
+                            hash-data=""
+                        />
+                    </div>
+                </div>
+
+                <div
+                    data-speed="1"
+                    class="relative w-full mt-20 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/vertical4.jpeg"
+                        alt="Vertical poster all"
+                        hash-data=""
+                    />
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4">
+                    <div
+                        data-speed="0.9"
+                        class="relative flex-3 cus-blurContainer cus-scrollImage"
+                        style="aspect-ratio: 20/18"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/mockup1.jpeg"
+                            alt="Poster mockup 1"
+                            hash-data=""
+                        />
+                    </div>
+                    <div
+                        data-speed="1.1"
+                        class="relative flex-4 cus-blurContainer cus-scrollImage"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/mockup2.jpeg"
+                            alt="Poster mockup 2"
+                            hash-data=""
+                        />
+                    </div>
+                </div>
+
+                <!-- Digital -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        Finding the campaign digitally.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        A website take-over with events that older people can go
+                        to and connect with others at.
+                    </p>
+                </div>
+
+                <div
+                    data-speed="1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer cus-scrollImage"
+                    style="aspect-ratio: 16/9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/mockup7.jpeg"
+                        alt="Website mockup"
+                        hash-data=""
+                    />
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-start">
+                    <div
+                        data-speed="1"
+                        class="relative flex-3 cus-blurContainer cus-scrollImage"
+                        style="aspect-ratio: 16/9"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <video
+                            class="absolute rounded-2xl w-full h-full object-cover"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/websiteRecording.mp4"
+                                type="video/mp4"
+                            />
+                            Website Recording
+                        </video>
+                    </div>
+                    <p class="flex-2 text-kBlack font-light leading-relaxed">
+                        The John Lewis website was redesigned to promote the
+                        campaign, with an explanation, stories and most
+                        importantly "little meet-ups" — which was the campaign's
+                        solution to helping those lost parents find something
+                        new to do in their lives.
+                    </p>
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-end">
+                    <div
+                        data-speed="1"
+                        class="relative flex-3 cus-blurContainer cus-scrollImage"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/facebook mockup.jpeg"
+                            alt="Facebook mockup"
+                            hash-data=""
+                        />
+                    </div>
+                    <div class="flex flex-col flex-2 gap-4">
+                        <div
+                            data-speed="0.9"
+                            class="relative cus-blurContainer cus-scrollImage"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/instagram mockup.jpeg"
+                                alt="Instagram mockup"
+                                hash-data=""
+                            />
+                        </div>
+                        <p class="text-kBlack font-light leading-relaxed">
+                            The social media promoted stories and presented the
+                            visuals and typography in a beautiful way that would
+                            help the campaign bring in more attention.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Staff uniform -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        Staff Uniform.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Expanding the mini-figure world.
+                    </p>
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4">
+                    <div
+                        data-speed="0.9"
+                        class="relative flex-2 cus-blurContainer cus-scrollImage"
+                        style="aspect-ratio: 7/12"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/mockup6.jpeg"
+                            alt="Nametag mockup"
+                            hash-data=""
+                        />
+                    </div>
+                    <div
+                        data-speed="1.1"
+                        class="relative flex-3 cus-blurContainer cus-scrollImage"
+                        style="aspect-ratio: 3/2"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/nametags.jpeg"
+                            alt="Nametag image"
+                            hash-data=""
+                        />
+                    </div>
+                </div>
+
+                <!-- Presentation -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        The presentation.
+                    </h2>
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-center">
+                    <div class="flex-1"></div>
+                    <a
+                        href="assets/Submission PDF.pdf"
+                        class="relative flex-3 cus-blurContainer cus-scrollImage"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/animationThumb.jpeg"
+                            alt="Final PDF"
+                            hash-data=""
+                        />
+                    </a>
+                    <p class="flex-2 text-kBlack font-light leading-relaxed">
+                        If you want to see it as a PDF, have a click of the
+                        image!
+                    </p>
+                </div>
+
+                <div class="h-64"></div>
+            </div>
+        </div>
+    </body>
+</html>
