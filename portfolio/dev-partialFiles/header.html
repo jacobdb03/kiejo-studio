@@ -26,16 +26,26 @@
 />
 
 <!--Links and scripts-->
+
+<script>
+    document.documentElement.classList.add("js-enabled");
+</script>
+<noscript>
+    <style>
+        .js-only {
+            display: none !important;
+        }
+        .no-js-only {
+            display: block !important;
+        }
+    </style>
+</noscript>
+
 <link
     rel="stylesheet"
     type="text/css"
     href="/portfolio/dev-styleFiles/styles.css"
 />
-
-<!--<script
-    type="module"
-    src="/portfolio/dev-scriptFiles/pageReady.ts"
-></script>-->
 
 <script
     type="module"

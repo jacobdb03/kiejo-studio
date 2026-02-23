@@ -88,10 +88,10 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
       containerTarget.classList.add("top-4");
 
       navTarget.classList.remove("text-xl", "py-8", "px-16");
-      navTarget.classList.add("text-xs", "py-4", "px-8", "w-96");
+      navTarget.classList.add("text-sm", "py-4", "px-8", "w-96");
 
-      titleTarget.classList.add("flex-3");
-      titleTarget.classList.remove("flex-5");
+      titleTarget.classList.add("flex-4");
+      titleTarget.classList.remove("flex-6");
 
       titleTarget.querySelector("a")?.classList.remove();
       titleTarget.querySelector("a")?.classList.add("flex-0");
@@ -99,8 +99,8 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
       logoTarget.classList.remove("flex-0");
       logoTarget.classList.add();
 
-      footerTarget[0].classList.remove("md:flex-3");
-      footerTarget[0].classList.add("md:flex-5");
+      footerTarget[0].classList.remove("md:flex-4");
+      footerTarget[0].classList.add("md:flex-6");
 
       Flip.from(shrunkState, {
         duration: 0.6,
@@ -122,10 +122,10 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
       containerTarget.classList.remove("top-4");
 
       navTarget.classList.add("text-xl", "py-8", "px-16");
-      navTarget.classList.remove("text-xs", "py-4", "px-8", "w-96");
+      navTarget.classList.remove("text-sm", "py-4", "px-8", "w-96");
 
-      titleTarget.classList.add("flex-5");
-      titleTarget.classList.remove("flex-3");
+      titleTarget.classList.add("flex-6");
+      titleTarget.classList.remove("flex-4");
 
       titleTarget.querySelector("a")?.classList.add();
       titleTarget.querySelector("a")?.classList.remove("flex-0");
@@ -133,8 +133,8 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
       logoTarget.classList.add("flex-0");
       logoTarget.classList.remove();
 
-      footerTarget[0].classList.add("md:flex-3");
-      footerTarget[0].classList.remove("md:flex-5");
+      footerTarget[0].classList.add("md:flex-4");
+      footerTarget[0].classList.remove("md:flex-6");
 
       Flip.from(shrunkState, {
         duration: 0.6,
