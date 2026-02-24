@@ -30,57 +30,45 @@ if (!document.documentElement.classList.contains("js-enabled")) {
   // Create and inject the transition box immediately
   const transitionBox = document.createElement("div");
   document.documentElement.appendChild(transitionBox);
-
   gsap.set(transitionBox, {
     position: "fixed",
-    top: 0,
-    left: "50%", // anchor to top-middle
-    xPercent: -50, // centre it horizontally
     width: "calc(200vw + 200vh)",
     height: "calc(200vw + 200vh)",
-    yPercent: -50, // start so the centre of the circle is at the top
     zIndex: 20,
     borderRadius: "50%",
     backgroundColor: colour.kWhite,
     pointerEvents: "none",
-    scale: sessionStorage.getItem("navigatedFromLink") === "true" ? 1 : 0,
+    scale: 0,
   });
 
   // Entrance — circle shrinks away on new page load
   if (sessionStorage.getItem("navigatedFromLink") === "true") {
+    const x = sessionStorage.getItem("clickX") || "50%";
+    const y = sessionStorage.getItem("clickY") || "0";
+
+    gsap.set(transitionBox, {
+      left: x,
+      top: y,
+      xPercent: -50,
+      yPercent: -50,
+      scale: 1, // start fully covering the screen
+    });
+
     gsap.to(transitionBox, {
       scale: 0,
+      backgroundColor: colour.kBlue,
       duration: 1,
       ease: "expo.inOut",
-      onComplete: () => sessionStorage.removeItem("navigatedFromLink"),
+      onComplete: () => {
+        (sessionStorage.removeItem("navigatedFromLink"),
+          sessionStorage.removeItem("clickX"));
+        sessionStorage.removeItem("clickY");
+      },
     });
   }
 
   document.addEventListener("DOMContentLoaded", () => {
     linkTarget = gsap.utils.toArray(document.querySelectorAll("a"));
-    // transitionBox = document.querySelector(".ani-transition");
-
-    linkTarget.forEach((item) => {
-      item.addEventListener("click", (e: Event) => {
-        if (item.classList.contains("cus-pageTransitionExcluded")) return;
-
-        e.preventDefault();
-
-        gsap.fromTo(
-          transitionBox,
-          { scale: 0 },
-          {
-            scale: 1,
-            duration: 1,
-            ease: "expo.inOut",
-            onComplete: () => {
-              sessionStorage.setItem("navigatedFromLink", "true");
-              window.location.href = item.href;
-            },
-          },
-        );
-      });
-    });
 
     // TEXT INTRO ANIMATION
     textTarget.forEach((child: HTMLElement, i) => {
@@ -90,6 +78,40 @@ if (!document.documentElement.classList.contains("js-enabled")) {
         duration: 1,
         ease: "elastic.out(0.2,0.18)",
         delay: (5 + i) * 0.15,
+      });
+    });
+
+    linkTarget.forEach((item) => {
+      item.addEventListener("click", (e: MouseEvent) => {
+        if (item.classList.contains("cus-pageTransitionExcluded")) return;
+
+        sessionStorage.setItem("clickX", String(e.clientX));
+        sessionStorage.setItem("clickY", String(e.clientY));
+
+        e.preventDefault();
+
+        // Position the circle at the click point
+        gsap.set(transitionBox, {
+          left: e.clientX,
+          top: e.clientY,
+          xPercent: -50,
+          yPercent: -50,
+        });
+
+        gsap.fromTo(
+          transitionBox,
+          { scale: 0, backgroundColor: colour.kBlue },
+          {
+            backgroundColor: colour.kWhite,
+            scale: 1,
+            duration: 1,
+            ease: "expo.inOut",
+            onComplete: () => {
+              sessionStorage.setItem("navigatedFromLink", "true");
+              window.location.href = item.href;
+            },
+          },
+        );
       });
     });
 
