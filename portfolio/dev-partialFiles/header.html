@@ -28,18 +28,37 @@
 <!--Links and scripts-->
 
 <script>
-    document.documentElement.classList.add("js-enabled");
+    (function () {
+        document.documentElement.classList.add("js-preload", "js-enabled");
+
+        // SELF-TIMEOUT: Remove preload after 0.1s EVEN IF JS fails
+        setTimeout(() => {
+            document.documentElement.classList.remove("js-preload");
+        }, 100);
+    })();
 </script>
-<noscript>
-    <style>
-        .js-only {
-            display: none !important;
-        }
-        .no-js-only {
-            display: block !important;
-        }
-    </style>
-</noscript>
+<style>
+    /* Global animation killer + overlay - Tailwind compatible */
+    .js-preload *,
+    .js-preload *::before,
+    .js-preload *::after {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+    }
+    .js-preload::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: var(--color-kWhite);
+        z-index: 99999;
+        opacity: 1;
+    }
+    /* Remove overlay when ready */
+    :not(.js-preload)::before {
+        content: none;
+    }
+</style>
 
 <link
     rel="stylesheet"
@@ -49,7 +68,7 @@
 
 <script
     type="module"
-    src="/portfolio/dev-animationFiles/pageTransitionAnimation.ts"
+    src="/portfolio/dev-animationFiles/navbarAnimation.ts"
 ></script>
 
 <script
@@ -60,11 +79,6 @@
 <script
     type="module"
     src="/portfolio/dev-animationFiles/imageAnimation.ts"
-></script>
-
-<script
-    type="module"
-    src="/portfolio/dev-animationFiles/navbarAnimation.ts"
 ></script>
 
 <script

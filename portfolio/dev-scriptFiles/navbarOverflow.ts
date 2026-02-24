@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", (event: Event) => {
             child,
             { paddingLeft: 0, opacity: 0 },
             {
-              paddingLeft: "5vw",
+              paddingLeft: "2vw",
               opacity: 1,
               ease: "elastic.out(0.2,0.18)",
               delay: i * 0.15,
