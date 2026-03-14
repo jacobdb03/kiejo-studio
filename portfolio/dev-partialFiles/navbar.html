@@ -1,89 +1,107 @@
-<div class="fixed inset-x-0 z-10 top-10 mx-32 ani-navContainer">
+<div class="flex flex-col fixed z-10 top-6 w-full mx-auto ani-navCont">
     <div
-        class="bg-kBlue rounded-[4rem] flex flex-row justify-between overflow-hidden max-w-360 text-xl mx-auto py-8 px-16 text-kWhite font-bold ani-navExpand"
+        class="flex flex-row mx-auto w-full justify-center text-kWhite font-extrabold text-base ani-navBox max-w-[90vw]"
     >
         <div
-            class="flex flex-5 pt-2.5 order-1 self-center ani-navTitle ani-textBump"
+            class="hidden md:flex gap-10 mt-1.5 flex-1 min-w-0 justify-start ani-navSide"
         >
-            <a href="/" class="">
-                <img
-                    src="/portfolio/dev-globalAssets/JacobBryant_LandscapeLogo.svg"
-                    class="h-8 ani-imageExclude"
-                    alt="JacobBryant"
-                />
-            </a>
-            <a href="/" class="ani-navLogo flex-0">
-                <img
-                    src="/portfolio/dev-globalAssets/logomark_white.svg"
-                    class="h-6 ani-imageExclude"
-                    alt="JLogo"
-                />
-            </a>
+            <span class="overflow-hidden inline-block">
+                <a href="/portfolio/about/index.html" class="block">Info</a>
+            </span>
+            <span class="overflow-hidden inline-block">
+                <a href="/portfolio/about/chat/index.html" class="block"
+                    >Chat</a
+                >
+            </span>
         </div>
 
-        <div
-            class="flex order-2 max-w-0 overflow-hidden self-center pt-1.5 md:max-w-none md:flex-3 md:justify-between ani-navLink"
-        >
-            <a
-                href="/portfolio/page-about/index.html"
-                class="ani-textBump ani-gsapHover"
-                >Story</a
-            >
-            <a
-                href="/portfolio/page-contact/index.html"
-                class="ani-textBump ani-gsapHover"
-                >Chat</a
-            >
-            <a class="ani-textBump font-light cus-navLinkBar">|</a>
+        <!--<div class="hidden">|</div>-->
 
-            <a
-                href="/portfolio/page-projects/index.html"
-                class="ani-textBump ani-gsapHover"
-                >Work</a
-            >
-
-            <!--<a
-                href="/portfolio/page-store/index.html"
-                class="ani-textBump ani-gsapHover"
-                >Store</a
-            >-->
+        <div class="flex flex-1 shrink-0 justify-start md:justify-center">
+            <span class="inline-block pt-4 -mt-4">
+                <a href="/" class="cus-logoWrap block relative ml-5 md:ml-0">
+                    <img
+                        class="md:ml-3 h-7 mt-px block cus-logoDefault"
+                        id="nav-logo"
+                        src="/portfolio/dev-globalAssets/logomarkDefault_white.svg"
+                    />
+                    <img
+                        class="md:ml-3 -md:mt-3 h-7 mt-px cus-logoHoverImg absolute top-0 left-0 opacity-0"
+                        id="nav-logo"
+                        src="/portfolio/dev-globalAssets/logomarkSurprised_white.svg"
+                    />
+                </a>
+            </span>
         </div>
 
+        <!--<div class="hidden">|</div>-->
+
         <div
-            class="flex order-2 basis-1/4 justify-end self-center pt-1 md:max-w-0 ani-navLink md:overflow-hidden cus-pageTransitionExcluded"
+            class="hidden md:flex gap-10 mt-1.5 min-w-0 flex-1 justify-end ani-navSide"
         >
-            <a
-                href="javascript:void(0)"
-                class="ani-textBump ani-gsapHover"
-                id="cus-overflowMenu"
-                >///</a
-            >
+            <span class="overflow-hidden inline-block">
+                <a href="/portfolio/about/resume/index.html" class="block"
+                    >Vita</a
+                >
+            </span>
+            <span class="overflow-hidden inline-block">
+                <a href="/portfolio/project/index.html" class="block">Work</a>
+            </span>
+        </div>
+
+        <div class="flex md:hidden order-4 flex-1 justify-end">
+            <span class="overflow-hidden inline-block">
+                <a
+                    id="cus-overflowMenu"
+                    class="font-extrabold font-mono text-base mt-1.5 mr-5 leading-2.5 align-middle md:hidden cus-pageTransitionExcluded"
+                    href="javascript:void(0)"
+                    >• •<br />• •</a
+                >
+            </span>
         </div>
     </div>
 
     <div
         id="overflowNavbar"
-        class="flex-col my-5 mx-auto px-5 text-kWhite text-[25vw] leading-[15vh] font-bold hidden"
+        class="flex z-12 flex-col h-[80vh] content-between text-[clamp(2rem,20vw,7.5rem)] text-kBlack pt-4"
     >
         <a
-            href="/portfolio/page-projects/index.html"
-            class="opacity-0 ani-gsapHover ani-overflowBump"
-            >Work</a
+            href="/"
+            class="opacity-0 flex items-start gap-6 ml-4 ani-overflowBump"
         >
+            <p class="text-lg self-baseline text-kBlue mt-8">01</p>
+            <p class="font-bold">Home</p>
+        </a>
+
         <a
-            href="/portfolio/page-about/index.html"
-            class="opacity-0 ani-gsapHover ani-overflowBump"
-            >Story</a
+            href="/portfolio/project/index.html"
+            class="opacity-0 flex items-start gap-6 ml-4 ani-overflowBump"
         >
+            <p class="text-lg self-baseline text-kBlue mt-8">02</p>
+            <p class="font-bold">Work</p>
+        </a>
+
         <a
-            href="/portfolio/page-contact/index.html"
-            class="opacity-0 ani-gsapHover ani-overflowBump"
-            >Chat</a
+            href="/portfolio/about/resume/index.html"
+            class="opacity-0 flex items-start gap-6 ml-4 ani-overflowBump"
         >
+            <p class="text-lg self-baseline text-kBlue mt-8">03</p>
+            <p class="font-bold">Vita</p>
+        </a>
+
         <a
-            href="/portfolio/page-store/index.html"
-            class="opacity-0 ani-gsapHover ani-overflowBump"
-            >Store</a
+            href="/portfolio/about/index.html"
+            class="opacity-0 flex items-start gap-6 ml-4 ani-overflowBump"
         >
+            <p class="text-lg self-baseline text-kBlue mt-8">04</p>
+            <p class="font-bold">Info</p>
+        </a>
+        <a
+            href="/portfolio/about/chat/index.html"
+            class="opacity-0 flex items-start gap-6 ml-4 ani-overflowBump"
+        >
+            <p class="text-lg self-baseline text-kBlue mt-8">05</p>
+            <p class="font-bold">Chat</p>
+        </a>
     </div>
 </div>

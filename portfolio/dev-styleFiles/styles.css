@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-    --font-sans: "Outfit", ui-sans-serif, system-ui;
+    --font-sans: "Outfit", sans-serif;
+    --font-mono: "DM Serif Display", serif;
 
     /* Also change in styleSetup.ts */
     --color-kBlue: #2560e0;
     --color-kWhite: #eff1f3;
-    --color-kBlack: #152229;
-    --color-klBlue: #8aafff;
-    --color-kdBlue: #2c50c8;
+    --color-kBlack: #0a1a30;
+    --color-klBlue: #f2f4f8;
+    --color-kdBlue: #1a3fa0;
 
-    --color-kOrange: #ff817b;
+    --color-kOrange: #e85d45;
 }
 
 @layer base {
@@ -19,6 +20,26 @@
     }
 
     body {
-        background-color: var(--color-kWhite);
+        background-color: var(--color-klBlue);
+        /*cursor: none;*/
     }
+
+    h2 {
+        color: var(--color-kBlue);
+        font-weight: 900;
+        font-size: 1.875rem;
+    }
+
+    p {
+        color: var(--color-kBlack);
+        font-weight: 500;
+    }
+    /*
+    .ani-navBox * {
+        transition: all 0.3s ease;
+    }*/
+
+    /** {
+        outline: 2px solid red;
+    }*/
 }

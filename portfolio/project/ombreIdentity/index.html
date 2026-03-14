@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+    <head>
+        <include src="dev-partialFiles/header.html"></include>
+    </head>
+
+    <body>
+        <include src="dev-partialFiles/navbar.html"></include>
+
+        <!-- GSAP SmoothScroll Wrappers -->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- Page Header with background video -->
+                <div
+                    class="relative flex flex-col justify-end items-start h-screen w-full overflow-hidden"
+                >
+                    <!-- Background video -->
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover z-0"
+                        muted
+                        autoplay
+                        loop
+                        preload="auto"
+                        playsinline
+                    >
+                        <source src="assets/logomark.mp4" type="video/mp4" />
+                        logomark animation
+                    </video>
+                    <!-- Dark overlay so text is legible -->
+                    <div
+                        class="absolute inset-0 bg-kBlack opacity-40 z-10"
+                    ></div>
+                    <!-- Header text -->
+                    <div
+                        class="relative z-20 flex flex-col justify-end items-start ml-12 pb-20 max-w-2xl"
+                    >
+                        <div class="flex flex-row flex-wrap">
+                            <h2 class="tag text-kWhite border-kWhite">
+                                December — May 2025
+                            </h2>
+                            <h2 class="tag text-kWhite border-kWhite">
+                                Concept Project
+                            </h2>
+                        </div>
+                        <h1 class="title text-kWhite">Ombrē.</h1>
+                        <h3
+                            class="font-light mt-4 text-base leading-relaxed text-kWhite"
+                        >
+                            Ombrē is a lifestyle brand built around an
+                            adjustable light switch, designed for a generation
+                            that prioritises comfort, self-care, and a balanced
+                            lifestyle. The switch allows users to set the mood
+                            for any moment by controlling the shade and tone of
+                            their lighting — ranging from bright white for
+                            productivity to soft, warm light for relaxation.
+                            <br /><br />Brief set by Red Dot Studio
+                        </h3>
+                        <div class="flex flex-row flex-wrap mt-4">
+                            <p class="tag text-kWhite border-kWhite">
+                                Branding
+                            </p>
+                            <p class="tag text-kWhite border-kWhite">
+                                Logo Design
+                            </p>
+                            <p class="tag text-kWhite border-kWhite">
+                                Creative Coding
+                            </p>
+                            <p class="tag text-kWhite border-kWhite">
+                                3D Design
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand System -->
+                <div class="flex flex-col w-full mt-72 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        The brand system.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Creating a variable logo that displays the brands focus
+                        on adjustable lighting
+                    </p>
+                </div>
+
+                <div class="flex flex-col w-full mt-8 px-16 gap-4">
+                    <div class="relative w-full cus-blurContainer">
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <video
+                            class="relative rounded-2xl w-full"
+                            preload="auto"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/wordmarkAnimation.mp4"
+                                type="video/mp4"
+                            />
+                            Wordmark Logo animation
+                        </video>
+                    </div>
+
+                    <div class="flex flex-row gap-4">
+                        <div
+                            data-speed="0.9"
+                            class="relative flex-1 cus-blurContainer"
+                            style="aspect-ratio: 1.8 / 2"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/logomarkSimple.jpg"
+                                alt="Logo simple"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            data-speed="1.1"
+                            class="relative flex-4 cus-blurContainer"
+                            style="aspect-ratio: 21 / 9"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/wordmarkComplex.jpg"
+                                alt="Wordmark complex"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Product -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">The product.</h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Using blender to create the product, to show off what it
+                        might look like
+                    </p>
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4">
+                    <div
+                        data-speed="1"
+                        class="relative flex-3 cus-blurContainer"
+                        style="aspect-ratio: 10 / 8"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/LightSwitchWhite.jpeg"
+                            alt="Product 1"
+                            hash-data=""
+                        />
+                    </div>
+                    <div class="flex flex-col flex-1 gap-4">
+                        <div
+                            data-speed="0.8"
+                            class="relative flex-1 cus-blurContainer"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/LightSwitchBlack.jpeg"
+                                alt="Product 2"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            data-speed="0.8"
+                            class="relative flex-1 cus-blurContainer"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/LightSwitchOrange.jpeg"
+                                alt="Product 3"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Typeface -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        A Custom Typeface.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Using the halftone dot effect to create a custom,
+                        working font using Glyphs.
+                    </p>
+                </div>
+
+                <div class="flex flex-col w-full mt-8 px-16 gap-4">
+                    <div class="relative w-full cus-blurContainer">
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <video
+                            class="relative rounded-2xl w-full"
+                            preload="auto"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/fontDemoZoomed.mp4"
+                                type="video/mp4"
+                            />
+                            Font Demo Zoomed
+                        </video>
+                    </div>
+                    <div class="relative w-full cus-blurContainer">
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <video
+                            class="relative rounded-2xl w-full"
+                            preload="auto"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/fontDemo.mp4"
+                                type="video/mp4"
+                            />
+                            Font Demo
+                        </video>
+                    </div>
+                </div>
+
+                <div class="flex w-full mt-20 px-16 justify-center">
+                    <a
+                        target="_blank"
+                        class="defaultButton"
+                        href="assets/OmbreSansVF.ttf"
+                        download
+                    >
+                        Download the font
+                    </a>
+                </div>
+
+                <!-- Social Media -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">Social Media.</h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Showing off the font, colours and imagery for the brand.
+                    </p>
+                </div>
+
+                <div
+                    data-speed="1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer"
+                    style="aspect-ratio: 16 / 9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/socialMedia.jpeg"
+                        alt="Social Media"
+                        hash-data=""
+                    />
+                </div>
+
+                <!-- Packaging -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        The Packaging.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Using blender to mockup the packaging in a 3D
+                        environment.
+                    </p>
+                </div>
+
+                <div class="flex flex-col w-full mt-8 px-16 gap-4 items-center">
+                    <div
+                        data-speed="1"
+                        class="relative w-3/5 cus-blurContainer"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/backBox.jpeg"
+                            alt="Packaging 1"
+                            hash-data=""
+                        />
+                    </div>
+                    <div
+                        data-speed="1"
+                        class="relative w-3/5 cus-blurContainer"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/frontBox.jpeg"
+                            alt="Packaging 2"
+                            hash-data=""
+                        />
+                    </div>
+                </div>
+
+                <!-- Website -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">Website.</h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Using code to develop an interactive experience for the
+                        website application, as well as a method to create the
+                        brand system.
+                    </p>
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4">
+                    <div
+                        data-speed="1"
+                        class="relative flex-3 cus-blurContainer"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/website1.png"
+                            alt="Website Mockup 1"
+                            hash-data=""
+                        />
+                    </div>
+                    <div class="flex flex-col flex-1 gap-4">
+                        <div
+                            data-speed="0.8"
+                            class="relative flex-1 cus-blurContainer"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/website2.png"
+                                alt="Website Mockup 2"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            data-speed="0.8"
+                            class="relative flex-1 cus-blurContainer"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/website3.png"
+                                alt="Website Mockup 3"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            data-speed="0.8"
+                            class="relative flex-1 cus-blurContainer"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/website4.png"
+                                alt="Website Mockup 4"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-row w-full mt-20 px-16 gap-4 justify-center"
+                >
+                    <a target="_blank" class="defaultButton" href="ombreWeb/">
+                        View the interactive site
+                    </a>
+                    <a target="_blank" class="defaultButton" href="ombreDev/">
+                        Use the code
+                    </a>
+                </div>
+
+                <!-- Full Brand -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        The full brand.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        A bento box of the brand identity.
+                    </p>
+                </div>
+
+                <div
+                    data-speed="1"
+                    class="relative w-full mt-8 px-16 cus-blurContainer"
+                    style="aspect-ratio: 16 / 9"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/bentoBox.jpeg"
+                        alt="Bento Box"
+                        hash-data=""
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

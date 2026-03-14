@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+    <head>
+        <include src="dev-partialFiles/header.html"></include>
+    </head>
+
+    <body>
+        <include src="dev-partialFiles/navbar.html"></include>
+
+        <!-- GSAP SmoothScroll Wrappers -->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- Page Header with background video -->
+                <div
+                    class="relative flex flex-col justify-end h-screen w-full overflow-hidden"
+                >
+                    <video
+                        class="absolute w-full h-full object-cover z-0"
+                        muted
+                        autoplay
+                        loop
+                        preload="auto"
+                        playsinline
+                    >
+                        <source src="assets/Motion2.mp4" type="video/mp4" />
+                        alternative games logo animation
+                    </video>
+
+                    <div
+                        class="relative z-20 flex flex-col gap-4 justify-center ml-12 pb-20 max-w-3xl"
+                    >
+                        <div class="flex flex-row ml-6 gap-12 flex-wrap">
+                            <h2 class="text-kWhite text-lg font-light">
+                                October – November 2024
+                            </h2>
+                            <h2 class="text-kWhite text-lg font-light">
+                                Concept Project
+                            </h2>
+                        </div>
+                        <h1 class="text-9xl font-black text-kWhite">
+                            Alternative Games.
+                        </h1>
+                        <h3
+                            class="font-semibold ml-4 text-lg leading-relaxed text-kWhite"
+                        >
+                            Allowing communities to unite over a collection of
+                            nonsensical events.
+                        </h3>
+                        <div
+                            class="flex flex-row gap-4 mt-4 ml-2 flex-wrap text-sm font-bold"
+                        >
+                            <p class="tag">Event Identity</p>
+                            <p class="tag">Branding</p>
+                            <p class="tag">Logo Design</p>
+                            <p class="tag">Motion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A New Series of Games -->
+                <div
+                    class="flex flex-col w-full max-w-360 mx-auto mt-16 px-2 cusAnimateTransitions md:px-5 lg:px-20"
+                >
+                    <h2>A New Series of games.</h2>
+                    <p>
+                        Olympic-like events for silly games that bring the
+                        community together.
+                    </p>
+                    <div
+                        class="flex h-100 flex-col mt-10 gap-2 cusAnimateTransitions md:h-140 md:flex-row sm:gap-4"
+                    >
+                        <div
+                            data-speed="0"
+                            class="w-full min-h-70 flex flex-row relative flex-2 gap-2 cusAnimateTransitions md:aspect-4/3 md:gap-4"
+                        >
+                            <div class="relative flex-1 cus-blurContainer">
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/poster3.jpeg"
+                                    alt="mockup of the posters"
+                                    hash-data="LEIW=+}~9$~00IRl^Ys.ET0Y9%WF"
+                                />
+                            </div>
+                            <div class="relative flex-1 cus-blurContainer">
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/poster4.jpeg"
+                                    alt="mockup of the posters"
+                                    hash-data="L5H3wpEAS89i00?8~Rad06E90E~L"
+                                />
+                            </div>
+                        </div>
+
+                        <div
+                            data-speed="0"
+                            class="w-full h-full min-h-100 md:h-full relative flex-1 cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/poster1.jpeg"
+                                alt="mockup of the posters"
+                                hash-data="LAHL0R],0J6V0cRP9tXS7-%}}x,l"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- The Alternative Games Experience -->
+                    <div
+                        class="flex flex-col w-full max-w-360 mx-auto mt-16 px-2 cusAnimateTransitions md:px-5 lg:px-20"
+                    >
+                        <h2>The Alternative Games Experience</h2>
+                        <p>
+                            TV stings that bring the brand identity to life on
+                            screen.
+                        </p>
+
+                        <div class="flex h-110 flex-row w-full mt-10 gap-4">
+                            <div
+                                data-speed="0"
+                                class="relative w-full md:max-w-3xl md:min-w-3xl flex-3 cus-blurContainer"
+                            >
+                                <canvas
+                                    class="absolute rounded-2xl w-full h-full"
+                                ></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                    src="assets/online1.jpeg"
+                                    alt="TV Overlays"
+                                    hash-data=""
+                                />
+                            </div>
+
+                            <div class="flex h-110 flex-col flex-2 gap-4">
+                                <div
+                                    data-speed="0"
+                                    class="relative cus-blurContainer"
+                                >
+                                    <canvas
+                                        class="absolute rounded-2xl w-full h-full"
+                                    ></canvas>
+                                    <img
+                                        loading="lazy"
+                                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                        src="assets/online3.jpeg"
+                                        alt="TV Overlays"
+                                        hash-data=""
+                                    />
+                                </div>
+                                <div
+                                    data-speed="0"
+                                    class="relative cus-blurContainer"
+                                >
+                                    <canvas
+                                        class="absolute rounded-2xl w-full h-full"
+                                    ></canvas>
+                                    <img
+                                        loading="lazy"
+                                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                        src="assets/online4.jpeg"
+                                        alt="TV Overlays"
+                                        hash-data=""
+                                    />
+                                </div>
+                                <div
+                                    data-speed="0"
+                                    class="relative cus-blurContainer"
+                                >
+                                    <canvas
+                                        class="absolute rounded-2xl w-full h-full"
+                                    ></canvas>
+                                    <img
+                                        loading="lazy"
+                                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                        src="assets/online2.jpeg"
+                                        alt="TV Overlays"
+                                        hash-data=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col w-full max-w-360 mx-auto mt-16 px-2 cusAnimateTransitions md:px-5 lg:px-20 outline-2"
+                >
+                    <div
+                        data-speed="0"
+                        class="relative flex-2 cus-blurContainer"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full border-2 border-kBlue"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/social1.jpeg"
+                            alt="Socials"
+                            hash-data=""
+                        />
+                    </div>
+                    <div
+                        data-speed="0"
+                        class="relative flex-3 cus-blurContainer"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full border-2 border-kBlue"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/social2.jpeg"
+                            alt="Socials"
+                            hash-data=""
+                        />
+                    </div>
+                </div>
+
+                <!-- The Main Event -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        The main event.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        The festival experience for those who take on the games.
+                    </p>
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4">
+                    <div class="flex flex-col flex-4 gap-4">
+                        <div data-speed="0" class="relative cus-blurContainer">
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/eventMockup5.jpeg"
+                                alt="mockup of the event"
+                                hash-data=""
+                            />
+                        </div>
+                        <div data-speed="0" class="relative cus-blurContainer">
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/eventMockup4.jpeg"
+                                alt="mockup of the event"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                    <div
+                        data-speed="0"
+                        class="relative flex-3 cus-blurContainer"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/eventMockup2.jpeg"
+                            alt="mockup of the event"
+                            hash-data=""
+                        />
+                    </div>
+                    <div class="flex flex-col flex-3 gap-4">
+                        <div
+                            data-speed="0"
+                            class="relative flex-1 cus-blurContainer"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/eventMockup1.jpeg"
+                                alt="mockup of the event"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            data-speed="0"
+                            class="relative flex-1 cus-blurContainer"
+                        >
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/eventMockup3.jpeg"
+                                alt="mockup of the event"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signage -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        Need help getting there?
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        Signage and billboards that help you navigate to the
+                        venue.
+                    </p>
+                </div>
+
+                <div class="flex flex-row w-full mt-8 px-16 gap-4">
+                    <div
+                        data-speed="0"
+                        class="relative flex-3 cus-blurContainer"
+                    >
+                        <canvas
+                            class="absolute rounded-2xl w-full h-full"
+                        ></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            src="assets/billboard2.jpeg"
+                            alt="mockup of the billboards"
+                            hash-data=""
+                        />
+                    </div>
+                    <div class="flex flex-col flex-2 gap-4">
+                        <div data-speed="0" class="relative cus-blurContainer">
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/billboard3.jpeg"
+                                alt="mockup of the billboards"
+                                hash-data=""
+                            />
+                        </div>
+                        <div data-speed="0" class="relative cus-blurContainer">
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/billboard1.jpeg"
+                                alt="mockup of the billboards"
+                                hash-data=""
+                            />
+                        </div>
+                        <div data-speed="0" class="relative cus-blurContainer">
+                            <canvas
+                                class="absolute rounded-2xl w-full h-full"
+                            ></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                src="assets/billboard4.jpeg"
+                                alt="mockup of the billboards"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Brand Overview -->
+                <div class="flex flex-col w-full mt-20 px-16">
+                    <h2 class="text-kBlue font-bold text-3xl">
+                        The full brand Overview.
+                    </h2>
+                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                        A bento box of all the brand elements.
+                    </p>
+                </div>
+
+                <div
+                    data-speed="0"
+                    class="relative w-full mt-4 px-16 cus-blurContainer"
+                >
+                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
+                    <img
+                        loading="lazy"
+                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                        src="assets/bento board.jpeg"
+                        alt="Bento Board"
+                        hash-data=""
+                    />
+                </div>
+
+                <div class="h-64"></div>
+            </div>
+        </div>
+    </body>
+</html>
