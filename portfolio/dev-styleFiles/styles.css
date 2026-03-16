@@ -2,13 +2,14 @@
 
 @theme {
     --font-sans: "Outfit", sans-serif;
-    --font-mono: "DM Serif Display", serif;
+    --font-serif: "DM Serif Display", serif;
+    --font-mono: "SUSE mono", sans-serif;
 
     /* Also change in styleSetup.ts */
     --color-kBlue: #2560e0;
     --color-kWhite: #eff1f3;
     --color-kBlack: #0a1a30;
-    --color-klBlue: #f2f4f8;
+    --color-klBlue: #bfc8e8;
     --color-kdBlue: #1a3fa0;
 
     --color-kOrange: #e85d45;
@@ -20,7 +21,7 @@
     }
 
     body {
-        background-color: var(--color-klBlue);
+        background-color: var(--color-kWhite);
         /*cursor: none;*/
     }
 
@@ -30,10 +31,11 @@
         font-size: 1.875rem;
     }
 
-    p {
+    body > p {
         color: var(--color-kBlack);
         font-weight: 500;
     }
+
     /*
     .ani-navBox * {
         transition: all 0.3s ease;

@@ -92,14 +92,15 @@ window.addEventListener("load", () => {
 
   let linkText_Hover: boolean = true;
   if (linkText_Hover) {
-    const navLinks = document.querySelectorAll<HTMLElement>(".ani-navBox a");
+    const navLinks = document.querySelectorAll<HTMLElement>(
+      "a:not(.cus-noHover), .cus-forceHover",
+    );
 
     navLinks.forEach((link) => {
       gsap.set(link, { display: "inline-block" });
       link.addEventListener("mouseenter", () => {
-        console.log("mouseenter fired", link);
         gsap.to(link, {
-          scale: 1.2,
+          scale: Math.min(1.2, 1 + 8 / link.getBoundingClientRect().width),
           duration: 0.3,
           ease: "back.out(2)",
         });
@@ -116,6 +117,7 @@ window.addEventListener("load", () => {
 
   let NavbarBox_Animations: boolean = true;
   if (NavbarBox_Animations) {
+    const navCont = document.querySelector(".ani-navCont") as HTMLDivElement;
     const nav = document.querySelector(".ani-navBox") as HTMLDivElement;
     const navChildren = nav.querySelectorAll<HTMLElement>(":scope > div");
     const leftChildren = navChildren[0];
@@ -136,16 +138,19 @@ window.addEventListener("load", () => {
 
           nav.classList.add(
             "text-sm",
-            "py-4",
-            "px-4",
+            "py-2",
+            "md:py-4",
+            "px-0",
+            "md:px-4",
             "rounded-4xl",
-            "w-[340px]",
+            "w-[200px]",
+            "md:w-[340px]",
             "backdrop-blur-2xl",
             "bg-kdBlue/80",
             "saturate-175",
             "shadow-[0_8px_40px_rgba(21,34,41,0.3)]",
           );
-          nav.classList.remove("text-base", "w-full", "max-w-[90vw]");
+          nav.classList.remove("text-base", "w-full", "md:max-w-[90vw]");
 
           leftChildren.classList.add(
             "gap-6",
@@ -182,22 +187,22 @@ window.addEventListener("load", () => {
         },
 
         onLeaveBack: () => {
-          const shrunkState = Flip.getState(
-            ".ani-navCont, .ani-navBox, .ani-navBox > div",
-          );
+          const shrunkState = Flip.getState(".ani-navBox, .ani-navBox > div");
 
           nav.classList.remove(
             "text-sm",
-            "py-4",
+            "py-2",
+            "md:py-4",
             "px-4",
             "rounded-4xl",
-            "w-[340px]",
+            "w-[200px]",
+            "md:w-[340px]",
             "backdrop-blur-2xl",
             "bg-kdBlue/80",
             "saturate-175",
             "shadow-[0_8px_40px_rgba(21,34,41,0.3)]",
           );
-          nav.classList.add("text-base", "w-full", "max-w-[90vw]");
+          nav.classList.add("text-base", "w-full");
 
           leftChildren.classList.remove(
             "gap-6",

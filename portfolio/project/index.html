@@ -9,7 +9,7 @@
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section
-                    class="flex h-screen justify-items-center w-auto bg-kBlack"
+                    class="flex h-dvh justify-items-center w-auto bg-kBlack"
                 >
                     <div class="self-end">
                         <h1
@@ -19,76 +19,81 @@
                         </h1>
                     </div>
                 </section>
-                <section class="flex h-[350vh] w-[96vw] mx-auto">
-                    <div class="flex flex-wrap mt-20 justify-center gap-8">
+                <section
+                    class="flex h-[400dvh] w-[96vw] place-content-around mx-auto"
+                >
+                    <div
+                        class="flex flex-wrap mt-20 justify-center gap-2 md:gap-4 items-start content-start"
+                    >
                         <include
                             src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/ombreIdentity/index.html", "cusPos": "object-center", "size": "basis-[calc(100%-1rem)]", "text": "Ombrē", "src": "../dev-thumbnailFiles/OmbreStill.png"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/alternativeGames/index.html", "cusPos": "object-center", "size": "basis-[calc(50%-1rem)]", "text": "Alt Games", "src": "../dev-thumbnailFiles/Alt Spiral.jpg"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/conductorIdentity/index.html", "cusPos": "object-center", "size": "basis-[calc(50%-1rem)]", "text": "Conductor", "src": "../dev-thumbnailFiles/conductorThumbStill.png"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/engineeredNothing/index.html", "cusPos": "object-bottom-left", "size": "basis-[calc(33%-1.3rem)]", "text": "engineeredNothing", "src": "../dev-thumbnailFiles/OnThumbStatic.jpeg"}'
+                            locals='{"href": "../project/ombreIdentity/index.html", "cusPos": "object-center", "size": "basis-[100%]", "text": "Ombrē", "src": "../dev-thumbnailFiles/OmbreStill.png"}'
                         ></include>
 
                         <include
                             src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/pluckedIdentity/index.html", "cusPos": "object-[20%]", "size": "basis-[calc(33%-1.3rem)]", "text": "Plucked", "src": "../dev-thumbnailFiles/Thumbnail6.jpg"}'
+                            locals='{"href": "../project/alternativeGames/index.html", "cusPos": "object-center", "size": "basis-[calc(50%-0.5rem)]", "text": "Alt Games", "src": "../dev-thumbnailFiles/Alt Spiral.jpg"}'
                         ></include>
                         <include
                             src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/tastebudsIdentity/index.html", "cusPos": "object-center", "size": "basis-[calc(33%-1.3rem)]", "text": "Tastebuds", "src": "../dev-thumbnailFiles/Tastebuds Thumbnail.png"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/shakenStirred/index.html", "cusPos": "object-center", "size": "basis-[calc(105%-1.5rem)]", "text": "ShakenStirred", "src": "../dev-thumbnailFiles/ShakenStirredThumb.jpeg"}'
+                            locals='{"href": "../project/conductorIdentity/index.html", "cusPos": "object-center", "size": "basis-[calc(50%-0.5rem)]", "text": "Conductor", "src": "../dev-thumbnailFiles/conductorThumbStill.png"}'
                         ></include>
 
                         <include
                             src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/analogueType/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-1.5rem)]", "text": "Killing Eve", "src": "../dev-thumbnailFiles/analogueThumb.jpg"}'
+                            locals='{"href": "../project/engineeredNothing/index.html", "cusPos": "object-bottom-left", "size": "basis-[calc(33%-0.6rem)]", "text": "engineeredNothing", "src": "../dev-thumbnailFiles/OnThumbStatic.jpeg"}'
                         ></include>
                         <include
                             src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/biophiliaIdentity/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-1.5rem)]", "text": "Biophilia", "src": "../dev-thumbnailFiles/BiophiliaThumb.jpeg"}'
+                            locals='{"href": "../project/pluckedIdentity/index.html", "cusPos": "object-[20%]", "size": "basis-[calc(33%-0.6rem)]", "text": "Plucked", "src": "../dev-thumbnailFiles/Thumbnail6.jpg"}'
                         ></include>
                         <include
                             src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/coderMotion/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-1.5rem)]", "text": "Coder", "src": "../dev-thumbnailFiles/coderMotionThumb.jpeg"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/colourSociety/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-1.5rem)]", "text": "Colour Soc", "src": "../dev-thumbnailFiles/colourThumb.jpg"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/goodEggs/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-1.5rem)]", "text": "Good Eggs", "src": "../dev-thumbnailFiles/GoodEggs_Thumb.jpeg"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/hublDesign/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-1.5rem)]", "text": "Hubl Design", "src": "../dev-thumbnailFiles/hublThumb.png"}'
+                            locals='{"href": "../project/tastebudsIdentity/index.html", "cusPos": "object-center", "size": "basis-[calc(33%-0.6rem)]", "text": "Tastebuds", "src": "../dev-thumbnailFiles/Tastebuds Thumbnail.png"}'
                         ></include>
 
                         <include
                             src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/rediscoverYou/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-1.5rem)]", "text": "RediscoverYou", "src": "../dev-thumbnailFiles/RediscoverThumb.jpg"}'
+                            locals='{"href": "../project/shakenStirred/index.html", "cusPos": "object-center", "size": "basis-[100%]", "text": "ShakenStirred", "src": "../dev-thumbnailFiles/ShakenStirredThumb.jpeg"}'
                         ></include>
 
                         <include
                             src="dev-partialFiles/workButton.html"
-                            locals='{"href": "../project/sportsFactory/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-1.5rem)]", "text": "Sports Factory", "src": "../dev-thumbnailFiles/SportsFactory_Thumb.png"}'
+                            locals='{"href": "../project/analogueType/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-0.75rem)]", "text": "Killing Eve", "src": "../dev-thumbnailFiles/analogueThumb.jpg"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/workButton.html"
+                            locals='{"href": "../project/biophiliaIdentity/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-0.75rem)]", "text": "Biophilia", "src": "../dev-thumbnailFiles/BiophiliaThumb.jpeg"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/workButton.html"
+                            locals='{"href": "../project/coderMotion/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-0.75rem)]", "text": "Coder", "src": "../dev-thumbnailFiles/coderMotionThumb.jpeg"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/workButton.html"
+                            locals='{"href": "../project/colourSociety/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-0.75rem)]", "text": "Colour Soc", "src": "../dev-thumbnailFiles/colourThumb.jpg"}'
+                        ></include>
+
+                        <include
+                            src="dev-partialFiles/workButton.html"
+                            locals='{"href": "../project/goodEggs/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-0.75rem)]", "text": "Good Eggs", "src": "../dev-thumbnailFiles/GoodEggs_Thumb.jpeg"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/workButton.html"
+                            locals='{"href": "../project/hublDesign/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-0.75rem)]", "text": "Hubl Design", "src": "../dev-thumbnailFiles/hublThumb.png"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/workButton.html"
+                            locals='{"href": "../project/rediscoverYou/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-0.75rem)]", "text": "RediscoverYou", "src": "../dev-thumbnailFiles/RediscoverThumb.jpg"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/workButton.html"
+                            locals='{"href": "../project/sportsFactory/index.html", "cusPos": "object-center", "size": "basis-[calc(25%-0.75rem)]", "text": "Sports Factory", "src": "../dev-thumbnailFiles/SportsFactory_Thumb.png"}'
                         ></include>
                     </div>
                 </section>
                 <!--
-                <section class="flex justify-center h-screen w-full bg-kWhite">
+                <section class="flex justify-center h-dvh w-full bg-kWhite">
                     <div class="flex flex-wrap text-[12vw] self-center gap-8">
                         <a
                             id="archiveButton"
@@ -107,8 +112,6 @@
                             </div>
                 </section>
                 -->
-
-                <section class="h-[50vh] w-full bg-kWhite"></section>
             </div>
         </div>
     </body>

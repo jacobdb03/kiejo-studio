@@ -1,6 +1,6 @@
 {
   "name": "kiejo-studio",
-  "version": "5.0.28",
+  "version": "5.0.29",
   "description": "Jacob Bryant's (Kiejo Studio) space on the internet for his graphic design portfolio",
   "repository": "https://github.com/jacobdb03/kiejo-studio",
   "homepage": "https://kiejo.studio/",
@@ -10,6 +10,7 @@
   "devDependencies": {
     "@mischnic/parcel-namer-preserve-structure": "^0.2.0",
     "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.5.0",
     "parcel": "^2.16.3",
     "postcss": "^8.5.6",
     "posthtml-include": "^2.0.1",
@@ -27,6 +28,7 @@
     "gitUpdate": "V=$(node -p \"require('./package.json').version\") && git add . && git commit -m \"v$V\" && git push origin main"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "autoprefixer": "^10.4.24",
     "blurhash": "^2.0.5",
     "depcheck": "^1.4.7",

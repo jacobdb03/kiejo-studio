@@ -32,6 +32,7 @@ if (sessionStorage.getItem("navigatedFromLink") === "true") {
     left: "50%",
     top: "2.5rem",
     scale: 0,
+    opacity: 0,
     duration: 1,
     delay: 0.15,
     ease: "expo.inOut",
