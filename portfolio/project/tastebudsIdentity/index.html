@@ -7,16 +7,13 @@
     <body>
         <include src="dev-partialFiles/navbar.html"></include>
 
-        <!-- GSAP SmoothScroll Wrappers -->
         <div id="smooth-wrapper">
             <div id="smooth-content">
-                <!-- Page Header with background video -->
-                <div
-                    class="relative flex flex-col justify-end items-start h-screen w-full overflow-hidden"
+                <section
+                    class="relative flex flex-col h-screen w-full justify-end overflow-hidden"
                 >
-                    <!-- Background video -->
                     <video
-                        class="absolute inset-0 w-full h-full object-cover z-0"
+                        class="absolute w-full h-full object-cover object-center z-0"
                         muted
                         autoplay
                         loop
@@ -29,1084 +26,873 @@
                         />
                         Animated tastebuds logo
                     </video>
-                    <!-- Dark overlay -->
                     <div
-                        class="absolute inset-0 bg-kBlack opacity-40 z-10"
-                    ></div>
-                    <!-- Header text -->
-                    <div
-                        class="relative z-20 flex flex-col justify-end items-start ml-12 pb-20 max-w-2xl"
+                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row flex-wrap">
-                            <h3 class="tag text-kWhite border-kWhite">
+                        <div class="flex flex-row gap-6 flex-wrap">
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
                                 May — August 2024
-                            </h3>
-                            <h3 class="tag text-kWhite border-kWhite">
+                            </h2>
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
                                 Live Brief
-                            </h3>
+                            </h2>
                         </div>
-                        <h1 class="title text-kWhite">Tastebuds.</h1>
+                        <h1
+                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
+                        >
+                            Tastebuds.
+                        </h1>
                         <h3
-                            class="font-light mt-4 text-base leading-relaxed text-kWhite"
+                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
                         >
                             A collective for the food & drink industry,
                             connecting suppliers, buyers and all other services
                             in-between.
                         </h3>
-                        <div class="flex flex-row flex-wrap mt-4">
-                            <p class="tag text-kWhite border-kWhite">
-                                Branding
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">
-                                Illustration
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">
-                                Creative Lead
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">
-                                Social Media
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">Motion</p>
+                        <div
+                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                        >
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Branding"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Illustration"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Creative Lead"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Social Media"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Motion"}'
+                            ></include>
                         </div>
                     </div>
-                    <!-- Extra page header (links + team) — top right -->
-                    <div
-                        class="absolute z-20 right-12 bottom-20 flex flex-col items-end flex-wrap max-w-xs text-right"
-                    >
-                        <p class="text-kWhite font-medium text-3xl w-full mb-2">
-                            Links.
-                        </p>
-                        <a
-                            target="_blank"
-                            href="https://tastebudscollective.co.uk/"
-                            class="tag text-kWhite border-kWhite"
-                            >Tastebuds Website</a
-                        >
-                        <a
-                            target="_blank"
-                            href="https://www.instagram.com/tastebuds_collective/"
-                            class="tag text-kWhite border-kWhite"
-                            >Tastebuds Instagram</a
-                        >
-                        <p
-                            class="text-kWhite font-medium text-3xl w-full mt-4 mb-2"
-                        >
-                            The team.
-                        </p>
-                        <p class="tag text-kWhite border-kWhite">
-                            Martin Burchett
-                        </p>
-                        <a
-                            target="_blank"
-                            href="https://www.linkedin.com/in/alexander-larter/"
-                            class="tag text-kWhite border-kWhite"
-                            >Alex Larter</a
-                        >
-                        <a
-                            target="_blank"
-                            href="https://www.linkedin.com/in/charlotte-louise-beach-193b1b128/"
-                            class="tag text-kWhite border-kWhite"
-                            >Charlotte Louise-Beach</a
-                        >
-                        <p class="tag text-kWhite border-kWhite">
-                            Jacob Bryant
-                        </p>
-                    </div>
-                </div>
+                </section>
 
-                <!-- Sprout -->
-                <div class="flex flex-col w-full mt-72 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">Sprout.</h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Links</h2>
+                    <div
+                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                    >
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Tastebuds Website", "href": "https://tastebudscollective.co.uk/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Tastebuds Instagram", "href": "https://www.instagram.com/tastebuds_collective/"}'
+                        ></include>
+                    </div>
+                    <h2 class="mt-8">The team</h2>
+                    <div
+                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                    >
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Martin Burchett"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Alex Larter", "href": "https://www.linkedin.com/in/alexander-larter/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Charlotte Louise-Beach", "href": "https://www.linkedin.com/in/charlotte-louise-beach-193b1b128/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Jacob Bryant"}'
+                        ></include>
+                    </div>
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Sprout.</h2>
+                    <p>
                         Tastebuds beginnings as a university competition brief.
                     </p>
-                </div>
 
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-4 cus-blurContainer"
-                        style="aspect-ratio: 100 / 92"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full opacity-0"
-                            style="object-fit: cover; object-position: 58%"
-                            src="assets/Sprout/Sprout_BusinessCard_1.jpeg"
-                            alt="Dark Business Cards"
-                            hash-data=""
-                        />
-                    </div>
-                    <div class="flex flex-col flex-3 gap-4">
+                    <div class="flex flex-col lg:flex-row mt-10 gap-4">
                         <div
-                            data-speed="0.8"
-                            class="relative flex-1 cus-blurContainer"
+                            class="relative flex-4 aspect-video cus-blurContainer"
                         >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
+                            <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Sprout/Sprout_Website_1.jpeg"
-                                alt="Sprout Website Mockup"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Sprout/Sprout_BusinessCard_1.jpeg"
+                                alt="Dark Business Cards"
                                 hash-data=""
                             />
                         </div>
                         <div
-                            data-speed="0.8"
-                            class="relative flex-1 cus-blurContainer"
+                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
                         >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Sprout/Sprout_Website_2.jpeg"
-                                alt="Sprout Website Mockup"
-                                hash-data=""
-                            />
+                            <div
+                                class="relative flex-1 aspect-4/3 lg:aspect-auto cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Sprout/Sprout_Website_1.jpeg"
+                                    alt="Sprout Website Mockup"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div
+                                class="relative flex-1 aspect-4/3 lg:aspect-auto cus-blurContainer hidden lg:block"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Sprout/Sprout_Website_2.jpeg"
+                                    alt="Sprout Website Mockup"
+                                    hash-data=""
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div class="flex-4"></div>
-                    <p class="flex-3 text-kBlack font-light leading-relaxed">
+                    <p class="mt-8 text-base font-light leading-relaxed">
                         Giving the "Food & Drink Innovation Cluster" a new name
                         and identity through a university competition brief.
                         Sprout was the winning route, and the starting point for
                         where Tastebuds is today.
                     </p>
-                </div>
+                </section>
 
-                <!-- Taste + Buds = Tastebuds -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Taste + Buds = Tastebuds.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Taste + Buds = Tastebuds.</h2>
+                    <p>
                         The logo being a growing bud communicates how Tastebuds
                         support and grow local businesses.
                     </p>
-                </div>
 
-                <div class="flex flex-row w-full mt-4 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 3 / 2"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full opacity-0"
-                            style="
-                                background-color: #046865;
-                                object-fit: contain;
-                                padding: 5%;
-                            "
-                            src="assets/Brand/Logotype_fullName_beige.png"
-                            alt="beige logotype"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        class="relative flex-1 cus-blurContainer"
-                        style="aspect-ratio: 1 / 1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <video
-                            class="absolute rounded-2xl w-full h-full object-contain"
-                            style="background-color: #017370; padding: 5%"
-                            muted
-                            autoplay
-                            loop
-                            playsinline
+                    <div class="flex flex-col lg:flex-row mt-10 gap-4">
+                        <div
+                            class="relative flex-3 aspect-video cus-blurContainer"
                         >
-                            <source
-                                src="assets/Brand/logomark animation green bg.mp4"
-                                type="video/mp4"
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-contain object-center opacity-0 bg-[#046865] p-[5%]"
+                                src="assets/Brand/Logotype_fullName_beige.png"
+                                alt="beige logotype"
+                                hash-data=""
                             />
-                            Animated tastebuds logo
-                        </video>
+                        </div>
+                        <div
+                            class="relative flex-1 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <video
+                                class="absolute w-full h-full object-contain object-center bg-[#017370] p-[5%]"
+                                muted
+                                autoplay
+                                loop
+                                playsinline
+                            >
+                                <source
+                                    src="assets/Brand/logomark animation green bg.mp4"
+                                    type="video/mp4"
+                                />
+                                Animated tastebuds logo
+                            </video>
+                        </div>
                     </div>
-                </div>
 
-                <div class="flex flex-row w-full mt-4 px-16 gap-4">
-                    <p class="flex-3 text-kBlack font-light leading-relaxed">
+                    <p class="mt-8 text-base font-light leading-relaxed">
                         Tastebuds, the collective for Food and Drink Innovators
                         — bringing the food and drink industry together,
                         nourishing connection and cultivating success.
                     </p>
-                </div>
 
-                <div class="flex flex-row w-full mt-4 px-16 gap-4">
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-1 cus-blurContainer"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full opacity-0"
-                            style="
-                                padding: 0.5em;
-                                border: 0.2em solid #046865;
-                                object-fit: contain;
-                            "
-                            src="assets/Brand/logomark diagram.png"
-                            alt="logomark diagram"
-                            hash-data=""
-                        />
+                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                        <div
+                            class="relative flex-1 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-contain object-center opacity-0 p-2 border-2 border-[#046865]"
+                                src="assets/Brand/logomark diagram.png"
+                                alt="logomark diagram"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-contain object-center opacity-0 p-2 border-2 border-[#046865]"
+                                src="assets/Brand/wordmark diagram.png"
+                                alt="tastebuds diagram"
+                                hash-data=""
+                            />
+                        </div>
                     </div>
-                    <div
-                        data-speed="1.1"
-                        class="relative flex-3 cus-blurContainer"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full opacity-0"
-                            style="
-                                padding: 0.5em;
-                                border: 0.2em solid #046865;
-                                object-fit: contain;
-                            "
-                            src="assets/Brand/wordmark diagram.png"
-                            alt="tastebuds diagram"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
 
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div class="flex-1"></div>
-                    <p class="flex-3 text-kBlack font-light leading-relaxed">
+                    <p class="mt-8 text-base font-light leading-relaxed">
                         The logo — formed from the letter b and bud shapes to
                         look like a plant breaking through its seed. A metaphor
                         as to how Tastebuds can help its members grow.
                     </p>
-                </div>
 
-                <div class="flex w-full mt-20 px-16 justify-center">
                     <div
-                        data-speed="1"
-                        class="relative w-3/5 cus-blurContainer"
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
                     >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
+                        <canvas class="absolute w-full h-full"></canvas>
                         <img
                             loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                            class="absolute w-full h-full object-cover object-center opacity-0"
                             src="assets/Brand/Logo sketches.jpeg"
                             alt="logo sketches"
                             hash-data=""
                         />
                     </div>
-                </div>
+                </section>
 
-                <!-- Digital Applications (Social Media) -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Digital Applications.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Digital Applications.</h2>
+                    <p>
                         A sample of social media posts I created using their
                         brand.
                     </p>
-                </div>
 
-                <div
-                    data-speed="1"
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16 / 7"
+                    <div
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                    >
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute w-full h-full object-cover object-center opacity-0"
+                            src="assets/Social Media/mockup2.jpeg"
+                            alt="instagram post mockup"
+                            hash-data=""
+                        />
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                        <div
+                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
+                        >
+                            <div
+                                class="relative flex-1 aspect-square lg:aspect-auto cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Social Media/July 1.jpeg"
+                                    alt="instagram post 1"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div
+                                class="relative flex-1 aspect-square lg:aspect-auto cus-blurContainer hidden lg:block"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Social Media/July 2.jpeg"
+                                    alt="instagram post 2"
+                                    hash-data=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex-2 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Social Media/July 3.jpeg"
+                                alt="instagram post 3"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
+                        >
+                            <div
+                                class="relative flex-1 aspect-square lg:aspect-auto cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Social Media/July 4.jpeg"
+                                    alt="instagram post 4"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div
+                                class="relative flex-1 aspect-square lg:aspect-auto cus-blurContainer hidden lg:block"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Social Media/July 5.jpeg"
+                                    alt="instagram post 5"
+                                    hash-data=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Social Media/July 6.jpeg"
+                                alt="instagram post 6"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col lg:flex-row lg:items-end mt-4 gap-4"
+                    >
+                        <div
+                            class="relative flex-1 aspect-[9/19] cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <video
+                                class="absolute w-full h-full object-cover"
+                                muted
+                                autoplay
+                                loop
+                                playsinline
+                            >
+                                <source
+                                    src="assets/Social Media/Upcoming event template 1.mp4"
+                                    type="video/mp4"
+                                />
+                                Upcoming event 1
+                            </video>
+                        </div>
+                        <p class="flex-2 text-base font-light leading-relaxed">
+                            Tastebuds has an active presence on social media,
+                            letting their founders and their partners know what
+                            is new to tastebuds, events coming up and partner's
+                            stories.
+                        </p>
+                    </div>
+
+                    <a
+                        class="defaultButton mt-8 self-center"
+                        href="https://www.instagram.com/tastebuds_collective/"
+                        >Their Instagram</a
+                    >
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
                 >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <img
-                        loading="lazy"
-                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                        src="assets/Social Media/mockup2.jpeg"
-                        alt="instagram post mockup"
-                        hash-data=""
-                    />
-                </div>
+                    <h2>Presentation Templates.</h2>
+                    <p>
+                        Designed ready for Tastebuds to present to their
+                        customers.
+                    </p>
 
-                <!-- Social media grid row 1 -->
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div class="flex flex-col flex-1 gap-4">
-                        <div
-                            data-speed="0.9"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 1/1"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Social Media/July 1.jpeg"
-                                alt="instagram post 1"
-                                hash-data=""
-                            />
-                        </div>
-                        <div
-                            data-speed="1.1"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 1/1"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Social Media/July 2.jpeg"
-                                alt="instagram post 2"
-                                hash-data=""
-                            />
-                        </div>
-                    </div>
                     <div
-                        data-speed="1"
-                        class="relative flex-2 cus-blurContainer"
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
                     >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Social Media/July 3.jpeg"
-                            alt="instagram post 3"
-                            hash-data=""
-                        />
-                    </div>
-                    <div class="flex flex-col flex-1 gap-4">
-                        <div
-                            data-speed="0.9"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 1/1"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Social Media/July 4.jpeg"
-                                alt="instagram post 4"
-                                hash-data=""
-                            />
-                        </div>
-                        <div
-                            data-speed="1.1"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 1/1"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Social Media/July 5.jpeg"
-                                alt="instagram post 5"
-                                hash-data=""
-                            />
-                        </div>
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative flex-2 cus-blurContainer"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Social Media/July 6.jpeg"
-                            alt="instagram post 6"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
-
-                <!-- Reel + caption -->
-                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-end">
-                    <div
-                        class="relative flex-1 cus-blurContainer"
-                        style="aspect-ratio: 9/19"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
+                        <canvas class="absolute w-full h-full"></canvas>
                         <video
-                            class="absolute rounded-2xl w-full h-full object-cover"
+                            class="absolute w-full h-full object-cover"
                             muted
                             autoplay
                             loop
                             playsinline
                         >
                             <source
-                                src="assets/Social Media/Upcoming event template 1.mp4"
+                                src="assets/Presentations/webinar opening.mp4"
                                 type="video/mp4"
                             />
-                            Upcoming event 1
+                            Webinar Opening
                         </video>
                     </div>
-                    <p class="flex-2 text-kBlack font-light leading-relaxed">
-                        Tastebuds has an active presence on social media,
-                        letting their founders and their partners know what is
-                        new to tastebuds, events coming up and partner's
-                        stories.
-                    </p>
-                </div>
 
-                <div class="flex w-full mt-20 px-16 justify-center">
-                    <a
-                        class="defaultButton"
-                        href="https://www.instagram.com/tastebuds_collective/"
-                    >
-                        Their Instagram
-                    </a>
-                </div>
+                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                        <div
+                            class="relative flex-4 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Presentations/eventbrite banner.jpeg"
+                                alt="eventbrite banner"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
+                        >
+                            <div
+                                class="relative flex-1 aspect-4/3 lg:aspect-auto cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Presentations/slide1.jpeg"
+                                    alt="Slide 1"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div
+                                class="relative flex-1 aspect-4/3 lg:aspect-auto cus-blurContainer hidden lg:block"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Presentations/slide3.jpeg"
+                                    alt="Slide 2"
+                                    hash-data=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                <!-- Presentation Templates -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Presentation Templates.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
-                        Designed ready for Tastebuds to present to their
-                        customers.
-                    </p>
-                </div>
-
-                <div
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16/9"
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
                 >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <video
-                        class="absolute rounded-2xl w-full h-full object-cover"
-                        muted
-                        autoplay
-                        loop
-                        playsinline
-                    >
-                        <source
-                            src="assets/Presentations/webinar opening.mp4"
-                            type="video/mp4"
-                        />
-                        Webinar Opening
-                    </video>
-                </div>
-
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1.1"
-                        class="relative flex-3 cus-blurContainer"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            style="object-fit: cover; height: 100%"
-                            src="assets/Presentations/eventbrite banner.jpeg"
-                            alt="eventbrite banner"
-                            hash-data=""
-                        />
-                    </div>
-                    <div class="flex flex-col flex-1 gap-4">
-                        <div
-                            data-speed="0.9"
-                            class="relative flex-1 cus-blurContainer"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Presentations/slide1.jpeg"
-                                alt="Slide 1"
-                                hash-data=""
-                            />
-                        </div>
-                        <div
-                            data-speed="1.1"
-                            class="relative flex-1 cus-blurContainer"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Presentations/slide3.jpeg"
-                                alt="Slide 2"
-                                hash-data=""
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Illustrations -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Illustrations.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                    <h2>Illustrations.</h2>
+                    <p>
                         Using the buds from the logo as a mascot to illustrate
                         what Tastebuds do.
                     </p>
-                </div>
 
-                <!-- Illustration grid — 21 images, 6 per row -->
-                <div class="flex flex-row flex-wrap w-full mt-4 px-16 gap-4">
-                    <!-- Row 1 -->
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i1.png"
-                            alt="Illustration 1"
-                            hash-data=""
-                        />
+                    <!-- Single flex-wrap grid: min-w-20 gives ~10 per row on desktop, ~4 on mobile -->
+                    <div class="flex flex-row flex-wrap mt-10 gap-2">
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i1.png"
+                                alt="Illustration 1"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i2.png"
+                                alt="Illustration 2"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i3.png"
+                                alt="Illustration 3"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i4.png"
+                                alt="Illustration 4"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i5.png"
+                                alt="Illustration 5"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i6.png"
+                                alt="Illustration 6"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i7.png"
+                                alt="Illustration 7"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i8.png"
+                                alt="Illustration 8"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i9.png"
+                                alt="Illustration 9"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i10.png"
+                                alt="Illustration 10"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i11.png"
+                                alt="Illustration 11"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i12.png"
+                                alt="Illustration 12"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i13.png"
+                                alt="Illustration 13"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i14.png"
+                                alt="Illustration 14"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i15.png"
+                                alt="Illustration 15"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i16.png"
+                                alt="Illustration 16"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i17.png"
+                                alt="Illustration 17"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i18.png"
+                                alt="Illustration 18"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i19.png"
+                                alt="Illustration 19"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i20.png"
+                                alt="Illustration 20"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-20 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas
+                            ><img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Illustration/i21.png"
+                                alt="Illustration 21"
+                                hash-data=""
+                            />
+                        </div>
                     </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i2.png"
-                            alt="Illustration 2"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i3.png"
-                            alt="Illustration 3"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i4.png"
-                            alt="Illustration 4"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i5.png"
-                            alt="Illustration 5"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i6.png"
-                            alt="Illustration 6"
-                            hash-data=""
-                        />
-                    </div>
-                    <!-- Row 2 -->
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i7.png"
-                            alt="Illustration 7"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i8.png"
-                            alt="Illustration 8"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i9.png"
-                            alt="Illustration 9"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i10.png"
-                            alt="Illustration 10"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i11.png"
-                            alt="Illustration 11"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i12.png"
-                            alt="Illustration 12"
-                            hash-data=""
-                        />
-                    </div>
-                    <!-- Row 3 -->
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i13.png"
-                            alt="Illustration 13"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i14.png"
-                            alt="Illustration 14"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i15.png"
-                            alt="Illustration 15"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i16.png"
-                            alt="Illustration 16"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i17.png"
-                            alt="Illustration 17"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i18.png"
-                            alt="Illustration 18"
-                            hash-data=""
-                        />
-                    </div>
-                    <!-- Row 4 — 3 images + caption -->
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i19.png"
-                            alt="Illustration 19"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i20.png"
-                            alt="Illustration 20"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(16.666% - 1rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Illustration/i21.png"
-                            alt="Illustration 21"
-                            hash-data=""
-                        />
-                    </div>
-                    <!-- Caption fills remaining 3 slots -->
-                    <p
-                        class="text-kBlack font-light leading-relaxed self-end"
-                        style="width: calc(50% - 1rem)"
-                    >
+
+                    <p class="mt-8 text-base font-light leading-relaxed">
                         The illustrations use the character mascot — the buds —
                         in various silly situations. Used in social media posts,
                         on the newsletters, and on the website.
                     </p>
-                </div>
+                </section>
 
-                <!-- Digital Applications (Website + Email) -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Digital Applications.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Digital Applications.</h2>
+                    <p>
                         Email signatures and the work I helped develop for
                         Tastebud's website.
                     </p>
-                </div>
 
-                <div
-                    data-speed="1"
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16 / 5"
-                >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <img
-                        loading="lazy"
-                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                        src="assets/Emails/Animated Jacob.gif"
-                        alt="Email Signature"
-                        hash-data=""
-                    />
-                </div>
-
-                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-end">
-                    <div class="flex flex-col flex-2 gap-4">
-                        <div
-                            data-speed="0.9"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 1/1"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Website/Splash Screens2.jpeg"
-                                alt="Website Mockup"
-                                hash-data=""
-                            />
-                        </div>
-                        <div
-                            data-speed="1.1"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 3/2"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Website/Header1.jpeg"
-                                alt="Website Mockup"
-                                hash-data=""
-                            />
-                        </div>
-                    </div>
-                    <div class="flex flex-col flex-3 gap-4">
-                        <div
-                            data-speed="1"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 3/2"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/Website/Become a bud.jpeg"
-                                alt="Website Mockup"
-                                hash-data=""
-                            />
-                        </div>
-                        <p class="text-kBlack font-light leading-relaxed">
-                            Their new website attempts to be friendlier and have
-                            a more fun approach to how they talk with their
-                            partners. The website was developed by 101 websites,
-                            however I had an input on visual direction and
-                            ideas.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex w-full mt-20 px-16 justify-center">
-                    <a
-                        class="defaultButton"
-                        href="https://tastebudscollective.co.uk/"
-                    >
-                        Their Website
-                    </a>
-                </div>
-
-                <!-- In the end -->
-                <div class="flex flex-row w-full mt-20 px-16 gap-4 items-start">
-                    <h2 class="text-kBlue font-bold text-3xl flex-1">
-                        In the end...
-                    </h2>
-                </div>
-
-                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-start">
-                    <div class="flex-1"></div>
                     <div
-                        data-speed="1"
-                        class="relative flex-3 cus-blurContainer"
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
                     >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <a href="assets/StyleSheet.pdf">
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute w-full h-full object-cover object-center opacity-0"
+                            src="assets/Emails/Animated Jacob.gif"
+                            alt="Email Signature"
+                            hash-data=""
+                        />
+                    </div>
+
+                    <div
+                        class="flex flex-col lg:flex-row lg:items-end mt-4 gap-4"
+                    >
+                        <div class="flex flex-col flex-2 gap-4">
+                            <div
+                                class="relative aspect-square cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Website/Splash Screens2.jpeg"
+                                    alt="Website Mockup"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div
+                                class="relative aspect-video cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Website/Header1.jpeg"
+                                    alt="Website Mockup"
+                                    hash-data=""
+                                />
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-3 gap-4">
+                            <div
+                                class="relative aspect-video cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/Website/Become a bud.jpeg"
+                                    alt="Website Mockup"
+                                    hash-data=""
+                                />
+                            </div>
+                            <p class="text-base font-light leading-relaxed">
+                                Their new website attempts to be friendlier and
+                                have a more fun approach. The website was
+                                developed by 101 websites, however I had an
+                                input on visual direction and ideas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a
+                        class="defaultButton mt-8 self-center"
+                        href="https://tastebudscollective.co.uk/"
+                        >Their Website</a
+                    >
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>In the end...</h2>
+
+                    <div
+                        class="flex flex-col lg:flex-row lg:items-center mt-10 gap-4"
+                    >
+                        <a
+                            href="assets/StyleSheet.pdf"
+                            class="relative flex-3 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
                                 src="assets/Tastebuds Thumbnail.png"
                                 alt="PDF thumbnail"
                                 hash-data=""
                             />
                         </a>
+                        <p class="flex-2 text-base font-light leading-relaxed">
+                            After months of working with Tastebuds, I left them
+                            with this styleguide (as well as a variety of
+                            templates), that shows how to use the brand elements
+                            clearly, in order for them to continue using the
+                            designs effectively.
+                        </p>
                     </div>
-                    <p
-                        class="flex-2 text-kBlack font-light leading-relaxed self-center"
-                    >
-                        After months of working with tastebuds, I left them with
-                        this styleguide (as well as a variety of templates),
-                        that shows how to use the brand elements as clearly as
-                        possible, in order for them to continue using the
-                        design's effectively.
-                    </p>
-                </div>
 
-                <!-- Info Box — kept as CSS class for animated gradient border -->
-                <div class="infoBox infoBoxAnimate mt-20 mx-16 text-center">
-                    <h2 class="text-kBlue font-bold text-2xl">
-                        A personal note on the experience.
-                    </h2>
+                    <div class="infoBox infoBoxAnimate mt-16 text-center">
+                        <h2>A personal note on the experience.</h2>
+                        <p class="mt-8 px-10 font-light leading-relaxed">
+                            Working with Tastebuds was an opportunity I'll
+                            reflect on throughout my design career, and I am
+                            grateful to have had such a fantastic start in the
+                            industry, especially only being in my second year of
+                            university.
+                        </p>
+                        <p class="mt-4 px-10 font-light leading-relaxed">
+                            This experience not only helped me to develop my
+                            design and motion skills, but also skills in public
+                            speaking and project management, helping my
+                            confidence and allowing me to develop into a better
+                            designer.
+                        </p>
+                        <p class="mt-4 px-10 font-light leading-relaxed">
+                            A huge thank you to Alex, Charlotte, and Martin for
+                            giving me the chance to work with them. I wish
+                            Tastebuds all the best for the future!
+                        </p>
+                        <p class="mt-4 px-10 font-light text-right">— Jacob</p>
+                    </div>
+                </section>
 
-                    <p
-                        class="mt-8 text-kBlack font-light leading-relaxed px-20"
-                    >
-                        Working with Tastebuds was an opportunity I'll reflect
-                        on throughout my design career, and I am grateful to
-                        have had such a fantastic start in the industry,
-                        especially only being in my second year of university.
-                    </p>
-                    <p
-                        class="mt-4 text-kBlack font-light leading-relaxed px-20"
-                    >
-                        This experience not only helped me to develop my design
-                        and motion skills, but also skills in public speaking
-                        and project management, helping my confidence and
-                        allowing me to develop into a better designer.
-                    </p>
-                    <p
-                        class="mt-4 text-kBlack font-light leading-relaxed px-20"
-                    >
-                        It's an amazing feeling to know my design work is out in
-                        the world, and I couldn't have asked for a better team
-                        to collaborate with.
-                    </p>
-                    <p
-                        class="mt-4 text-kBlack font-light leading-relaxed px-20"
-                    >
-                        A huge thank you to Alex, Charlotte, and Martin for
-                        giving me the chance to work with them. I wish Tastebuds
-                        all the best for the future!
-                    </p>
-                    <p class="mt-4 text-right pr-20 text-kBlack font-light">
-                        — Jacob
-                    </p>
-                </div>
+                <include src="dev-partialFiles/footer.html"></include>
             </div>
         </div>
     </body>

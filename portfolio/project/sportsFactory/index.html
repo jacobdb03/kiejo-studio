@@ -9,476 +9,405 @@
 
         <div id="smooth-wrapper">
             <div id="smooth-content">
-                <!-- Page Header -->
-                <div
-                    class="relative flex flex-col justify-end items-start h-screen w-full overflow-hidden"
+                <section
+                    class="relative flex flex-col h-screen w-full justify-end overflow-hidden"
                 >
                     <img
-                        class="absolute inset-0 w-full h-full object-cover z-0"
+                        class="absolute w-full h-full object-cover object-center z-0"
                         src="assets/logomark white.png"
                         alt="Logomark white"
                     />
                     <div
-                        class="absolute inset-0 bg-kBlack opacity-40 z-10"
-                    ></div>
-                    <div
-                        class="relative z-20 flex flex-col justify-end items-start ml-12 pb-20 max-w-2xl"
+                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row flex-wrap">
-                            <h3 class="tag text-kWhite border-kWhite">
+                        <div class="flex flex-row gap-6 flex-wrap">
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
                                 March — July 2024
-                            </h3>
-                            <h3 class="tag text-kWhite border-kWhite">
+                            </h2>
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
                                 Live Brief
-                            </h3>
+                            </h2>
                         </div>
-                        <h1 class="title text-kWhite">Sports Factory.</h1>
+                        <h1
+                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
+                        >
+                            Sports Factory.
+                        </h1>
                         <h3
-                            class="font-light mt-4 text-base leading-relaxed text-kWhite"
+                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
                         >
                             A Christian charity that supports children through
-                            sport, while sharing religious teachings in order to
-                            educate children on moral and ethical issues —
-                            connected to Norwich's EAST church group.
+                            sport, while sharing religious teachings to educate
+                            children on moral and ethical issues — connected to
+                            Norwich's EAST church group.
                         </h3>
-                        <div class="flex flex-row flex-wrap mt-4">
-                            <p class="tag text-kWhite border-kWhite">
-                                Creative Direction
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">
-                                Branding
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">
-                                Logo Design
-                            </p>
+                        <div
+                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                        >
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Creative Direction"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Branding"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Logo Design"}'
+                            ></include>
                         </div>
                     </div>
-                    <!-- Extra page header -->
-                    <div
-                        class="absolute z-20 right-12 bottom-20 flex flex-col items-end flex-wrap max-w-xs text-right"
-                    >
-                        <p class="text-kWhite font-medium text-3xl w-full mb-2">
-                            Links
-                        </p>
-                        <a
-                            href="https://sportsfactory.org.uk/"
-                            class="tag text-kWhite border-kWhite"
-                            >Website</a
-                        >
-                        <a
-                            href="https://www.instagram.com/sportsfactoryuk/"
-                            class="tag text-kWhite border-kWhite"
-                            >Primary Instagram</a
-                        >
-                        <a
-                            href="https://www.instagram.com/sf.eastchurch/"
-                            class="tag text-kWhite border-kWhite"
-                            >Second Instagram</a
-                        >
-                        <p
-                            class="text-kWhite font-medium text-3xl w-full mt-4 mb-2"
-                        >
-                            Creatives
-                        </p>
-                        <a
-                            target="_blank"
-                            href="https://www.linkedin.com/in/holly-arnold-789bb230a/"
-                            class="tag text-kWhite border-kWhite"
-                            >Holly Arnold</a
-                        >
-                        <p class="tag text-kWhite border-kWhite">
-                            Jacob Bryant
-                        </p>
-                    </div>
-                </div>
+                </section>
 
-                <!-- Brand -->
-                <div class="flex flex-col w-full mt-72 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Sports Factory's brand.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
-                        How did Sports Factory come to look the way it does?
-                    </p>
-                </div>
-
-                <div
-                    data-speed="1"
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 21/9"
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
                 >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <img
-                        loading="lazy"
-                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                        src="assets/wordmark stacked white.png"
-                        alt="Wordmark stacked white"
-                        hash-data=""
-                    />
-                </div>
-
-                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-start">
-                    <p class="flex-2 text-kBlack font-light leading-relaxed">
-                        This rebrand required a minimalistic black and white
-                        identity that would stand out among brands with similar
-                        missions.
-                        <br /><br />
-                        The logomark has subtle meanings to both sport and
-                        religion, indicating the two primary goals of the
-                        charity.
-                        <br /><br />
-                        The business needed a new logomark, logotype, shapes and
-                        fonts, and to realise this we considered how the
-                        identity might look on websites and in merchandise.
-                        <br /><br />
-                        What excited me the most about this project was that it
-                        was my first time working with a client and working
-                        outside of uni. It allowed me to experience what the
-                        industry of freelance design was like and put the skills
-                        I have learnt to practice.
-                    </p>
+                    <h2>Links</h2>
                     <div
-                        data-speed="1"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 16/9"
+                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
                     >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Website", "href": "https://sportsfactory.org.uk/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Primary Instagram", "href": "https://www.instagram.com/sportsfactoryuk/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Second Instagram", "href": "https://www.instagram.com/sf.eastchurch/"}'
+                        ></include>
+                    </div>
+                    <h2 class="mt-8">Creatives</h2>
+                    <div
+                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                    >
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Holly Arnold", "href": "https://www.linkedin.com/in/holly-arnold-789bb230a/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Jacob Bryant"}'
+                        ></include>
+                    </div>
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Sports Factory's brand.</h2>
+                    <p>How did Sports Factory come to look the way it does?</p>
+
+                    <div
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                    >
+                        <canvas class="absolute w-full h-full"></canvas>
                         <img
                             loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/wordmark diagram.png"
-                            alt="Wordmark diagram"
+                            class="absolute w-full h-full object-cover object-center opacity-0"
+                            src="assets/wordmark stacked white.png"
+                            alt="Wordmark stacked white"
                             hash-data=""
                         />
                     </div>
-                </div>
 
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
                     <div
-                        data-speed="1"
-                        class="relative flex-4 cus-blurContainer"
+                        class="flex flex-col lg:flex-row lg:items-start mt-10 gap-4"
                     >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/logomark diagram.png"
-                            alt="Logomark diagram"
-                            hash-data=""
-                        />
-                    </div>
-                    <div class="flex flex-col flex-3 gap-4">
+                        <p class="flex-2 text-base font-light leading-relaxed">
+                            This rebrand required a minimalistic black and white
+                            identity that would stand out among brands with
+                            similar missions. The logomark has subtle meanings
+                            to both sport and religion, indicating the two
+                            primary goals of the charity.
+                            <br /><br />
+                            What excited me the most about this project was that
+                            it was my first time working with a client outside
+                            of uni.
+                        </p>
                         <div
-                            data-speed="0.9"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 21/9"
+                            class="relative flex-3 aspect-video cus-blurContainer"
                         >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
+                            <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                style="object-position: 50% 100%"
-                                src="assets/tshirt black wordmark.jpg"
-                                alt="Black wordmark t-shirt"
-                                hash-data=""
-                            />
-                        </div>
-                        <div
-                            data-speed="1.1"
-                            class="relative cus-blurContainer"
-                            style="aspect-ratio: 21/9"
-                        >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                style="object-position: bottom"
-                                src="assets/tshirt white logomark.jpg"
-                                alt="White logomark t-shirt"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/wordmark diagram.png"
+                                alt="Wordmark diagram"
                                 hash-data=""
                             />
                         </div>
                     </div>
-                </div>
 
-                <!-- Iconography -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">Iconography.</h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                        <div
+                            class="relative flex-4 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/logomark diagram.png"
+                                alt="Logomark diagram"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
+                        >
+                            <div
+                                class="relative flex-1 aspect-4/3 cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-bottom opacity-0"
+                                    src="assets/tshirt black wordmark.jpg"
+                                    alt="Black wordmark t-shirt"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div
+                                class="relative flex-1 aspect-4/3 cus-blurContainer hidden lg:block"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-bottom opacity-0"
+                                    src="assets/tshirt white logomark.jpg"
+                                    alt="White logomark t-shirt"
+                                    hash-data=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Iconography.</h2>
+                    <p>
                         Making the brand feel more alive and providing various
                         applications using the dot system.
                     </p>
-                </div>
+                    <div
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                    >
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute w-full h-full object-cover object-center opacity-0"
+                            src="assets/icons black.png"
+                            alt="Black icons"
+                            hash-data=""
+                        />
+                    </div>
+                </section>
 
-                <div
-                    data-speed="1"
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16/7"
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
                 >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <img
-                        loading="lazy"
-                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                        src="assets/icons black.png"
-                        alt="Black icons"
-                        hash-data=""
-                    />
-                </div>
-
-                <!-- Website -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">Website.</h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                    <h2>Website.</h2>
+                    <p>
                         Website mockups using the circle as a framing device and
                         the minimalist black and white colour scheme.
                     </p>
-                </div>
-
-                <div
-                    data-speed="1"
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16/9"
-                >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <img
-                        loading="lazy"
-                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                        src="assets/Website Mockup.png"
-                        alt="Website Mockup"
-                        hash-data=""
-                    />
-                </div>
-
-                <div class="flex w-full mt-8 px-16 justify-center">
+                    <div
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                    >
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute w-full h-full object-cover object-center opacity-0"
+                            src="assets/Website Mockup.png"
+                            alt="Website Mockup"
+                            hash-data=""
+                        />
+                    </div>
                     <a
-                        class="defaultButton"
+                        class="defaultButton mt-8 self-center"
                         target="_blank"
                         href="https://sportsfactory.org.uk/"
                         >The Final Website</a
                     >
-                </div>
+                </section>
 
-                <!-- Colour variants -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        A pop of colour...
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>A pop of colour...</h2>
+                    <p>
                         Sports Factory needs to work across various school and
                         team colours.
                     </p>
-                </div>
 
-                <!-- Blue -->
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-2 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/logomark blue.jpg"
-                            alt="Blue logomark"
-                            hash-data=""
-                        />
+                    <div class="flex flex-col lg:flex-row mt-10 gap-4">
+                        <div
+                            class="relative flex-2 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/logomark blue.jpg"
+                                alt="Blue logomark"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/wordmark blue bg.png"
+                                alt="Blue wordmark"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/tshirt blue.jpg"
+                                alt="Blue t-shirt"
+                                hash-data=""
+                            />
+                        </div>
                     </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 100/65.65"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/wordmark blue bg.png"
-                            alt="Blue wordmark"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1.1"
-                        class="relative flex-2 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/tshirt blue.jpg"
-                            alt="Blue t-shirt"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
 
-                <!-- Red -->
-                <div class="flex flex-row w-full mt-4 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-2 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/logomark red.jpg"
-                            alt="Red logomark"
-                            hash-data=""
-                        />
+                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                        <div
+                            class="relative flex-2 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/logomark red.jpg"
+                                alt="Red logomark"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/wordmark red bg.png"
+                                alt="Red wordmark"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/tshirt red.jpg"
+                                alt="Red t-shirt"
+                                hash-data=""
+                            />
+                        </div>
                     </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 100/65.65"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/wordmark red bg.png"
-                            alt="Red wordmark"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1.1"
-                        class="relative flex-2 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/tshirt red.jpg"
-                            alt="Red t-shirt"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
 
-                <!-- Yellow -->
-                <div class="flex flex-row w-full mt-4 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-2 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/logomark yellow.jpg"
-                            alt="Yellow logomark"
-                            hash-data=""
-                        />
+                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                        <div
+                            class="relative flex-2 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/logomark yellow.jpg"
+                                alt="Yellow logomark"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/wordmark yellow bg.png"
+                                alt="Yellow wordmark"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/tshirt yellow.jpg"
+                                alt="Yellow t-shirt"
+                                hash-data=""
+                            />
+                        </div>
                     </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 100/65.65"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/wordmark yellow bg.png"
-                            alt="Yellow wordmark"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1.1"
-                        class="relative flex-2 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/tshirt yellow.jpg"
-                            alt="Yellow t-shirt"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
 
-                <div class="flex flex-row w-full mt-8 px-16">
-                    <p class="flex-3 text-kBlack font-light leading-relaxed">
+                    <p class="mt-8 text-base font-light leading-relaxed">
                         The brand identity system needed to work with a variety
                         of colours, as this brand could appear on various school
-                        gym kits, and we didn't have the option to choose these
-                        colours. Therefore, our minimalist black and white
-                        approach worked best for any situation that this brand
-                        might encounter in the future.
+                        gym kits. Our minimalist black and white approach worked
+                        best for any situation this brand might encounter in the
+                        future.
                     </p>
-                </div>
+                </section>
 
-                <!-- At the end -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">At the end...</h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
-                        What we presented to the client.
-                    </p>
-                </div>
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>At the end...</h2>
+                    <p>What we presented to the client.</p>
 
-                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-center">
-                    <div class="flex-1"></div>
-                    <a
-                        target="_blank"
-                        href="assets/Final Presentation.pdf"
-                        class="relative flex-3 cus-blurContainer"
+                    <div
+                        class="flex flex-col lg:flex-row lg:items-center mt-10 gap-4"
                     >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/wordmark white.png"
-                            alt="PDF Thumbnail"
-                            hash-data=""
-                        />
-                    </a>
-                    <p class="flex-2 text-kBlack font-light leading-relaxed">
-                        We presented this work to our client, who loved our
-                        route and adopted it after a round of revisions. You can
-                        have a look at what we presented as a PDF, by clicking
-                        the image to the left (this will open in a new tab).
-                    </p>
-                </div>
+                        <a
+                            target="_blank"
+                            href="assets/Final Presentation.pdf"
+                            class="relative flex-3 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/wordmark white.png"
+                                alt="PDF Thumbnail"
+                                hash-data=""
+                            />
+                        </a>
+                        <p class="flex-2 text-base font-light leading-relaxed">
+                            We presented this work to our client, who loved our
+                            route and adopted it after a round of revisions.
+                            Click the image to view the presentation PDF in a
+                            new tab.
+                        </p>
+                    </div>
+                </section>
 
-                <div class="h-64"></div>
+                <include src="dev-partialFiles/footer.html"></include>
             </div>
         </div>
     </body>

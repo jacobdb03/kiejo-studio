@@ -1,3 +1,5 @@
+declare const process: { env: { BUILD_DATE: string } };
+
 import pkg from "../../package.json";
 import emailjs from "@emailjs/browser";
 import { gsap, ScrollTrigger } from "../dev-scriptFiles/gsapSetup";

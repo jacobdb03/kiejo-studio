@@ -36,6 +36,12 @@
         font-weight: 500;
     }
 
+    @supports (-webkit-hyphens: none) {
+        .cus-blurContainer {
+            height: 100%;
+        }
+    }
+
     /*
     .ani-navBox * {
         transition: all 0.3s ease;

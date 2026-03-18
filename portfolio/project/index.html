@@ -9,21 +9,19 @@
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section
-                    class="flex h-dvh justify-items-center w-auto bg-kBlack"
+                    class="flex h-dvh w-full justify-center object-cover bg-kBlue"
                 >
-                    <div class="self-end">
-                        <h1
-                            class="text-[15vw] text-kWhite font-medium ml-20 m-10"
-                        >
-                            Portfolio
-                        </h1>
-                    </div>
+                    <h1
+                        class="text-kWhite text-3xl self-center text-center font-bold z-20"
+                    >
+                        Portfolio
+                    </h1>
                 </section>
                 <section
-                    class="flex h-[400dvh] w-[96vw] place-content-around mx-auto"
+                    class="flex max-w-480 place-content-around mx-auto bg-kWhite px-5 py-5"
                 >
                     <div
-                        class="flex flex-wrap mt-20 justify-center gap-2 md:gap-4 items-start content-start"
+                        class="flex flex-wrap mt-5 justify-center gap-2 md:gap-4 items-start content-start"
                     >
                         <include
                             src="dev-partialFiles/workButton.html"
@@ -92,6 +90,9 @@
                         ></include>
                     </div>
                 </section>
+
+                <include src="dev-partialFiles/footer.html"></include>
+
                 <!--
                 <section class="flex justify-center h-dvh w-full bg-kWhite">
                     <div class="flex flex-wrap text-[12vw] self-center gap-8">

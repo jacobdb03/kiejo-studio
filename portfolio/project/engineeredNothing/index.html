@@ -9,12 +9,11 @@
 
         <div id="smooth-wrapper">
             <div id="smooth-content">
-                <!-- Page Header -->
-                <div
-                    class="relative flex flex-col justify-end items-start h-screen w-full overflow-hidden"
+                <section
+                    class="relative flex flex-col h-screen w-full justify-end overflow-hidden"
                 >
                     <video
-                        class="absolute inset-0 w-full h-full object-cover z-0"
+                        class="absolute w-full h-full object-cover object-center z-0"
                         muted
                         autoplay
                         loop
@@ -25,459 +24,401 @@
                         aura effect animation
                     </video>
                     <div
-                        class="absolute inset-0 bg-kBlack opacity-40 z-10"
-                    ></div>
-                    <div
-                        class="relative z-20 flex flex-col justify-end items-start ml-12 pb-20 max-w-2xl"
+                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row flex-wrap">
-                            <h2 class="tag text-kWhite border-kWhite">
+                        <div class="flex flex-row gap-6 flex-wrap">
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
                                 January – March 2025
                             </h2>
-                            <h2 class="tag text-kWhite border-kWhite">
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
                                 D&AD Newblood
                             </h2>
                         </div>
-                        <h1 class="title text-kWhite">
+                        <h1
+                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
+                        >
                             Swiss-Engineered Nothing.
                         </h1>
                         <h3
-                            class="font-light mt-4 text-base leading-relaxed text-kWhite"
+                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
                         >
                             A minimalist, human-centred campaign answering the
-                            On brief for D&AD Newblood 2025 that asked to tell
-                            On's story through movement to a new generation
-                            using the tagline: "Feel Nothing. To Feel
-                            Everything."<br /><br />
-                            By juxtaposing their apparel with Gen Z's boundless
-                            energy, On provides the 'Nothing' — lightweight,
-                            distraction-free technology designed to be
-                            forgotten.<br /><br />
-                            Meanwhile, the wearer brings the 'Everything' — the
-                            passion, ambition, and spirit that brings On's story
-                            to life.<br /><br />
-                            On silences life's distractions, allowing Gen Z to
-                            focus on what matters most — the freedom of
-                            movement.
+                            On brief for D&AD Newblood 2025. "Feel Nothing. To
+                            Feel Everything."
                         </h3>
-                        <div class="flex flex-row flex-wrap mt-4">
-                            <p class="tag text-kWhite border-kWhite">
-                                Campaign Identity
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">
-                                Motion Design
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">Web Dev</p>
+                        <div
+                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                        >
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Campaign Identity"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Motion Design"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Web Dev"}'
+                            ></include>
                         </div>
                     </div>
-                    <!-- Extra page header -->
-                    <div
-                        class="absolute z-20 right-12 bottom-20 flex flex-col items-end flex-wrap max-w-xs text-right"
-                    >
-                        <p class="text-kWhite font-medium text-3xl w-full mb-2">
-                            Creatives
-                        </p>
-                        <a
-                            target="_blank"
-                            href="https://cassielouise.com/"
-                            class="tag text-kWhite border-kWhite"
-                            >Cassie Muskett</a
-                        >
-                        <p class="tag text-kWhite border-kWhite">
-                            Jacob Bryant
-                        </p>
-                    </div>
-                </div>
+                </section>
 
-                <!-- Campaign video -->
-                <div class="flex flex-col w-full mt-72 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Campaign Video.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Creatives</h2>
+                    <div
+                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                    >
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Cassie Muskett", "href": "https://cassielouise.com/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Jacob Bryant"}'
+                        ></include>
+                    </div>
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Campaign Video.</h2>
+                    <p>
                         The Campaign Video that outlines how we brought On's
                         Story to life through movement to a new generation.
                     </p>
-                </div>
-
-                <div
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16/9"
-                >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <video
-                        class="absolute rounded-2xl w-full h-full object-cover"
-                        controls
-                        preload="auto"
-                        poster="assets/campaignVidThumb.jpeg"
+                    <div
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
                     >
-                        <source src="assets/campaignVid.mp4" type="video/mp4" />
-                        Campaign Animation
-                    </video>
-                </div>
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <video
+                            class="absolute w-full h-full object-cover"
+                            controls
+                            preload="auto"
+                            poster="assets/campaignVidThumb.jpeg"
+                        >
+                            <source
+                                src="assets/campaignVid.mp4"
+                                type="video/mp4"
+                            />
+                            Campaign Animation
+                        </video>
+                    </div>
+                </section>
 
-                <!-- Physical applications -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Physical Applications.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Physical Applications.</h2>
+                    <p>
                         Posters that promote the campaign's message: We give you
                         nothing. You bring your everything.
                     </p>
-                </div>
 
-                <div class="flex flex-row w-full mt-8 px-16 gap-4 items-end">
                     <div
-                        data-speed="1"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 18/9"
+                        class="flex flex-col lg:flex-row lg:items-end mt-10 gap-4"
                     >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <video
-                            class="absolute rounded-2xl w-full h-full object-cover"
-                            poster="assets/PosterThumb.jpeg"
-                            muted
-                            autoplay
-                            loop
-                            preload="auto"
-                            playsinline
+                        <div
+                            class="relative flex-4 aspect-video cus-blurContainer"
                         >
-                            <source
-                                src="assets/postersSlide.mp4"
-                                type="video/mp4"
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <video
+                                class="absolute w-full h-full object-cover"
+                                poster="assets/PosterThumb.jpeg"
+                                muted
+                                autoplay
+                                loop
+                                preload="auto"
+                                playsinline
+                            >
+                                <source
+                                    src="assets/postersSlide.mp4"
+                                    type="video/mp4"
+                                />
+                                Poster animation
+                            </video>
+                        </div>
+                        <div
+                            class="relative flex-1 aspect-[72/93] cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/PosterMockup.jpeg"
+                                alt="Poster Mockup"
+                                hash-data=""
                             />
-                            Poster animation
-                        </video>
+                        </div>
                     </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-2 cus-blurContainer"
-                        style="aspect-ratio: 72/93"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/PosterMockup.jpeg"
-                            alt="Poster Mockup"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
+                </section>
 
-                <!-- In-store applications -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        In-Store Applications.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>In-Store Applications.</h2>
+                    <p>
                         Screens that react to your energy, putting you at the
                         center of On's story.
                     </p>
-                </div>
 
-                <div
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16/9"
+                    <div
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                    >
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <video
+                            class="absolute w-full h-full object-cover"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/InteractiveScreen.mp4"
+                                type="video/mp4"
+                            />
+                            In Screen Aura Effect
+                        </video>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                        <div
+                            class="relative flex-4 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/manScreenMockup.jpeg"
+                                alt="Man Screen Mockup"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/WomenScreenMockup.jpeg"
+                                alt="Women Screen Mockup"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
                 >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <video
-                        class="absolute rounded-2xl w-full h-full object-cover"
-                        muted
-                        autoplay
-                        loop
-                        playsinline
-                    >
-                        <source
-                            src="assets/InteractiveScreen.mp4"
-                            type="video/mp4"
-                        />
-                        In Screen Aura Effect
-                    </video>
-                </div>
-
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-4 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/manScreenMockup.jpeg"
-                            alt="Man Screen Mockup"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 38/51"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/WomenScreenMockup.jpeg"
-                            alt="Women Screen Mockup"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
-
-                <!-- Online applications -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Online Applications.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                    <h2>Online Applications.</h2>
+                    <p>
                         A working website that reacts to the user's input,
                         repeating our message that without the customers, On's
                         story disappears.
                     </p>
-                </div>
 
-                <div
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16/9"
-                >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <video
-                        class="absolute rounded-2xl w-full h-full object-cover"
-                        muted
-                        autoplay
-                        loop
-                        playsinline
+                    <div
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
                     >
-                        <source
-                            src="assets/websiteRecording.mp4"
-                            type="video/mp4"
-                        />
-                        Website Recording
-                    </video>
-                </div>
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <video
+                            class="absolute w-full h-full object-cover"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/websiteRecording.mp4"
+                                type="video/mp4"
+                            />
+                            Website Recording
+                        </video>
+                    </div>
 
-                <div class="flex w-full mt-8 px-16 justify-center">
                     <a
                         target="_blank"
-                        class="defaultButton"
+                        class="defaultButton mt-8 self-center"
                         href="FeelEverythingSite/"
                         >View the Site</a
                     >
-                </div>
 
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-3 cus-blurContainer"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/website1.jpeg"
-                            alt="Website Mockup 1"
-                            hash-data=""
-                        />
-                    </div>
-                    <div class="flex flex-col flex-2 gap-4">
+                    <div class="flex flex-col lg:flex-row mt-10 gap-4">
                         <div
-                            data-speed="0.8"
-                            class="relative flex-1 cus-blurContainer"
+                            class="relative flex-4 aspect-video cus-blurContainer"
                         >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
+                            <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/website2.jpeg"
-                                alt="Website Mockup 2"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/website1.jpeg"
+                                alt="Website Mockup 1"
                                 hash-data=""
                             />
                         </div>
                         <div
-                            data-speed="1.1"
-                            class="relative flex-1 cus-blurContainer"
+                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
                         >
-                            <canvas
-                                class="absolute rounded-2xl w-full h-full"
-                            ></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                                src="assets/website3.jpeg"
-                                alt="Website Mockup 3"
-                                hash-data=""
-                            />
+                            <div
+                                class="relative flex-1 aspect-4/3 cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/website2.jpeg"
+                                    alt="Website Mockup 2"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div
+                                class="relative flex-1 aspect-4/3 cus-blurContainer hidden lg:block"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/website3.jpeg"
+                                    alt="Website Mockup 3"
+                                    hash-data=""
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <!-- Social media -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Social Applications.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Social Applications.</h2>
+                    <p>
                         Social media posts that promote On's story and the
                         campaign message.
                     </p>
-                </div>
 
-                <div
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16/9"
+                    <div
+                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                    >
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <video
+                            class="absolute w-full h-full object-cover object-center"
+                            poster="assets/auraEffect.jpeg"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="assets/socialsSlide.mp4"
+                                type="video/mp4"
+                            />
+                            Social Media Animation
+                        </video>
+                    </div>
+
+                    <div class="flex flex-col mt-4 gap-4">
+                        <div
+                            class="relative w-full aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/socials1.jpeg"
+                                alt="Social media 1"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative w-full aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/socials2.jpg"
+                                alt="Social media 2"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
                 >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <video
-                        class="absolute rounded-2xl w-full h-full object-cover"
-                        poster="assets/auraEffect.jpeg"
-                        muted
-                        autoplay
-                        loop
-                        playsinline
-                    >
-                        <source
-                            src="assets/socialsSlide.mp4"
-                            type="video/mp4"
-                        />
-                        Social Media Animation
-                    </video>
-                </div>
-
-                <div class="flex flex-col w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative w-full cus-blurContainer"
-                        style="aspect-ratio: 16/9"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/socials1.jpeg"
-                            alt="Social media 1"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative w-full cus-blurContainer"
-                        style="aspect-ratio: 16/9"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/socials2.jpg"
-                            alt="Social media 2"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
-
-                <!-- Product applications -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Product Applications.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
+                    <h2>Product Applications.</h2>
+                    <p>
                         A shoe box that uses thermochromic ink to react to the
                         user's heat. On's product? Nothing.
                     </p>
-                </div>
 
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-4 cus-blurContainer"
-                        style="aspect-ratio: 495/368"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            style="object-position: bottom"
-                            src="assets/shoeBox1.jpeg"
-                            alt="ShoeBox 1"
-                            hash-data=""
-                        />
+                    <div class="flex flex-col lg:flex-row mt-10 gap-4">
+                        <div
+                            class="relative flex-4 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-bottom opacity-0"
+                                src="assets/shoeBox1.jpeg"
+                                alt="ShoeBox 1"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-bottom opacity-0"
+                                src="assets/shoeBox2.jpeg"
+                                alt="ShoeBox 2"
+                                hash-data=""
+                            />
+                        </div>
                     </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            style="object-position: bottom"
-                            src="assets/shoeBox2.jpeg"
-                            alt="ShoeBox 2"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
 
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1.1"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 1/1"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/shoeBox4.jpeg"
-                            alt="ShoeBox 4"
-                            hash-data=""
-                        />
+                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                        <div
+                            class="relative flex-3 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/shoeBox4.jpeg"
+                                alt="ShoeBox 4"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-4 aspect-video lg:aspect-auto cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/shoeBox3.jpeg"
+                                alt="ShoeBox 3"
+                                hash-data=""
+                            />
+                        </div>
                     </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-4 cus-blurContainer"
-                        style="aspect-ratio: 495/368"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/shoeBox3.jpeg"
-                            alt="ShoeBox 3"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
+                </section>
 
-                <div class="h-64"></div>
+                <include src="dev-partialFiles/footer.html"></include>
             </div>
         </div>
     </body>

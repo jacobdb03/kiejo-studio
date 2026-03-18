@@ -9,329 +9,278 @@
 
         <div id="smooth-wrapper">
             <div id="smooth-content">
-                <!-- Page Header -->
-                <div
-                    class="relative flex flex-col justify-end items-start h-screen w-full overflow-hidden"
+                <section
+                    class="relative flex flex-col h-screen w-full justify-end overflow-hidden"
                 >
                     <img
-                        class="absolute inset-0 w-full h-full object-cover z-0"
-                        style="object-position: 50% 0%"
+                        class="absolute w-full h-full object-cover object-top z-0"
                         src="assets/hublThumb.jpg"
                         alt="Page Tease"
                     />
                     <div
-                        class="absolute inset-0 bg-kBlack opacity-40 z-10"
-                    ></div>
-                    <div
-                        class="relative z-20 flex flex-col justify-end items-start ml-12 pb-20 max-w-2xl"
+                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row flex-wrap">
-                            <h3 class="tag text-kWhite border-kWhite">
+                        <div class="flex flex-row gap-6 flex-wrap">
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
                                 August – October 2024
-                            </h3>
-                            <h3 class="tag text-kWhite border-kWhite">
+                            </h2>
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
                                 Live Brief
-                            </h3>
+                            </h2>
                         </div>
-                        <h1 class="title text-kWhite">Hubl.</h1>
+                        <h1
+                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
+                        >
+                            Hubl.
+                        </h1>
                         <h3
-                            class="font-light mt-4 text-base leading-relaxed text-kWhite"
+                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
                         >
                             Assisting in the launch of an independent, english
                             language assessment hub by creating graphics and
                             helping with their brand identity.
                         </h3>
-                        <div class="flex flex-row flex-wrap mt-4">
-                            <p class="tag text-kWhite border-kWhite">
-                                Creative Direction
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">
-                                Social Media
-                            </p>
-                            <p class="tag text-kWhite border-kWhite">
-                                Poster Design
-                            </p>
+                        <div
+                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                        >
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Creative Direction"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Social Media"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Poster Design"}'
+                            ></include>
                         </div>
                     </div>
-                    <!-- Extra page header -->
-                    <div
-                        class="absolute z-20 right-12 bottom-20 flex flex-col items-end flex-wrap max-w-xs text-right"
-                    >
-                        <p class="text-kWhite font-medium text-3xl w-full mb-2">
-                            Links
-                        </p>
-                        <a
-                            target="_blank"
-                            href="https://hubl.org.uk/"
-                            class="tag text-kWhite border-kWhite"
-                            >Hubl Website</a
-                        >
-                        <a
-                            target="_blank"
-                            href="https://www.instagram.com/hublnorwich"
-                            class="tag text-kWhite border-kWhite"
-                            >Hubl Instagram</a
-                        >
-                        <p
-                            class="text-kWhite font-medium text-3xl w-full mt-4 mb-2"
-                        >
-                            Creatives
-                        </p>
-                        <a
-                            target="_blank"
-                            href="https://jameshopper.design/"
-                            class="tag text-kWhite border-kWhite"
-                            >James Hopper</a
-                        >
-                        <p class="tag text-kWhite border-kWhite">
-                            Jacob Bryant
-                        </p>
-                        <p
-                            class="text-kWhite font-medium text-3xl w-full mt-4 mb-2"
-                        >
-                            The Team
-                        </p>
-                        <a
-                            target="_blank"
-                            href="https://www.linkedin.com/in/nicola-turner-b0933523/"
-                            class="tag text-kWhite border-kWhite"
-                            >Nikky Turner</a
-                        >
-                    </div>
-                </div>
+                </section>
 
-                <!-- The poster -->
-                <div class="flex flex-col w-full mt-72 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">The poster.</h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
-                        The poster that I designed to attract people to Hubl.
-                    </p>
-                </div>
-
-                <div class="flex flex-row w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative flex-4 cus-blurContainer"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Poster 1.png"
-                            alt="Poster 1"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative flex-3 cus-blurContainer"
-                        style="aspect-ratio: 10/19"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/banner.jpeg"
-                            alt="Banner"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
-
-                <!-- Social media -->
-                <div class="flex flex-col w-full mt-20 px-16">
-                    <h2 class="text-kBlue font-bold text-3xl">
-                        Social Media Posts.
-                    </h2>
-                    <p class="text-kBlack font-normal mt-2 w-2/5 leading-snug">
-                        Initial posts to give Hubl a social media presence.
-                    </p>
-                </div>
-
-                <!-- 5 pairs of posts in rows of 2 each -->
-                <div class="flex flex-row flex-wrap w-full mt-8 px-16 gap-4">
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post2 Img1.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post1 Img1.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1.1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post2 Img2.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post1 Img2.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post2 Img3.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1.1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post1 Img3.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post2 Img4.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="0.9"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post1 Img4.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1.1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post2 Img5.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                    <div
-                        data-speed="1"
-                        class="relative cus-blurContainer"
-                        style="width: calc(50% - 0.5rem)"
-                    >
-                        <canvas
-                            class="absolute rounded-2xl w-full h-full"
-                        ></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                            src="assets/Post1 Img5.jpeg"
-                            alt="Social Media Post"
-                            hash-data=""
-                        />
-                    </div>
-                </div>
-
-                <div
-                    data-speed="1"
-                    class="relative w-full mt-8 px-16 cus-blurContainer"
-                    style="aspect-ratio: 16/9"
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
                 >
-                    <canvas class="absolute rounded-2xl w-full h-full"></canvas>
-                    <img
-                        loading="lazy"
-                        class="absolute rounded-2xl w-full h-full object-cover opacity-0"
-                        src="assets/extraPost2.jpeg"
-                        alt="Extra post"
-                        hash-data=""
-                    />
-                </div>
+                    <h2>Links</h2>
+                    <div
+                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                    >
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Hubl Website", "href": "https://hubl.org.uk/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Hubl Instagram", "href": "https://www.instagram.com/hublnorwich"}'
+                        ></include>
+                    </div>
+                    <h2 class="mt-8">Creatives</h2>
+                    <div
+                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                    >
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "James Hopper", "href": "https://jameshopper.design/"}'
+                        ></include>
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Jacob Bryant"}'
+                        ></include>
+                    </div>
+                    <h2 class="mt-8">The Team</h2>
+                    <div
+                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                    >
+                        <include
+                            src="dev-partialFiles/pageTag.html"
+                            locals='{"tagName": "Nikky Turner", "href": "https://www.linkedin.com/in/nicola-turner-b0933523/"}'
+                        ></include>
+                    </div>
+                </section>
 
-                <div class="h-64"></div>
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>The poster.</h2>
+                    <p>The poster that I designed to attract people to Hubl.</p>
+
+                    <div class="flex flex-col lg:flex-row mt-10 gap-4">
+                        <div
+                            class="relative flex-4 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Poster 1.png"
+                                alt="Poster 1"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 aspect-video cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/banner.jpeg"
+                                alt="Banner"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                >
+                    <h2>Social Media Posts.</h2>
+                    <p>Initial posts to give Hubl a social media presence.</p>
+
+                    <div class="flex flex-row flex-wrap mt-10 gap-4">
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post2 Img1.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post1 Img1.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post2 Img2.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post1 Img2.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post2 Img3.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post1 Img3.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post2 Img4.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post1 Img4.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post2 Img5.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex-1 min-w-40 aspect-square cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/Post1 Img5.jpeg"
+                                alt="Social Media Post"
+                                hash-data=""
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        class="relative w-full mt-4 aspect-video cus-blurContainer"
+                    >
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute w-full h-full object-cover object-center opacity-0"
+                            src="assets/extraPost2.jpeg"
+                            alt="Extra post"
+                            hash-data=""
+                        />
+                    </div>
+                </section>
+
+                <include src="dev-partialFiles/footer.html"></include>
             </div>
         </div>
     </body>

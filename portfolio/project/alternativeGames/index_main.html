@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+    <head>
+        <include src="dev-partialFiles/header.html"></include>
+    </head>
+
+    <body>
+        <include src="dev-partialFiles/navbar.html"></include>
+
+        <!-- GSAP SmoothScroll Wrappers -->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- Page Header with background video -->
+                <section
+                    class="relative flex flex-col h-screen w-full justify-end overflow-hidden"
+                >
+                    <video
+                        class="absolute w-full h-full object-cover z-0"
+                        muted
+                        autoplay
+                        loop
+                        preload="auto"
+                        playsinline
+                    >
+                        <source src="assets/Motion2.mp4" type="video/mp4" />
+                        Alternative games logo animation
+                    </video>
+
+                    <div
+                        class="relative z-20 gap-4 justify-center pb-20 flex flex-col w-full md:max-w-480 max-w-[80vw] mx-auto mt-16 px-2 cusAnimateTransitions md:px-5 lg:px-20"
+                    >
+                        <div class="flex flex-row gap-6 flex-wrap">
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
+                                October – November 2024
+                            </h2>
+                            <h2
+                                class="text-kWhite text-sm md:text-lg font-light"
+                            >
+                                Concept Project
+                            </h2>
+                        </div>
+                        <h1 class="text-5xl md:text-9xl font-black text-kWhite">
+                            Alternative Games.
+                        </h1>
+                        <h3
+                            class="font-semibold text-lg leading-relaxed text-kWhite"
+                        >
+                            Allowing communities to unite over a collection of
+                            nonsensical events.
+                        </h3>
+                        <div
+                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                        >
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Event Identity"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Branding"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Logo Design"}'
+                            ></include>
+                            <include
+                                src="dev-partialFiles/pageTag.html"
+                                locals='{"tagName": "Motion"}'
+                            ></include>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- A New Series of Games -->
+                <section
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20 cusAnimateTransitions"
+                >
+                    <h2>A New Series of games.</h2>
+                    <p>
+                        Olympic-like events for silly games that bring the
+                        community together.
+                    </p>
+                    <div class="flex flex-col mt-10 gap-2 lg:flex-row sm:gap-4">
+                        <div
+                            data-speed="1"
+                            class="flex gap-2 cusAnimateTransitions md:gap-4 lg:w-full"
+                        >
+                            <div
+                                class="aspect-3/4 w-full relative cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/poster3.jpeg"
+                                    alt="mockup of the posters"
+                                    hash-data="LEIW=+}~9$~00IRl^Ys.ET0Y9%WF"
+                                />
+                            </div>
+                            <div
+                                class="aspect-3/4 w-full relative cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/poster4.jpeg"
+                                    alt="mockup of the posters"
+                                    hash-data="L5H3wpEAS89i00?8~Rad06E90E~L"
+                                />
+                            </div>
+                        </div>
+
+                        <div
+                            data-speed="1"
+                            class="aspect-4/3 lg:aspect-auto relative cus-blurContainer cusAnimateTransitions lg:w-full"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/poster1.jpeg"
+                                alt="mockup of the posters"
+                                hash-data="LAHL0R],0J6V0cRP9tXS7-%}}x,l"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="flex flex-col w-full max-w-480 mx-auto mt-16 px-2 cusAnimateTransitions md:px-5 lg:px-20"
+                >
+                    <h2>The Alternative Games Experience</h2>
+                    <p>
+                        TV stings that bring the brand identity to life on
+                        screen.
+                    </p>
+
+                    <div
+                        class="flex h-100 flex-col mt-10 gap-2 cusAnimateTransitions md:h-140 md:flex-row sm:gap-4"
+                    >
+                        <div
+                            class="relative w-full md:max-w-3xl md:min-w-3xl flex-3 cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover opacity-0"
+                                src="assets/online1.jpeg"
+                                alt="TV Overlays"
+                                hash-data=""
+                            />
+                        </div>
+
+                        <div class="flex h-110 flex-col flex-2 gap-4">
+                            <div class="relative cus-blurContainer">
+                                <canvas
+                                    class="absolute rounded-2xl w-full h-full"
+                                ></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                    src="assets/online3.jpeg"
+                                    alt="TV Overlays"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div class="relative cus-blurContainer">
+                                <canvas
+                                    class="absolute rounded-2xl w-full h-full"
+                                ></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                    src="assets/online4.jpeg"
+                                    alt="TV Overlays"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div class="relative cus-blurContainer">
+                                <canvas
+                                    class="absolute rounded-2xl w-full h-full"
+                                ></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute rounded-2xl w-full h-full object-cover opacity-0"
+                                    src="assets/online2.jpeg"
+                                    alt="TV Overlays"
+                                    hash-data=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
