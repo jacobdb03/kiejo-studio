@@ -77,45 +77,49 @@
                                 locals='{"tagName": "Motion"}'
                             ></include>
                         </div>
-                    </div>
-                </section>
+                        <div
+                            class="lg:absolute relative origin-left lg:origin-bottom-right flex flex-col lg:text-right lg:right-10 lg:bottom-20 z-20 lg:max-w-160"
+                        >
+                            <div
+                                class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end font-bold"
+                            >
+                                <h2 class="text-lg text-kWhite w-full">
+                                    Check them out
+                                </h2>
+                                <include
+                                    src="dev-partialFiles/linkPageTag.html"
+                                    locals='{"tagName": "Website", "href": "https://tastebudscollective.co.uk/"}'
+                                ></include>
+                                <include
+                                    src="dev-partialFiles/linkPageTag.html"
+                                    locals='{"tagName": "Instagram", "href": "https://www.instagram.com/tastebuds_collective/"}'
+                                ></include>
+                            </div>
+                            <div
+                                class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end text-xs font-bold lg:max-w-100"
+                            >
+                                <h2 class="text-lg text-kWhite w-full">
+                                    The team
+                                </h2>
 
-                <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
-                >
-                    <h2>Links</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Tastebuds Website", "href": "https://tastebudscollective.co.uk/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Tastebuds Instagram", "href": "https://www.instagram.com/tastebuds_collective/"}'
-                        ></include>
-                    </div>
-                    <h2 class="mt-8">The team</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Martin Burchett"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Alex Larter", "href": "https://www.linkedin.com/in/alexander-larter/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Charlotte Louise-Beach", "href": "https://www.linkedin.com/in/charlotte-louise-beach-193b1b128/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Jacob Bryant"}'
-                        ></include>
+                                <include
+                                    src="dev-partialFiles/pageTag.html"
+                                    locals='{"tagName": "Martin Burchett"}'
+                                ></include>
+                                <include
+                                    src="dev-partialFiles/pageTag.html"
+                                    locals='{"tagName": "Alex Larter", "href": "https://www.linkedin.com/in/alexander-larter/"}'
+                                ></include>
+                                <include
+                                    src="dev-partialFiles/pageTag.html"
+                                    locals='{"tagName": "Charlotte Louise-Beach", "href": "https://www.linkedin.com/in/charlotte-louise-beach-193b1b128/"}'
+                                ></include>
+                                <include
+                                    src="dev-partialFiles/pageTag.html"
+                                    locals='{"tagName": "Jacob Bryant"}'
+                                ></include>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -204,7 +208,7 @@
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
-                                class="absolute w-full h-full object-contain object-center bg-[#017370] p-[5%]"
+                                class="absolute w-full h-full object-contain object-center bg-[#046865] p-[5%]"
                                 muted
                                 autoplay
                                 loop
@@ -219,32 +223,34 @@
                         </div>
                     </div>
 
-                    <p class="mt-8 text-base font-light leading-relaxed">
+                    <p
+                        class="mt-4 text-base font-light text-center leading-relaxed"
+                    >
                         Tastebuds, the collective for Food and Drink Innovators
                         — bringing the food and drink industry together,
                         nourishing connection and cultivating success.
                     </p>
 
-                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                    <div class="flex flex-col lg:flex-row mt-8 gap-4">
                         <div
-                            class="relative flex-1 aspect-video cus-blurContainer"
+                            class="relative flex-2 aspect-square cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute w-full h-full object-contain object-center opacity-0 p-2 border-2 border-[#046865]"
+                                class="absolute w-full h-full object-contain object-center opacity-0 p-2"
                                 src="assets/Brand/logomark diagram.png"
                                 alt="logomark diagram"
                                 hash-data=""
                             />
                         </div>
                         <div
-                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="relative flex-6 aspect-video lg:aspect-auto cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute w-full h-full object-contain object-center opacity-0 p-2 border-2 border-[#046865]"
+                                class="absolute w-full h-full object-contain object-center opacity-0 p-2"
                                 src="assets/Brand/wordmark diagram.png"
                                 alt="tastebuds diagram"
                                 hash-data=""
@@ -252,14 +258,16 @@
                         </div>
                     </div>
 
-                    <p class="mt-8 text-base font-light leading-relaxed">
+                    <p
+                        class="mt-4 text-base text-center font-light leading-relaxed"
+                    >
                         The logo — formed from the letter b and bud shapes to
                         look like a plant breaking through its seed. A metaphor
                         as to how Tastebuds can help its members grow.
                     </p>
 
                     <div
-                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                        class="relative w-[80%] mx-auto mt-10 aspect-video cus-blurContainer"
                     >
                         <canvas class="absolute w-full h-full"></canvas>
                         <img
