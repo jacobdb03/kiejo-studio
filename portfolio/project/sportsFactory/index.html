@@ -18,84 +18,91 @@
                         alt="Logomark white"
                     />
                     <div
-                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
+                        class="relative z-20 pb-20 w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row gap-6 flex-wrap">
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                March — July 2024
-                            </h2>
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                Live Brief
-                            </h2>
-                        </div>
-                        <h1
-                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
-                        >
-                            Sports Factory.
-                        </h1>
-                        <h3
-                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
-                        >
-                            A Christian charity that supports children through
-                            sport, while sharing religious teachings to educate
-                            children on moral and ethical issues — connected to
-                            Norwich's EAST church group.
-                        </h3>
                         <div
-                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                            class="flex flex-col lg:flex-row lg:items-end gap-8"
                         >
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Creative Direction"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Branding"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Logo Design"}'
-                            ></include>
+                            <div class="flex flex-col flex-3">
+                                <div class="flex flex-row gap-6 flex-wrap">
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        March — July 2024
+                                    </h2>
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        Live Brief
+                                    </h2>
+                                </div>
+                                <h1
+                                    class="text-5xl md:text-9xl font-black text-kWhite mt-4"
+                                >
+                                    Sports<br />
+                                    Factory.
+                                </h1>
+                                <h3
+                                    class="font-semibold text-lg max-w-160 leading-relaxed text-kWhite mt-4"
+                                >
+                                    A Christian charity that supports children
+                                    through sport, while sharing religious
+                                    teachings to educate children on moral and
+                                    ethical issues — connected to Norwich's EAST
+                                    church group.
+                                </h3>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold text-kWhite"
+                                >
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Creative Direction"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Branding"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Logo Design"}'
+                                    ></include>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col flex-1 lg:items-end lg:text-right gap-4 text-xs font-bold text-kWhite"
+                            >
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end"
+                                >
+                                    <h2 class="text-lg text-kWhite w-full">
+                                        Links
+                                    </h2>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Website", "href": "https://sportsfactory.org.uk/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Primary Instagram", "href": "https://www.instagram.com/sportsfactoryuk/"}'
+                                    ></include>
+                                </div>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end"
+                                >
+                                    <h2 class="text-lg text-kWhite w-full">
+                                        Creatives
+                                    </h2>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Holly Arnold", "href": "https://www.linkedin.com/in/holly-arnold-789bb230a/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Jacob Bryant"}'
+                                    ></include>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
-                >
-                    <h2>Links</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Website", "href": "https://sportsfactory.org.uk/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Primary Instagram", "href": "https://www.instagram.com/sportsfactoryuk/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Second Instagram", "href": "https://www.instagram.com/sf.eastchurch/"}'
-                        ></include>
-                    </div>
-                    <h2 class="mt-8">Creatives</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Holly Arnold", "href": "https://www.linkedin.com/in/holly-arnold-789bb230a/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Jacob Bryant"}'
-                        ></include>
                     </div>
                 </section>
 
@@ -117,38 +124,31 @@
                             hash-data=""
                         />
                     </div>
-
-                    <div
-                        class="flex flex-col lg:flex-row lg:items-start mt-10 gap-4"
-                    >
-                        <p class="flex-2 text-base font-light leading-relaxed">
-                            This rebrand required a minimalistic black and white
-                            identity that would stand out among brands with
-                            similar missions. The logomark has subtle meanings
-                            to both sport and religion, indicating the two
-                            primary goals of the charity.
-                            <br /><br />
-                            What excited me the most about this project was that
-                            it was my first time working with a client outside
-                            of uni.
-                        </p>
-                        <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
-                        >
-                            <canvas class="absolute w-full h-full"></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute w-full h-full object-cover object-center opacity-0"
-                                src="assets/wordmark diagram.png"
-                                alt="Wordmark diagram"
-                                hash-data=""
-                            />
-                        </div>
+                    <div class="relative flex-3 aspect-video cus-blurContainer">
+                        <canvas class="absolute w-full h-full"></canvas>
+                        <img
+                            loading="lazy"
+                            class="absolute w-full h-full object-cover object-center opacity-0"
+                            src="assets/wordmark diagram.png"
+                            alt="Wordmark diagram"
+                            hash-data=""
+                        />
                     </div>
 
-                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                    <p class="flex-2 text-base font-light leading-relaxed">
+                        This rebrand required a minimalistic black and white
+                        identity that would stand out among brands with similar
+                        missions. The logomark has subtle meanings to both sport
+                        and religion, indicating the two primary goals of the
+                        charity.
+                        <br /><br />
+                        What excited me the most about this project was that it
+                        was my first time working with a client outside of uni.
+                    </p>
+
+                    <div class="flex flex-col mt-10 gap-2 lg:flex-row sm:gap-4">
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="aspect-4/3 lg:aspect-auto relative cus-blurContainer lg:w-full"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -159,11 +159,9 @@
                                 hash-data=""
                             />
                         </div>
-                        <div
-                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
-                        >
+                        <div class="flex gap-2 md:gap-4 lg:w-full">
                             <div
-                                class="relative flex-1 aspect-4/3 cus-blurContainer"
+                                class="aspect-3/4 w-full relative cus-blurContainer"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
@@ -175,7 +173,7 @@
                                 />
                             </div>
                             <div
-                                class="relative flex-1 aspect-4/3 cus-blurContainer hidden lg:block"
+                                class="aspect-3/4 w-full relative cus-blurContainer hidden lg:block"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
@@ -251,7 +249,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-10 gap-4">
                         <div
-                            class="relative flex-2 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -263,7 +261,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="relative aspect-vide w-full o lg:aspect-auto cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -275,7 +273,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
+                            class="relative w-full aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -290,7 +288,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-4 gap-4">
                         <div
-                            class="relative flex-2 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -302,7 +300,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="relative w-full aspect-video lg:aspect-auto cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -314,7 +312,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
+                            class="relative w-full aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -329,7 +327,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-4 gap-4">
                         <div
-                            class="relative flex-2 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -341,7 +339,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="relative w-full aspect-video lg:aspect-auto cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -353,7 +351,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
+                            class="relative w-full aspect-video lg:aspect-auto cus-blurContainer hidden lg:block"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img

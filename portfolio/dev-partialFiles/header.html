@@ -35,11 +35,10 @@
 <script>
     (function () {
         document.documentElement.classList.add("js-preload", "js-enabled");
-
-        // SELF-TIMEOUT: Remove preload after 0.1s EVEN IF JS fails
-        setTimeout(() => {
+        const removePreload = () =>
             document.documentElement.classList.remove("js-preload");
-        }, 100);
+        setTimeout(removePreload, 300);
+        window.addEventListener("pageshow", removePreload);
     })();
 </script>
 <style>
@@ -105,4 +104,4 @@
     type="module"
     src="/portfolio/dev-scriptFiles/navbarOverflow.ts"
 ></script>
-<script type="module" src="/portfolio/dev-scriptFiles/betaBanner.ts"></script>
+<!--<script type="module" src="/portfolio/dev-scriptFiles/betaBanner.ts"></script>-->

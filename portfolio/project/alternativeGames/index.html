@@ -25,50 +25,57 @@
                         Alternative games logo animation
                     </video>
                     <div
-                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
+                        class="relative z-20 pb-20 w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row gap-6 flex-wrap">
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                October – November 2024
-                            </h2>
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                Concept Project
-                            </h2>
-                        </div>
-                        <h1
-                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
-                        >
-                            Alternative Games.
-                        </h1>
-                        <h3
-                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
-                        >
-                            A brand identity system allowing communities to
-                            unite over a collection of nonsensical events.
-                        </h3>
                         <div
-                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                            class="flex flex-col lg:flex-row lg:items-end gap-8"
                         >
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Event Identity"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Branding"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Logo Design"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Motion"}'
-                            ></include>
+                            <div class="flex flex-col flex-3">
+                                <div class="flex flex-row gap-6 flex-wrap">
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        October – November 2024
+                                    </h2>
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        Concept Project
+                                    </h2>
+                                </div>
+                                <h1
+                                    class="text-5xl md:text-9xl max-w-160 font-black text-kWhite mt-4"
+                                >
+                                    Alternative Games.
+                                </h1>
+                                <h3
+                                    class="font-semibold text-lg max-w-160 leading-relaxed text-kWhite mt-4"
+                                >
+                                    A brand identity system allowing communities
+                                    to unite over a collection of nonsensical
+                                    events.
+                                </h3>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold text-kWhite"
+                                >
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Event Identity"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Branding"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Logo Design"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Motion"}'
+                                    ></include>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -130,7 +137,10 @@
                     class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
                 >
                     <h2>Welcome to the games!</h2>
-                    <p>What you might see at the event and on TV</p>
+                    <p>
+                        What you might see at the event, on TV and on social
+                        media.
+                    </p>
 
                     <div class="flex flex-col lg:flex-row mt-10 gap-4">
                         <div
@@ -139,7 +149,7 @@
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute w-full h-full object-cover opacity-0 object-left"
+                                class="absolute w-full h-full object-cover opacity-0"
                                 src="assets/online1.jpeg"
                                 alt="TV Overlays"
                                 hash-data=""
@@ -154,7 +164,7 @@
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
-                                    class="absolute w-full h-full object-cover opacity-0 object-bottom-left"
+                                    class="absolute w-full h-full object-cover object-bottom-left opacity-0"
                                     src="assets/online3.jpeg"
                                     alt="TV Overlays"
                                     hash-data=""
@@ -166,19 +176,19 @@
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
-                                    class="absolute w-full h-full object-cover opacity-0 object-bottom-left"
+                                    class="absolute w-full h-full object-cover object-bottom-left opacity-0"
                                     src="assets/online4.jpeg"
                                     alt="TV Overlays"
                                     hash-data=""
                                 />
                             </div>
                             <div
-                                class="relative flex-1 aspect-3/4 cus-blurContainer hidden lg:block"
+                                class="relative flex-1 aspect-4/3 cus-blurContainer hidden lg:block"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
-                                    class="absolute w-full h-full object-cover opacity-0 object-bottom"
+                                    class="absolute w-full h-full object-cover object-bottom-left opacity-0"
                                     src="assets/online2.jpeg"
                                     alt="TV Overlays"
                                     hash-data=""
@@ -186,16 +196,10 @@
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
-                >
-                    <h2>We're social!</h2>
-                    <p>How the brand looks on social media.</p>
                     <div class="flex flex-row mt-10 gap-2 sm:gap-4">
                         <div
-                            class="relative flex-6 aspect-square cus-blurContainer"
+                            class="relative flex-1 aspect-square cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -206,7 +210,7 @@
                                 hash-data=""
                             />
                         </div>
-                        <div class="relative flex-10 cus-blurContainer">
+                        <div class="relative flex-2 cus-blurContainer">
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
@@ -250,7 +254,7 @@
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
-                                    class="absolute w-full h-full object-cover opacity-0 object-bottom"
+                                    class="absolute w-full h-full object-cover opacity-0"
                                     src="assets/eventMockup4.jpeg"
                                     alt="mockup of the event"
                                     hash-data=""
@@ -314,7 +318,9 @@
                         <div
                             class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
                         >
-                            <div class="relative flex-1 cus-blurContainer">
+                            <div
+                                class="relative flex-1 aspect-4/3 cus-blurContainer"
+                            >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
@@ -324,7 +330,9 @@
                                     hash-data=""
                                 />
                             </div>
-                            <div class="relative flex-1 cus-blurContainer">
+                            <div
+                                class="relative flex-1 aspect-4/3 cus-blurContainer"
+                            >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
@@ -335,12 +343,12 @@
                                 />
                             </div>
                             <div
-                                class="relative flex-1 cus-blurContainer hidden lg:block"
+                                class="relative flex-1 aspect-4/3 cus-blurContainer hidden lg:block"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
-                                    class="absolute w-full h-full object-cover object-top opacity-0"
+                                    class="absolute w-full h-full object-cover opacity-0"
                                     src="assets/billboard4.jpeg"
                                     alt="mockup of the billboards"
                                     hash-data=""
@@ -348,7 +356,7 @@
                             </div>
                         </div>
                         <div
-                            class="relative flex-2 aspect-4/3 cus-blurContainer"
+                            class="relative flex-4 aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img

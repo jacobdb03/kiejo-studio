@@ -1,6 +1,6 @@
 <div class="flex flex-col fixed z-10 top-6 w-full mx-auto ani-navCont">
     <div
-        class="flex flex-row mx-auto w-full justify-center text-kWhite font-extrabold text-base ani-navBox max-w-[90vw]"
+        class="flex flex-row mx-auto w-full justify-center font-extrabold text-base ani-navBox text-kWhite max-w-[90vw]"
     >
         <div
             class="hidden md:flex gap-10 mt-2 flex-1 min-w-0 justify-start ani-navSide"
@@ -9,7 +9,9 @@
                 <a href="/portfolio/about/index.html" class="block">Info</a>
             </span>
             <span class="overflow-hidden inline-block">
-                <a href="/portfolio/about/chat/index.html" class="block"
+                <a
+                    href="/portfolio/about/chat/index.html"
+                    class="block text-inherit"
                     >Chat</a
                 >
             </span>
@@ -20,13 +22,22 @@
                 <a href="/" class="cus-logoWrap block relative ml-5 md:ml-0">
                     <img
                         class="md:ml-3 h-8 mt-px block cus-logoDefault"
-                        id="nav-logo"
+                        id="nav-logoDef"
                         src="/portfolio/dev-globalAssets/logomarkDefault_white.svg"
                     />
                     <img
                         class="md:ml-3 -md:mt-3 h-8 mt-px cus-logoHoverImg absolute top-0 left-0 opacity-0"
-                        id="nav-logo"
+                        id="nav-logoSurprised"
                         src="/portfolio/dev-globalAssets/logomarkSurprised_white.svg"
+                    />
+                    <!-- Hidden black logo versions for JS to read src from -->
+                    <img
+                        class="hidden cus-logoDefault-black"
+                        src="/portfolio/dev-globalAssets/logomarkDefault_blue.svg"
+                    />
+                    <img
+                        class="hidden cus-logoHover-black"
+                        src="/portfolio/dev-globalAssets/logomarkSurprised_blue.svg"
                     />
                 </a>
             </span>

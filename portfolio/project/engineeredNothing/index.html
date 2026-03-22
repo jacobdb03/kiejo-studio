@@ -24,93 +24,73 @@
                         aura effect animation
                     </video>
                     <div
-                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
+                        class="relative z-20 pb-20 w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row gap-6 flex-wrap">
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                January – March 2025
-                            </h2>
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                D&AD Newblood
-                            </h2>
-                        </div>
-                        <h1
-                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
-                        >
-                            Swiss-Engineered Nothing.
-                        </h1>
-                        <h3
-                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
-                        >
-                            A minimalist, human-centred campaign answering the
-                            On brief for D&AD Newblood 2025. "Feel Nothing. To
-                            Feel Everything."
-                        </h3>
                         <div
-                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                            class="flex flex-col lg:flex-row lg:items-end gap-8"
                         >
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Campaign Identity"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Motion Design"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Web Dev"}'
-                            ></include>
+                            <div class="flex flex-col flex-3">
+                                <div class="flex flex-row gap-6 flex-wrap">
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        January – March 2025
+                                    </h2>
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        D&AD Newblood
+                                    </h2>
+                                </div>
+                                <h1
+                                    class="text-5xl md:text-9xl font-black text-kWhite mt-4"
+                                >
+                                    Swiss-Engineered Nothing.
+                                </h1>
+                                <h3
+                                    class="font-semibold text-lg max-w-140 leading-relaxed text-kWhite mt-4"
+                                >
+                                    A minimalist, human-centred campaign
+                                    answering the On brief for D&AD Newblood
+                                    2025. "Feel Nothing. To Feel Everything."
+                                </h3>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold text-kWhite"
+                                >
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Campaign Identity"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Motion Design"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Web Dev"}'
+                                    ></include>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col flex-1 lg:items-end lg:text-right gap-4 text-xs font-bold"
+                            >
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end text-kWhite"
+                                >
+                                    <h2 class="text-lg text-kWhite w-full">
+                                        Creatives
+                                    </h2>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Cassie Muskett", "href": "https://cassielouise.com/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Jacob Bryant"}'
+                                    ></include>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
-                >
-                    <h2>Creatives</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Cassie Muskett", "href": "https://cassielouise.com/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Jacob Bryant"}'
-                        ></include>
-                    </div>
-                </section>
-
-                <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
-                >
-                    <h2>Campaign Video.</h2>
-                    <p>
-                        The Campaign Video that outlines how we brought On's
-                        Story to life through movement to a new generation.
-                    </p>
-                    <div
-                        class="relative w-full mt-10 aspect-video cus-blurContainer"
-                    >
-                        <canvas class="absolute w-full h-full"></canvas>
-                        <video
-                            class="absolute w-full h-full object-cover"
-                            controls
-                            preload="auto"
-                            poster="assets/campaignVidThumb.jpeg"
-                        >
-                            <source
-                                src="assets/campaignVid.mp4"
-                                type="video/mp4"
-                            />
-                            Campaign Animation
-                        </video>
                     </div>
                 </section>
 
@@ -127,7 +107,7 @@
                         class="flex flex-col lg:flex-row lg:items-end mt-10 gap-4"
                     >
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
@@ -147,7 +127,7 @@
                             </video>
                         </div>
                         <div
-                            class="relative flex-1 aspect-[72/93] cus-blurContainer"
+                            class="relative w-full lg:w-1/2 aspect-8/9 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -246,16 +226,18 @@
                         </video>
                     </div>
 
-                    <a
-                        target="_blank"
-                        class="defaultButton mt-8 self-center"
-                        href="FeelEverythingSite/"
-                        >View the Site</a
+                    <div
+                        class="flex flex-row mt-8 gap-4 justify-center text-kBlue"
                     >
+                        <include
+                            src="dev-partialFiles/linkPageTag.html"
+                            locals='{"tagName": "View the Site", "href": "FeelEverythingSite/index.html"}'
+                        ></include>
+                    </div>
 
                     <div class="flex flex-col lg:flex-row mt-10 gap-4">
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="relative lg:w-full aspect-6/4 lg:aspect-auto cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -266,11 +248,9 @@
                                 hash-data=""
                             />
                         </div>
-                        <div
-                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
-                        >
+                        <div class="flex gap-2 flex-col md:gap-4 lg:w-1/3">
                             <div
-                                class="relative flex-1 aspect-4/3 cus-blurContainer"
+                                class="relative w-full aspect-6/4 cus-blurContainer"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
@@ -282,7 +262,7 @@
                                 />
                             </div>
                             <div
-                                class="relative flex-1 aspect-4/3 cus-blurContainer hidden lg:block"
+                                class="relative w-full aspect-13/12 cus-blurContainer hidden lg:block"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
@@ -328,7 +308,7 @@
 
                     <div class="flex flex-col mt-4 gap-4">
                         <div
-                            class="relative w-full aspect-video cus-blurContainer"
+                            class="relative w-full aspect-5/2 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -340,7 +320,7 @@
                             />
                         </div>
                         <div
-                            class="relative w-full aspect-video cus-blurContainer"
+                            class="relative w-full aspect-5/2 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -365,7 +345,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-10 gap-4">
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="relative flex-4 aspect-4/3 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -392,7 +372,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-4 gap-4">
                         <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
+                            class="relative flex-3 aspect-5/6 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img

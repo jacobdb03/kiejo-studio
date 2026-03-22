@@ -15,6 +15,16 @@ gsap.set(transitionBox, {
   scale: 0,
 });
 
+window.addEventListener("pageshow", (e: PageTransitionEvent) => {
+  if (e.persisted) {
+    gsap.killTweensOf(transitionBox);
+    gsap.set(transitionBox, { scale: 0, opacity: 0, pointerEvents: "none" });
+    sessionStorage.removeItem("navigatedFromLink");
+    sessionStorage.removeItem("clickX");
+    sessionStorage.removeItem("clickY");
+  }
+});
+
 if (sessionStorage.getItem("navigatedFromLink") === "true") {
   const x = sessionStorage.getItem("clickX") || "50%";
   const y = sessionStorage.getItem("clickY") || "0";

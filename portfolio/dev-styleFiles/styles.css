@@ -23,6 +23,7 @@
     body {
         background-color: var(--color-kWhite);
         /*cursor: none;*/
+        color: var(--color-kBlack);
     }
 
     h2 {

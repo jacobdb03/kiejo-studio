@@ -18,55 +18,62 @@
                         alt="Page Tease"
                     />
                     <div
-                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
+                        class="relative z-20 pb-20 w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row gap-6 flex-wrap">
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                March — May 2025
-                            </h2>
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                Concept Project
-                            </h2>
-                        </div>
-                        <h1
-                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
-                        >
-                            Conductor.
-                        </h1>
-                        <h3
-                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
-                        >
-                            The design of a brand for a rail transportation
-                            service with a theme of classical music. Brief set
-                            by Conran Design Group.
-                        </h3>
                         <div
-                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                            class="flex flex-col lg:flex-row lg:items-end gap-8"
                         >
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Branding"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Logo Design"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Poster Design"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Motion Design"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Application Design"}'
-                            ></include>
+                            <div class="flex flex-col flex-3">
+                                <div class="flex flex-row gap-6 flex-wrap">
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        March — May 2025
+                                    </h2>
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        Concept Project
+                                    </h2>
+                                </div>
+                                <h1
+                                    class="text-5xl md:text-9xl font-black text-kWhite mt-4"
+                                >
+                                    Conductor.
+                                </h1>
+                                <h3
+                                    class="font-semibold max-w-160 text-lg leading-relaxed text-kWhite mt-4"
+                                >
+                                    The design of a brand for a rail
+                                    transportation service with a theme of
+                                    classical music. Brief set by Conran Design
+                                    Group.
+                                </h3>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold text-kWhite"
+                                >
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Branding"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Logo Design"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Poster Design"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Motion Design"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Application Design"}'
+                                    ></include>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -98,27 +105,27 @@
                         </video>
                     </div>
 
-                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                    <div class="flex flex-col mt-10 gap-2 lg:flex-row sm:gap-4">
                         <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-12/3 lg:aspect-auto cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute w-full h-full object-contain object-center opacity-0"
-                                src="assets/fullWordmark.svg"
+                                class="absolute w-full h-full object-contain object-center opacity-0 bg-[#8d5b48] p-4"
+                                src="assets/fullWordmark.png"
                                 alt="Full wordmark"
                                 hash-data=""
                             />
                         </div>
                         <div
-                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="relative w-full aspect-square cus-blurContainer hidden lg:block"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
                                 class="absolute w-full h-full object-contain object-center opacity-0"
-                                src="assets/logo.svg"
+                                src="assets/logo.png"
                                 alt="logo"
                                 hash-data=""
                             />
@@ -229,21 +236,35 @@
                         service.
                     </p>
 
-                    <div class="flex flex-col lg:flex-row mt-10 gap-4">
-                        <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
-                        >
-                            <canvas class="absolute w-full h-full"></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute w-full h-full object-cover object-center opacity-0"
-                                src="assets/poster1.png"
-                                alt="Poster 1"
-                                hash-data=""
-                            />
+                    <div class="flex flex-col mt-10 gap-2 lg:flex-row sm:gap-4">
+                        <div class="flex flex-col gap-2 md:gap-4 lg:w-full">
+                            <div
+                                class="aspect-4/3 w-full relative cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/billboard.jpeg"
+                                    alt="Billboard"
+                                    hash-data=""
+                                />
+                            </div>
+                            <div
+                                class="aspect-video w-full relative cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/poster1.png"
+                                    alt="Poster 1"
+                                    hash-data=""
+                                />
+                            </div>
                         </div>
                         <div
-                            class="relative flex-2 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="aspect-3/4 lg:aspect-auto relative cus-blurContainer lg:w-full"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -255,18 +276,6 @@
                             />
                         </div>
                     </div>
-                    <div
-                        class="relative w-full mt-4 aspect-video cus-blurContainer"
-                    >
-                        <canvas class="absolute w-full h-full"></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute w-full h-full object-cover object-center opacity-0"
-                            src="assets/billboard.jpeg"
-                            alt="Billboard"
-                            hash-data=""
-                        />
-                    </div>
                 </section>
 
                 <section
@@ -275,7 +284,7 @@
                     <h2>Pick up your tickets.</h2>
                     <p>A classical ticket design for a classical audience.</p>
                     <div
-                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                        class="relative w-full mt-10 aspect-23/6 cus-blurContainer"
                     >
                         <canvas class="absolute w-full h-full"></canvas>
                         <img
@@ -299,7 +308,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-10 gap-4">
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="relative flex-8 cus-blurContainer aspect-video"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -311,7 +320,7 @@
                             />
                         </div>
                         <div
-                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
+                            class="flex gap-4 flex-3 flex-row flex-wrap lg:flex-col"
                         >
                             <div
                                 class="relative flex-1 aspect-4/3 cus-blurContainer"
@@ -339,12 +348,15 @@
                             </div>
                         </div>
                     </div>
-                    <a
-                        target="_blank"
-                        class="defaultButton mt-8 self-center"
-                        href="webDemo/"
-                        >Use the website</a
+
+                    <div
+                        class="flex flex-row mt-8 gap-4 justify-center text-kBlue"
                     >
+                        <include
+                            src="dev-partialFiles/linkPageTag.html"
+                            locals='{"tagName": "Interactive site", "href": "webDemo/index.html"}'
+                        ></include>
+                    </div>
                 </section>
 
                 <section

@@ -10,10 +10,11 @@
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section
+                    data-nav="dark"
                     class="relative flex flex-col h-screen w-full justify-end overflow-hidden"
                 >
                     <video
-                        class="absolute w-full h-full object-cover object-right z-0"
+                        class="absolute w-full h-full object-cover z-0"
                         muted
                         autoplay
                         loop
@@ -27,79 +28,88 @@
                         Plucked Logo
                     </video>
                     <div
-                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
+                        class="relative z-20 pb-20 w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row gap-6 flex-wrap">
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                March — June 2024
-                            </h2>
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                Concept Project
-                            </h2>
-                        </div>
-                        <h1
-                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
-                        >
-                            Plucked.
-                        </h1>
-                        <h3
-                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
-                        >
-                            An unapologetically bold but fun brand identity for
-                            plucked; an imaginary chicken rental brand standing
-                            up for the mistreatment of chickens in the poultry
-                            industry. Brief set by design agency Public London.
-                        </h3>
                         <div
-                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                            class="flex flex-col lg:flex-row lg:items-end gap-8"
                         >
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Branding"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Motion"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Social Media"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Out-of-home"}'
-                            ></include>
+                            <div class="flex flex-col flex-3">
+                                <div class="flex flex-row gap-6 flex-wrap">
+                                    <h2
+                                        class="text-kBlack text-sm md:text-lg font-light"
+                                    >
+                                        March — June 2024
+                                    </h2>
+                                    <h2
+                                        class="text-kBlack text-sm md:text-lg font-light"
+                                    >
+                                        Concept Project
+                                    </h2>
+                                </div>
+                                <h1
+                                    class="text-5xl md:text-9xl font-black text-kBlack mt-4"
+                                >
+                                    Plucked.
+                                </h1>
+                                <h3
+                                    class="font-semibold text-lg max-w-160 leading-relaxed text-kBlack mt-4"
+                                >
+                                    An unapologetically bold but fun brand
+                                    identity for plucked; an imaginary chicken
+                                    rental brand standing up for the
+                                    mistreatment of chickens in the poultry
+                                    industry. Brief set by design agency Public
+                                    London.
+                                </h3>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold text-kBlack border-kBlack"
+                                >
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Branding"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Motion"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Social Media"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Out-of-home"}'
+                                    ></include>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col flex-1 lg:items-end lg:text-right gap-4 text-xs font-bold"
+                            >
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end"
+                                >
+                                    <h2 class="text-lg w-full text-kBlack">
+                                        Creatives
+                                    </h2>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Cassie Muskett", "href": "https://cassielouise.com/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Elliot Huckett", "href": "https://elliothuckett.xyz/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Reiss Badhasha", "href": "https://glued.studio/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Jacob Bryant"}'
+                                    ></include>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
-                >
-                    <h2>Creatives</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Cassie Muskett", "href": "https://cassielouise.com/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Elliot Huckett", "href": "https://elliothuckett.xyz/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Reiss Badhasha", "href": "https://glued.studio/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Jacob Bryant"}'
-                        ></include>
                     </div>
                 </section>
 
@@ -197,7 +207,7 @@
                     <!-- Stories grid: flex-1 min-w-36 puts all 7 on one line on desktop, wraps to 2 on mobile -->
                     <div class="flex flex-row flex-wrap mt-10 gap-4">
                         <div
-                            class="relative flex-1 min-w-36 aspect-4/3 cus-blurContainer"
+                            class="relative flex-1 min-w-36 aspect-9/16 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
@@ -213,9 +223,7 @@
                                 />
                             </video>
                         </div>
-                        <div
-                            class="relative flex-1 min-w-36 aspect-4/3 cus-blurContainer"
-                        >
+                        <div class="relative flex-1 min-w-36 cus-blurContainer">
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
                                 class="absolute w-full h-full object-cover"
@@ -230,9 +238,7 @@
                                 />
                             </video>
                         </div>
-                        <div
-                            class="relative flex-1 min-w-36 aspect-4/3 cus-blurContainer"
-                        >
+                        <div class="relative flex-1 min-w-36 cus-blurContainer">
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
                                 class="absolute w-full h-full object-cover"
@@ -247,9 +253,7 @@
                                 />
                             </video>
                         </div>
-                        <div
-                            class="relative flex-1 min-w-36 aspect-4/3 cus-blurContainer"
-                        >
+                        <div class="relative flex-1 min-w-36 cus-blurContainer">
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
                                 class="absolute w-full h-full object-cover"
@@ -264,9 +268,7 @@
                                 />
                             </video>
                         </div>
-                        <div
-                            class="relative flex-1 min-w-36 aspect-4/3 cus-blurContainer"
-                        >
+                        <div class="relative flex-1 min-w-36 cus-blurContainer">
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
                                 class="absolute w-full h-full object-cover"
@@ -281,9 +283,7 @@
                                 />
                             </video>
                         </div>
-                        <div
-                            class="relative flex-1 min-w-36 aspect-4/3 cus-blurContainer"
-                        >
+                        <div class="relative flex-1 min-w-36 cus-blurContainer">
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
                                 class="absolute w-full h-full object-cover"
@@ -298,9 +298,7 @@
                                 />
                             </video>
                         </div>
-                        <div
-                            class="relative flex-1 min-w-36 aspect-4/3 cus-blurContainer"
-                        >
+                        <div class="relative flex-1 min-w-36 cus-blurContainer">
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
@@ -332,7 +330,7 @@
                         class="flex flex-col lg:flex-row lg:items-end mt-10 gap-4"
                     >
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="relative flex-2 aspect-square cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -343,9 +341,8 @@
                                 hash-data=""
                             />
                         </div>
-                        <!-- aspect-[131/281] is a very tall narrow ratio — keep on mobile too -->
                         <div
-                            class="relative flex-1 aspect-[131/281] cus-blurContainer"
+                            class="relative flex-1 aspect-9/16 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
@@ -416,38 +413,34 @@
                         </p>
                     </div>
 
-                    <div
-                        class="flex flex-col lg:flex-row lg:items-end mt-10 gap-4"
-                    >
+                    <div class="flex flex-col mt-10 gap-2 lg:flex-row sm:gap-4">
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="aspect-video lg:aspect-auto relative cus-blurContainer lg:w-full"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
                                 class="absolute w-full h-full object-cover object-center opacity-0"
-                                src="assets/Van.jpeg"
-                                alt="Van mockup"
+                                src="assets/tshirts.jpeg"
+                                alt="T-shirts"
                                 hash-data=""
                             />
                         </div>
-                        <div
-                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
-                        >
+                        <div class="flex flex-col gap-2 md:gap-4 lg:w-full">
                             <div
-                                class="relative flex-1 aspect-4/3 lg:aspect-auto cus-blurContainer"
+                                class="aspect-video w-full relative cus-blurContainer"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
                                     class="absolute w-full h-full object-cover object-center opacity-0"
-                                    src="assets/tshirts.jpeg"
-                                    alt="T-shirts"
+                                    src="assets/Van.jpeg"
+                                    alt="Van mockup"
                                     hash-data=""
                                 />
                             </div>
                             <div
-                                class="relative flex-1 aspect-4/3 lg:aspect-auto cus-blurContainer hidden lg:block"
+                                class="aspect-video w-full relative cus-blurContainer hidden lg:block"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
@@ -461,26 +454,10 @@
                         </div>
                     </div>
 
-                    <div
-                        class="flex flex-col lg:flex-row lg:items-end mt-10 gap-4"
-                    >
-                        <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
-                        >
-                            <canvas class="absolute w-full h-full"></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute w-full h-full object-cover object-center opacity-0"
-                                src="assets/3D Chicken.jpeg"
-                                alt="3D Chicken"
-                                hash-data=""
-                            />
-                        </div>
-                        <div
-                            class="flex gap-4 flex-1 flex-row flex-wrap lg:flex-col"
-                        >
+                    <div class="flex flex-col mt-10 gap-2 lg:flex-row sm:gap-4">
+                        <div class="flex flex-col gap-2 md:gap-4 lg:w-full">
                             <div
-                                class="relative flex-1 aspect-4/3 lg:aspect-auto cus-blurContainer"
+                                class="aspect-33/25 w-full relative cus-blurContainer"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
@@ -492,7 +469,7 @@
                                 />
                             </div>
                             <div
-                                class="relative flex-1 aspect-4/3 lg:aspect-auto cus-blurContainer hidden lg:block"
+                                class="aspect-33/25 w-full relative cus-blurContainer hidden lg:block"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
@@ -504,12 +481,27 @@
                                 />
                             </div>
                         </div>
-                        <p class="flex-2 text-base font-light leading-relaxed">
-                            This included custom T-shirts, a 3D printed chicken
-                            as a gift, and a presentation that left them without
-                            any feedback to give us.
-                        </p>
+                        <div
+                            class="aspect-video lg:aspect-auto relative cus-blurContainer lg:w-full"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/3D Chicken.jpeg"
+                                alt="3D Chicken"
+                                hash-data=""
+                            />
+                        </div>
                     </div>
+
+                    <p
+                        class="flex-2 mt-10 text-base font-light leading-relaxed"
+                    >
+                        This included custom T-shirts, a 3D printed chicken as a
+                        gift, and a presentation that left them without any
+                        feedback to give us.
+                    </p>
                 </section>
 
                 <section
@@ -529,7 +521,7 @@
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
-                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                class="absolute w-full h-full object-cover object-bottom opacity-0"
                                 src="assets/Final Applications Thumbnail.jpeg"
                                 alt="PDF thumbnail"
                                 hash-data=""
@@ -549,7 +541,7 @@
                     <h2>The flock needs you!</h2>
                     <p>The plucked team as chickens.</p>
                     <div
-                        class="relative w-full mt-10 aspect-video cus-blurContainer"
+                        class="relative w-full mt-10 aspect-20/5 cus-blurContainer"
                     >
                         <canvas class="absolute w-full h-full"></canvas>
                         <img

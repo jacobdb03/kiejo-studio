@@ -5,6 +5,64 @@ let mouseFollows: boolean = true;
 let mousePointer = document.createElement("div");
 
 window.addEventListener("load", () => {
+  let backgroundDetector: boolean = true;
+  if (backgroundDetector) {
+    const logoWrap = document.querySelector<HTMLElement>(".cus-logoWrap");
+    const logoDefault =
+      logoWrap?.querySelector<HTMLImageElement>(".cus-logoDefault");
+    const logoHover =
+      logoWrap?.querySelector<HTMLImageElement>(".cus-logoHoverImg");
+
+    // the hidden black versions you added to navbar.html
+    const logoDefaultBlack = document.querySelector<HTMLImageElement>(
+      ".cus-logoDefault-black",
+    );
+    const logoSurprisedBlack = document.querySelector<HTMLImageElement>(
+      ".cus-logoHover-black",
+    );
+
+    const logoDefaultWhiteSrc = logoDefault?.src ?? "";
+    const logoSurprisedWhiteSrc = logoHover?.src ?? "";
+
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach((section) => {
+      const theme = section.getAttribute("data-nav") ?? "light";
+      if (theme === "light") return; // only create triggers for dark sections
+
+      ScrollTrigger.create({
+        trigger: section,
+        start: "top 10%",
+        end: "bottom 10%",
+
+        onEnter: () => {
+          gsap.to(".ani-navCont a", { color: colour.kBlue, duration: 0.3 });
+          if (logoDefault)
+            logoDefault.src = logoDefaultBlack?.src ?? logoDefaultWhiteSrc;
+          if (logoHover)
+            logoHover.src = logoSurprisedBlack?.src ?? logoSurprisedWhiteSrc;
+        },
+        onLeaveBack: () => {
+          gsap.to(".ani-navCont a", { color: colour.kWhite, duration: 0.3 });
+          if (logoDefault) logoDefault.src = logoDefaultWhiteSrc;
+          if (logoHover) logoHover.src = logoSurprisedWhiteSrc;
+        },
+        onLeave: () => {
+          gsap.to(".ani-navCont a", { color: colour.kWhite, duration: 0.3 });
+          if (logoDefault) logoDefault.src = logoDefaultWhiteSrc;
+          if (logoHover) logoHover.src = logoSurprisedWhiteSrc;
+        },
+        onEnterBack: () => {
+          gsap.to(".ani-navCont a", { color: colour.kBlue, duration: 0.3 });
+          if (logoDefault)
+            logoDefault.src = logoDefaultBlack?.src ?? logoDefaultWhiteSrc;
+          if (logoHover)
+            logoHover.src = logoSurprisedBlack?.src ?? logoSurprisedWhiteSrc;
+        },
+      });
+    });
+  }
+
   let mousePointerLoop: boolean = false;
   if (mousePointerLoop) {
     document.body.appendChild(mousePointer);
@@ -117,7 +175,6 @@ window.addEventListener("load", () => {
 
   let NavbarBox_Animations: boolean = true;
   if (NavbarBox_Animations) {
-    const navCont = document.querySelector(".ani-navCont") as HTMLDivElement;
     const nav = document.querySelector(".ani-navBox") as HTMLDivElement;
     const navChildren = nav.querySelectorAll<HTMLElement>(":scope > div");
     const leftChildren = navChildren[0];

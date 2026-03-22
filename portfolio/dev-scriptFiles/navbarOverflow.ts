@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.remove();
     document.body.classList.remove("overflow-hidden");
 
-    gsap.to(".ani-navBox a", { color: colour.kWhite, duration: 0.3 });
+    gsap.to(".ani-navBox a", { duration: 0.3 });
     gsap.to(".ani-navBox img", { filter: "brightness(1)", duration: 0.3 });
     gsap.set(navBox, { clearProps: "all" });
   };

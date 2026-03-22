@@ -18,67 +18,74 @@
                         alt="Page Tease"
                     />
                     <div
-                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
+                        class="relative z-20 pb-20 w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row gap-6 flex-wrap">
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                January 2024
-                            </h2>
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                Concept Project
-                            </h2>
-                        </div>
-                        <h1
-                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
-                        >
-                            Rediscover You.
-                        </h1>
-                        <h3
-                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
-                        >
-                            Working on a team with two others, we created a
-                            campaign using miniature figures and AI generated
-                            art to conquer loneliness using John Lewis' tone of
-                            voice.
-                        </h3>
                         <div
-                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                            class="flex flex-col lg:flex-row lg:items-end gap-8"
                         >
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Campaign Identity"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Branding"}'
-                            ></include>
+                            <div class="flex flex-col flex-3">
+                                <div class="flex flex-row gap-6 flex-wrap">
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        January 2024
+                                    </h2>
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        Concept Project
+                                    </h2>
+                                </div>
+                                <h1
+                                    class="text-5xl md:text-9xl font-black text-kWhite mt-4 max-w-160"
+                                >
+                                    Rediscover You.
+                                </h1>
+                                <h3
+                                    class="font-semibold text-lg max-w-160 leading-relaxed text-kWhite mt-4"
+                                >
+                                    Working on a team with two others, we
+                                    created a campaign using miniature figures
+                                    and AI generated art to conquer loneliness
+                                    using John Lewis' tone of voice.
+                                </h3>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold text-kWhite"
+                                >
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Campaign Identity"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Branding"}'
+                                    ></include>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col flex-1 lg:items-end lg:text-right gap-4 text-xs font-bold"
+                            >
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end text-kWhite"
+                                >
+                                    <h2 class="text-lg text-kWhite w-full">
+                                        Creatives
+                                    </h2>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Cassie Muskett", "href": "https://cassielouise.com/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Emma Hopkin"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Jacob Bryant"}'
+                                    ></include>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
-                >
-                    <h2>Creatives</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Cassie Muskett", "href": "https://cassielouise.com/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Emma Hopkin"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Jacob Bryant"}'
-                        ></include>
                     </div>
                 </section>
 
@@ -111,7 +118,7 @@
                 </section>
 
                 <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
+                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20 gap-4"
                 >
                     <h2>The billboards.</h2>
                     <p>Using a miniature world to make a big difference.</p>
@@ -123,27 +130,28 @@
                         <img
                             loading="lazy"
                             class="absolute w-full h-full object-cover object-center opacity-0"
-                            src="assets/horizontal1.jpeg"
-                            alt="Horizontal Billboard 1"
+                            src="assets/mockup3.jpeg"
+                            alt="Billboard mockup 1"
                             hash-data=""
                         />
                     </div>
 
-                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
+                    <div class="flex flex-col lg:flex-row gap-4">
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-4/3 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
                                 loading="lazy"
                                 class="absolute w-full h-full object-cover object-center opacity-0"
-                                src="assets/mockup3.jpeg"
-                                alt="Billboard mockup 1"
+                                src="assets/mockup2.jpeg"
+                                alt="Poster mockup 2"
                                 hash-data=""
                             />
                         </div>
+
                         <div
-                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="relative w-full aspect-video lg:aspect-auto cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -156,44 +164,15 @@
                         </div>
                     </div>
 
-                    <div
-                        class="relative w-full mt-10 aspect-video cus-blurContainer"
-                    >
+                    <div class="relative w-full aspect-21/10 cus-blurContainer">
                         <canvas class="absolute w-full h-full"></canvas>
                         <img
                             loading="lazy"
                             class="absolute w-full h-full object-cover object-center opacity-0"
-                            src="assets/vertical4.jpeg"
-                            alt="Vertical poster all"
+                            src="assets/mockup1.jpeg"
+                            alt="Poster mockup 1"
                             hash-data=""
                         />
-                    </div>
-
-                    <div class="flex flex-col lg:flex-row mt-4 gap-4">
-                        <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
-                        >
-                            <canvas class="absolute w-full h-full"></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute w-full h-full object-cover object-center opacity-0"
-                                src="assets/mockup1.jpeg"
-                                alt="Poster mockup 1"
-                                hash-data=""
-                            />
-                        </div>
-                        <div
-                            class="relative flex-4 aspect-video lg:aspect-auto cus-blurContainer"
-                        >
-                            <canvas class="absolute w-full h-full"></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute w-full h-full object-cover object-center opacity-0"
-                                src="assets/mockup2.jpeg"
-                                alt="Poster mockup 2"
-                                hash-data=""
-                            />
-                        </div>
                     </div>
                 </section>
 
@@ -207,23 +186,10 @@
                     </p>
 
                     <div
-                        class="relative w-full mt-10 aspect-video cus-blurContainer"
-                    >
-                        <canvas class="absolute w-full h-full"></canvas>
-                        <img
-                            loading="lazy"
-                            class="absolute w-full h-full object-cover object-center opacity-0"
-                            src="assets/mockup7.jpeg"
-                            alt="Website mockup"
-                            hash-data=""
-                        />
-                    </div>
-
-                    <div
                         class="flex flex-col lg:flex-row lg:items-start mt-4 gap-4"
                     >
                         <div
-                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <video
@@ -240,50 +206,62 @@
                                 Website Recording
                             </video>
                         </div>
-                        <p class="flex-2 text-base font-light leading-relaxed">
-                            The John Lewis website was redesigned to promote the
-                            campaign, with "little meet-ups" as the campaign's
-                            solution to helping those lost parents find
-                            something new to do in their lives.
-                        </p>
                     </div>
+                    <p class="flex-2 text-base font-light leading-relaxed mt-5">
+                        The John Lewis website was redesigned to promote the
+                        campaign, with "little meet-ups" as the campaign's
+                        solution to helping those lost parents find something
+                        new to do in their lives.
+                    </p>
 
-                    <div
-                        class="flex flex-col lg:flex-row lg:items-end mt-10 gap-4"
-                    >
+                    <div class="flex flex-col lg:flex-row mt-5 gap-4">
                         <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
+                            class="flex flex-col justify-between gap-2 md:gap-4 lg:w-full"
                         >
-                            <canvas class="absolute w-full h-full"></canvas>
-                            <img
-                                loading="lazy"
-                                class="absolute w-full h-full object-cover object-center opacity-0"
-                                src="assets/facebook mockup.jpeg"
-                                alt="Facebook mockup"
-                                hash-data=""
-                            />
-                        </div>
-                        <div class="flex flex-col flex-2 gap-4">
                             <div
-                                class="relative aspect-video lg:aspect-auto cus-blurContainer"
+                                class="relative w-full aspect-10/8 cus-blurContainer"
                             >
                                 <canvas class="absolute w-full h-full"></canvas>
                                 <img
                                     loading="lazy"
                                     class="absolute w-full h-full object-cover object-center opacity-0"
-                                    src="assets/instagram mockup.jpeg"
-                                    alt="Instagram mockup"
+                                    src="assets/mockup7.jpeg"
+                                    alt="Website mockup"
                                     hash-data=""
                                 />
                             </div>
-                            <p class="text-base font-light leading-relaxed">
-                                The social media promoted stories and presented
-                                the visuals and typography in a beautiful way
-                                that would help the campaign bring in more
-                                attention.
-                            </p>
+                            <div
+                                class="relative w-full aspect-4/3 cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0"
+                                    src="assets/facebook mockup.jpeg"
+                                    alt="Facebook mockup"
+                                    hash-data=""
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="relative w-full aspect-5/8 cus-blurContainer"
+                        >
+                            <canvas class="absolute w-full h-full"></canvas>
+                            <img
+                                loading="lazy"
+                                class="absolute w-full h-full object-cover object-center opacity-0"
+                                src="assets/instagram mockup.jpeg"
+                                alt="Instagram mockup"
+                                hash-data=""
+                            />
                         </div>
                     </div>
+
+                    <p class="text-base font-light leading-relaxed mt-5">
+                        The social media promoted stories and presented the
+                        visuals and typography in a beautiful way that would
+                        help the campaign bring in more attention.
+                    </p>
                 </section>
 
                 <section
@@ -292,9 +270,9 @@
                     <h2>Staff Uniform.</h2>
                     <p>Expanding the mini-figure world.</p>
 
-                    <div class="flex flex-col lg:flex-row mt-10 gap-4">
+                    <div class="flex flex-col mt-10 gap-2 lg:flex-row sm:gap-4">
                         <div
-                            class="relative flex-2 aspect-video cus-blurContainer"
+                            class="aspect-4/3 relative cus-blurContainer w-full"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -306,7 +284,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-3 aspect-video lg:aspect-auto cus-blurContainer"
+                            class="aspect-4/3 relative cus-blurContainer w-full"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img

@@ -18,109 +18,120 @@
                         alt="Page Tease"
                     />
                     <div
-                        class="relative z-20 pb-20 flex flex-col w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
+                        class="relative z-20 pb-20 w-full max-w-480 mx-auto px-2 md:px-5 lg:px-20"
                     >
-                        <div class="flex flex-row gap-6 flex-wrap">
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                November 2024
-                            </h2>
-                            <h2
-                                class="text-kWhite text-sm md:text-lg font-light"
-                            >
-                                Live Brief
-                            </h2>
-                        </div>
-                        <h1
-                            class="text-5xl md:text-9xl font-black text-kWhite mt-4"
-                        >
-                            The Good Eggs.
-                        </h1>
-                        <h3
-                            class="font-semibold text-lg leading-relaxed text-kWhite mt-4"
-                        >
-                            An online system connecting farmers with an
-                            audience, cutting out the middlemen supermarkets.
-                            Winner of the people's choice award at Sync the City
-                            2024.
-                        </h3>
                         <div
-                            class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
+                            class="flex flex-col lg:flex-row lg:items-end gap-8"
                         >
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Branding"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Team Lead"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Socials"}'
-                            ></include>
-                            <include
-                                src="dev-partialFiles/pageTag.html"
-                                locals='{"tagName": "Presentation"}'
-                            ></include>
+                            <div class="flex flex-col flex-3">
+                                <div class="flex flex-row gap-6 flex-wrap">
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        November 2024
+                                    </h2>
+                                    <h2
+                                        class="text-kWhite text-sm md:text-lg font-light"
+                                    >
+                                        Live Brief
+                                    </h2>
+                                </div>
+                                <h1
+                                    class="text-5xl md:text-9xl max-w-160 font-black text-kWhite mt-4"
+                                >
+                                    The Good Eggs.
+                                </h1>
+                                <h3
+                                    class="font-semibold text-lg max-w-160 leading-relaxed text-kWhite mt-4"
+                                >
+                                    An online system connecting farmers with an
+                                    audience, cutting out the middlemen
+                                    supermarkets. Winner of the people's choice
+                                    award at Sync the City 2024.
+                                </h3>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold text-kWhite"
+                                >
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Branding"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Team Lead"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Socials"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/pageTag.html"
+                                        locals='{"tagName": "Presentation"}'
+                                    ></include>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col flex-1 lg:items-end lg:text-right gap-4 text-xs font-bold"
+                            >
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end text-kWhite"
+                                >
+                                    <h2 class="text-lg text-kWhite w-full">
+                                        Designers
+                                    </h2>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Jacob Bryant", "href": "https://www.linkedin.com/in/jacobdb03"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "James Hopper", "href": "https://www.jameshopper.design/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Jade Guiraud", "href": "https://www.linkedin.com/in/jade-guiraud-78732024b/"}'
+                                    ></include>
+                                </div>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end text-kWhite"
+                                >
+                                    <h2 class="text-lg text-kWhite w-full">
+                                        Developers
+                                    </h2>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Neringa Chomanskyte", "href": "https://www.linkedin.com/in/chomanskyte"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Alva Moore-Fuller", "href": "https://www.linkedin.com/in/alva-moore-fuller-8b522b277/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Jamie Marrin-Smith", "href": "https://www.linkedin.com/in/jamie-marrin-smith-bb0a8423a/"}'
+                                    ></include>
+                                </div>
+                                <div
+                                    class="flex flex-row gap-4 mt-4 flex-wrap lg:justify-end text-kWhite"
+                                >
+                                    <h2 class="text-lg text-kWhite w-full">
+                                        Business Team
+                                    </h2>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Mark Simpson", "href": "https://www.linkedin.com/in/mark-simpson-mrics-97760164/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Toby Russell", "href": "https://www.linkedin.com/in/toby-russell-47015812b/"}'
+                                    ></include>
+                                    <include
+                                        src="dev-partialFiles/linkPageTag.html"
+                                        locals='{"tagName": "Rashidat Adedotun", "href": "https://www.linkedin.com/in/rashidat-adedotun-asq-cqia/"}'
+                                    ></include>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <section
-                    class="flex flex-col max-w-480 mx-auto mt-16 px-2 md:px-5 lg:px-20"
-                >
-                    <h2>Designers</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Jacob Bryant", "href": "https://www.linkedin.com/in/jacobdb03"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "James Hopper", "href": "https://www.jameshopper.design/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Jade Guiraud", "href": "https://www.linkedin.com/in/jade-guiraud-78732024b/"}'
-                        ></include>
-                    </div>
-                    <h2 class="mt-8">Developers</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Neringa Chomanskyte", "href": "https://www.linkedin.com/in/chomanskyte"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Alva Moore-Fuller", "href": "https://www.linkedin.com/in/alva-moore-fuller-8b522b277/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Jamie Marrin-Smith", "href": "https://www.linkedin.com/in/jamie-marrin-smith-bb0a8423a/"}'
-                        ></include>
-                    </div>
-                    <h2 class="mt-8">Business Team</h2>
-                    <div
-                        class="flex flex-row gap-4 mt-4 flex-wrap text-xs md:text-sm font-bold"
-                    >
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Mark Simpson", "href": "https://www.linkedin.com/in/mark-simpson-mrics-97760164/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Toby Russell", "href": "https://www.linkedin.com/in/toby-russell-47015812b/"}'
-                        ></include>
-                        <include
-                            src="dev-partialFiles/pageTag.html"
-                            locals='{"tagName": "Rashidat Adedotun", "href": "https://www.linkedin.com/in/rashidat-adedotun-asq-cqia/"}'
-                        ></include>
                     </div>
                 </section>
 
@@ -134,7 +145,7 @@
                     </p>
                     <div class="flex flex-col mt-10 gap-4">
                         <div
-                            class="relative w-full aspect-video cus-blurContainer"
+                            class="relative w-full aspect-21/10 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -146,7 +157,7 @@
                             />
                         </div>
                         <div
-                            class="relative w-full aspect-video cus-blurContainer"
+                            class="relative w-full aspect-21/8 cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -171,7 +182,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-10 gap-4">
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -183,7 +194,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -198,7 +209,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-4 gap-4">
                         <div
-                            class="relative flex-4 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -210,7 +221,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -248,7 +259,7 @@
 
                     <div class="flex flex-col lg:flex-row mt-4 gap-4">
                         <div
-                            class="relative flex-2 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -260,7 +271,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-3 aspect-video cus-blurContainer"
+                            class="relative w-full aspect-video cus-blurContainer"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
@@ -272,7 +283,7 @@
                             />
                         </div>
                         <div
-                            class="relative flex-2 aspect-video cus-blurContainer hidden lg:block"
+                            class="relative w-full aspect-video cus-blurContainer hidden lg:block"
                         >
                             <canvas class="absolute w-full h-full"></canvas>
                             <img
