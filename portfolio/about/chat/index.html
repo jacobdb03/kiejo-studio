@@ -2,6 +2,11 @@
 <html>
     <head>
         <include src="dev-partialFiles/header.html"></include>
+
+        <script
+            type="module"
+            src="../../dev-animationFiles/aboutPagesAnimation.ts"
+        ></script>
     </head>
 
     <body>
@@ -10,24 +15,120 @@
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section
-                    class="flex flex-col h-dvh w-full justify-center items-center text-center bg-kBlue"
+                    class="absolute top-0 left-0 z-0 bg-kWhite h-screen"
+                    data-nav="dark"
+                ></section>
+                <section
+                    class="flex flex-col ml-10 w-full justify-start object-cover"
                 >
                     <h1
-                        class="text-kWhite text-3xl self-center text-center font-bold z-20"
+                        class="text-kBlue text-[18vw] lg:text-[16vw] tracking-tight leading-60 self-start mt-40 text-start font-bold z-20 cus-letterPopIn"
                     >
-                        Resume
+                        Woohoo!<br />
+                        Let's Chat!
                     </h1>
                 </section>
                 <section
-                    class="h-40 w-full justify-center items-center text-center"
+                    class="flex flex-col flex-wrap mx-12 mt-30 align-bottom font-medium text-4xl"
                 >
-                    <p
-                        class="text-kBlack self-center text-lg mt-40 text-center font-light z-20"
+                    <div class="flex-1">
+                        <p
+                            class="font-light text-kBlack text-5xl mb-12 cus-aboutFadeOn"
+                        >
+                            Say something nice to me at
+                            <a
+                                href="javascript:void(0)"
+                                id="contactEmail-copy"
+                                class="font-bold text-kBlue cus-pageTransitionExcluded"
+                                >Hello@JacobBryant.Design</a
+                            >
+                        </p>
+                        <div
+                            id="contactEmail-toast"
+                            class="fixed w-48 text-center transform -translate-y-8 bg-kBlack text-kWhite text-sm px-4 py-3 rounded-full opacity-0 pointer-events-none"
+                        >
+                            Copied — Talk soon :)
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p
+                            class="font-light text-kBlack text-5xl mb-12 cus-aboutFadeOn"
+                        >
+                            Reach out to me on
+                            <a
+                                href="https://www.instagram.com/jacobdb03/"
+                                id="contactEmail-copy"
+                                class="font-bold text-kBlue cus-pageTransitionExcluded"
+                                >Instagram</a
+                            >
+                            &
+                            <a
+                                href="https://www.linkedin.com/in/jacobdb03/"
+                                id="contactEmail-copy"
+                                class="font-bold text-kBlue cus-pageTransitionExcluded"
+                                >Linkedin</a
+                            >
+                        </p>
+                    </div>
+                    <div class="flex-1">
+                        <p
+                            class="font-light text-kBlack text-5xl mb-12 cus-aboutFadeOn"
+                        >
+                            Or fill in the form below if you prefer :)
+                        </p>
+                    </div>
+                </section>
+                <section
+                    class="flex flex-col lg:flex-row flex-wrap mx-12 mt-30 align-bottom font-medium text-4xl"
+                >
+                    <form
+                        id="chat-contact-form"
+                        class="flex flex-col lg:flex-row content-between w-auto lg:w-full gap-8 cus-aboutFadeOn"
+                        novalidate
                     >
-                        So Sorry — This parts not done yet!
-                        <br />Reach out in the footer for the same idea or,
-                        reach me on my socials!
-                    </p>
+                        <input
+                            id="chat-input-email"
+                            type="email"
+                            placeholder="Email"
+                            class="bg-kBlue/20 font-light text-kBlack text-2xl rounded-4xl p-10 lg:flex-1 self-start leading-tight cus-forceHover"
+                        />
+
+                        <textarea
+                            id="chat-input-message"
+                            placeholder="Message"
+                            rows="5"
+                            class="bg-kBlue/20 font-light text-kBlack text-2xl rounded-4xl p-10 lg:flex-3 self-start leading-tight cus-forceHover"
+                        ></textarea>
+
+                        <button
+                            type="submit"
+                            class="text-nowrap font-black mr-4 cus-forceHover cursor-pointer"
+                        >
+                            <span
+                                class="block text-5xl text-kBlue font-serif font-black scale-x-80 -translate-y-1"
+                                >➤</span
+                            >
+                        </button>
+
+                        <div
+                            id="chat-toast-email"
+                            class="fixed left-10 top-8 w-80 text-2xl text-center bg-kBlue text-kWhite px-4 py-2 rounded-full opacity-0 pointer-events-none"
+                        >
+                            Forgot something ÓJÒ
+                        </div>
+                        <div
+                            id="chat-toast-message"
+                            class="fixed left-180 top-25 w-80 text-2xl text-center bg-kBlue text-kWhite px-4 py-2 rounded-full opacity-0 pointer-events-none"
+                        >
+                            What's on your mind? OJŌ
+                        </div>
+                        <div
+                            id="chat-toast-working"
+                            class="fixed left-180 top-25 w-80 text-2xl text-center bg-kBlue text-kWhite px-4 py-2 rounded-full opacity-0 pointer-events-none"
+                        >
+                            Sending >J<
+                        </div>
+                    </form>
                 </section>
 
                 <include src="dev-partialFiles/footer.html"></include>

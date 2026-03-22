@@ -10,24 +10,58 @@
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section
-                    class="flex flex-col h-dvh w-full justify-center items-center text-center bg-kBlue"
+                    class="absolute top-0 left-0 z-0 bg-kWhite h-screen"
+                    data-nav="dark"
+                ></section>
+                <section
+                    class="flex flex-col ml-10 w-full justify-start object-cover"
                 >
                     <h1
-                        class="text-kWhite text-3xl self-center text-center font-bold z-20"
+                        class="text-kBlue text-[18vw] lg:text-[16vw] tracking-tight leading-60 self-start mt-40 text-start font-bold z-20 cus-letterPopIn"
                     >
-                        About me
+                        Hello,<br />
+                        I'm Jacob.
                     </h1>
                 </section>
                 <section
-                    class="h-40 w-full justify-center items-center text-center"
+                    class="flex flex-col flex-wrap mx-12 mt-30 align-bottom font-medium text-4xl"
                 >
-                    <p
-                        class="text-kBlack self-center text-lg mt-40 text-center font-light z-20"
-                    >
-                        So Sorry — This parts not done yet! Reach out to learn
-                        more about me<br />Or, have a stalk of my socials!
-                        Linked below
-                    </p>
+                    <div class="flex-1">
+                        <p
+                            class="font-light text-kBlack text-5xl mb-12 leading-relaxed cus-aboutFadeOn"
+                        >
+                            I'm primarily a London-based graphics/motion
+                            designer specialising in brand identities and 2D
+                            motion design, with recognised agency experience and
+                            over two years of working as a freelancer. Combining
+                            unrelenting positivity, distinct creativity and
+                            persistent eagerness to collaborate and ensure
+                            impactful, well-crafted, idea-led outcomes.
+                        </p>
+                    </div>
+                    <div class="flex-1">
+                        <p
+                            class="font-light leading-relaxed text-kBlack text-5xl mb-12 cus-aboutFadeOn"
+                        >
+                            If you have the time and are interested in finding
+                            out a bit more about me, have a look at my
+                            <a
+                                href="https://www.instagram.com/jacobdb03/"
+                                id="contactEmail-copy"
+                                class="font-bold text-kBlue cus-pageTransitionExcluded"
+                                >Instagram</a
+                            >
+                            &
+                            <a
+                                href="https://www.linkedin.com/in/jacobdb03/"
+                                id="contactEmail-copy"
+                                class="font-bold text-kBlue cus-pageTransitionExcluded"
+                                >Linkedin</a
+                            >
+                            , where you will most likely find me at a design
+                            event or talking about recent work.
+                        </p>
+                    </div>
                 </section>
 
                 <include src="dev-partialFiles/footer.html"></include>

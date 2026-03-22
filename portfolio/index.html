@@ -16,11 +16,15 @@
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section
-                    class="flex h-dvh w-full justify-center object-cover bg-kBlue"
+                    class="flex h-dvh w-full justify-center m-auto bg-kBlue"
                 >
                     <img
                         src="./dev-globalAssets/JacobBryant_LandscapeLogo.svg"
-                        class="absolute z-8 w-200 h-dvh"
+                        class="absolute z-8 w-240 h-dvh px-20 hidden lg:block"
+                    />
+                    <img
+                        src="./dev-globalAssets/JacobBryant_StackedLogo.svg"
+                        class="absolute z-8 w-240 h-dvh px-20 lg:hidden"
                     />
 
                     <!--<p
@@ -40,10 +44,78 @@
                         </p>-->
                 </section>
 
-                <include
-                    src="dev-partialFiles/footer.html"
-                    locals='{"cusBgColour": "bg-kBlue"}'
-                ></include>
+                <section
+                    class="flex flex-col flex-wrap mx-12 mt-30 align-bottom font-medium text-4xl"
+                >
+                    <p
+                        class="font-light text-kBlack text-4xl w-full text-center mb-12 mt-20 leading-relaxed cus-aboutFadeOn"
+                    >
+                        <span class="text-kBlue font-medium">Hello!</span>
+                        I'm Jacob, I'm a London-based graphics/motion designer.
+                        <br />Thank's so much for taking the time to stop by.
+                        <span class="text-kBlue font-medium"> ⌃J⌃</span>
+                    </p>
+                    <h2
+                        class="font-medium text-kBlack w-full text-center text-3xl mb-12 leading-relaxed cus-aboutFadeOn"
+                    >
+                        Below are my favourite projects that I think you will
+                        like:
+                    </h2>
+                </section>
+
+                <section
+                    class="flex max-w-420 place-content-around mx-auto bg-kWhite px-5 mt-20"
+                >
+                    <div
+                        class="flex flex-wrap mt-5 gap-2 gap-y-4 md:gap-x-4 items-start content-start cus-linkAnimateIn"
+                    >
+                        <a
+                            class="flex w-full h-auto overflow-hidden transform duration-500 ease-out rounded-xl lg:rounded-4xl cus-link"
+                            href="./project/ombreIdentity/index.html"
+                        >
+                            <img
+                                class="w-full h-auto aspect-video object-cover overflow-clip object-center transform-view duration-300 ease-out hover:scale-105"
+                                src="./dev-thumbnailFiles/OmbreStill.png"
+                                alt="Ombre Identity Thumbnail Image"
+                            />
+                        </a>
+
+                        <div class="flex flex-row gap-4 justify-between">
+                            <a
+                                class="flex flex-1 overflow-hidden transform duration-500 ease-out cus-link rounded-xl lg:rounded-4xl"
+                                href="./project/conductorIdentity/index.html"
+                            >
+                                <img
+                                    class="w-full h-auto aspect-video object-cover object-center transform-view duration-300 ease-out hover:scale-105"
+                                    src="./dev-thumbnailFiles/conductorThumbStill.png"
+                                    alt="Conductor Thumbnail Image"
+                                />
+                            </a>
+
+                            <a
+                                class="flex flex-1 overflow-hidden transform duration-500 ease-out cus-link rounded-xl lg:rounded-4xl"
+                                href="./project/engineeredNothing/index.html"
+                            >
+                                <img
+                                    class="w-full h-auto aspect-video object-cover object-bottom-left transform-view duration-300 ease-out hover:scale-105"
+                                    src="./dev-thumbnailFiles/OnThumbStatic.jpeg"
+                                    alt="Swiss-Engineered Nothing Thumbnail Image"
+                                />
+                            </a>
+                        </div>
+
+                        <div
+                            class="mt-10 text-kBlue mx-auto cus-pageTransitionExcluded"
+                        >
+                            <include
+                                src="./dev-partialFiles/linkPageTag.html"
+                                locals='{"tagName": "See all my work here", "href": "./project/index.html"}'
+                            ></include>
+                        </div>
+                    </div>
+                </section>
+
+                <include src="dev-partialFiles/footer.html"></include>
             </div>
         </div>
     </body>
