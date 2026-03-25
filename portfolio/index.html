@@ -64,54 +64,76 @@
                 </section>
 
                 <section
-                    class="flex max-w-420 place-content-around mx-auto bg-kWhite px-5 mt-20"
+                    class="flex flex-col gap-4 w-screen max-w-420 mx-auto px-5"
                 >
                     <div
                         class="flex flex-wrap mt-5 gap-2 gap-y-4 md:gap-x-4 items-start content-start cus-linkAnimateIn"
                     >
                         <a
-                            class="flex w-full h-auto overflow-hidden transform duration-500 ease-out rounded-xl lg:rounded-4xl cus-link"
+                            class="flex-1 overflow-hidden transform duration-500 ease-out rounded-xl lg:rounded-4xl cus-link"
                             href="./project/ombreIdentity/index.html"
                         >
-                            <img
-                                class="w-full h-auto aspect-video object-cover overflow-clip object-center transform-view duration-300 ease-out hover:scale-105"
-                                src="./dev-thumbnailFiles/OmbreStill.png"
-                                alt="Ombre Identity Thumbnail Image"
-                            />
-                        </a>
-
-                        <div class="flex flex-row gap-4 justify-between">
-                            <a
-                                class="flex flex-1 overflow-hidden transform duration-500 ease-out cus-link rounded-xl lg:rounded-4xl"
-                                href="./project/conductorIdentity/index.html"
+                            <div
+                                class="lg:min-h-100 relative aspect-video overflow-hidden cus-blurContainer"
                             >
+                                <canvas class="absolute w-full h-full"></canvas>
                                 <img
-                                    class="w-full h-auto aspect-video object-cover object-center transform-view duration-300 ease-out hover:scale-105"
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0 transform-view duration-300 ease-out hover:scale-105"
+                                    src="./dev-thumbnailFiles/OmbreStill.png"
+                                    alt="Ombre Identity Thumbnail Image"
+                                    hash-data="LB84[mx99DDgVUpMV?jr0MIS-.-;"
+                                />
+                            </div>
+                        </a>
+                    </div>
+
+                    <div
+                        class="flex flex-col lg:w-screen lg:max-w-full lg:flex-row gap-4 justify-between"
+                    >
+                        <a
+                            class="flex-1 overflow-hidden transform duration-500 ease-out rounded-xl lg:rounded-4xl cus-link"
+                            href="./project/conductorIdentity/index.html"
+                        >
+                            <div
+                                class="lg:min-h-100 relative aspect-video overflow-hidden cus-blurContainer"
+                            >
+                                <canvas class="absolute w-full h-full"></canvas>
+                                <img
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0 transform-view duration-300 ease-out hover:scale-105"
                                     src="./dev-thumbnailFiles/conductorThumbStill.png"
                                     alt="Conductor Thumbnail Image"
+                                    hash-data="L48zJps:00WBxaWXWBWB00R*~qof"
                                 />
-                            </a>
+                            </div>
+                        </a>
 
-                            <a
-                                class="flex flex-1 overflow-hidden transform duration-500 ease-out cus-link rounded-xl lg:rounded-4xl"
-                                href="./project/engineeredNothing/index.html"
+                        <a
+                            class="flex-1 overflow-hidden transform duration-500 ease-out rounded-xl lg:rounded-4xl cus-link"
+                            href="./project/engineeredNothing/index.html"
+                        >
+                            <div
+                                class="lg:min-h-100 relative aspect-video overflow-hidden cus-blurContainer"
                             >
+                                <canvas class="absolute w-full h-full"></canvas>
                                 <img
-                                    class="w-full h-auto aspect-video object-cover object-bottom-left transform-view duration-300 ease-out hover:scale-105"
+                                    loading="lazy"
+                                    class="absolute w-full h-full object-cover object-center opacity-0 transform-view duration-300 ease-out hover:scale-105"
                                     src="./dev-thumbnailFiles/OnThumbStatic.jpeg"
                                     alt="Swiss-Engineered Nothing Thumbnail Image"
+                                    hash-data="LOG$MK}?].r?Inv#r?kCniR*S2ay"
                                 />
-                            </a>
-                        </div>
-
-                        <div
-                            class="mt-10 text-kBlue mx-auto cus-pageTransitionExcluded"
-                        >
-                            <include
-                                src="./dev-partialFiles/linkPageTag.html"
-                                locals='{"tagName": "See all my work here", "href": "./project/index.html"}'
-                            ></include>
-                        </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="mt-10 text-kBlue scale-200 mx-auto cus-pageTransitionExcluded"
+                    >
+                        <include
+                            src="./dev-partialFiles/linkPageTag.html"
+                            locals='{"tagName": "See all my work here", "href": "./project/index.html"}'
+                        ></include>
                     </div>
                 </section>
 
