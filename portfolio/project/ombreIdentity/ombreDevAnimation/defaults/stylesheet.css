@@ -1,7 +1,8 @@
 @font-face {
     font-family: "FilsonPro";
+    src: url(FilsonProMedium.otf) format("opentype");
     font-weight: 500;
-    src: url("../defaults/FilsonProMedium.otf");
+    font-style: normal;
 }
 
 body {
