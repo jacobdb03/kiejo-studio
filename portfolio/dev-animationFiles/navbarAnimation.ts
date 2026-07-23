@@ -203,7 +203,7 @@ window.addEventListener("load", () => {
             "w-[200px]",
             "md:w-[340px]",
             "backdrop-blur-2xl",
-            "bg-kdBlue/80",
+            "bg-kdBlue/75",
             "saturate-175",
             "shadow-[0_8px_40px_rgba(21,34,41,0.3)]",
           );
@@ -255,7 +255,7 @@ window.addEventListener("load", () => {
             "w-[200px]",
             "md:w-[340px]",
             "backdrop-blur-2xl",
-            "bg-kdBlue/80",
+            "bg-kdBlue/75",
             "saturate-175",
             "shadow-[0_8px_40px_rgba(21,34,41,0.3)]",
           );

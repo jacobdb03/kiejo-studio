@@ -3,7 +3,7 @@
 @theme {
     --font-sans: "Outfit", sans-serif;
     --font-serif: "DM Serif Display", serif;
-    --font-mono: "SUSE mono", sans-serif;
+    --font-mono: "SUSE Mono", monospace;
 
     /* Also change in styleSetup.ts */
     --color-kBlue: #2560e0;

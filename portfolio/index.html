@@ -16,51 +16,135 @@
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section
-                    class="flex h-dvh w-full justify-center m-auto bg-kBlue"
+                    class="flex flex-col justify-end h-dvh items-start bg-kBlue"
                 >
                     <img
-                        src="./dev-globalAssets/JacobBryant_LandscapeLogo.svg"
-                        class="absolute z-8 w-240 h-dvh px-20 hidden lg:block"
+                        src="dev-globalAssets/FullStackLogo.svg"
+                        class="w-screen lg:w-[60vw] z-10 lg:p-20 lg:pb-10 p-5"
                     />
-                    <img
-                        src="./dev-globalAssets/JacobBryant_StackedLogo.svg"
-                        class="absolute z-8 w-240 h-dvh px-20 lg:hidden"
-                    />
-
-                    <!--<p
-                        class="text-kWhite text-base self-end mb-32 text-center font-light z-20"
+                    <div
+                        note="ImageCarousel"
+                        class="absolute top-0 w-screen h-screen left-0 overflow-hidden z-0"
                     >
-                        Apologies for any messes you might find — Full site
-                        coming soon. <br /><br />
-                        If you have any problems viewing my work, reach out
-                        below<br />
-                        in the form below or Have a look at my old site
+                        <!-- Slide 1 -->
                         <a
-                            class="font-bold"
-                            href="https://old.jacobbryant.design/"
+                            class="heroSlide absolute inset-0"
+                            href="project/ombreIdentity/index.html"
                         >
-                            here</a
+                            <img
+                                class="heroImg w-full h-full object-cover"
+                                src="./dev-thumbnailFiles/mainPageImage1.jpeg"
+                            />
+                            <h2
+                                class="heroCaption z-2 text-2xl font-bold text-kWhite absolute bottom-[8.5vh] right-[4vh] text-right lg:block hidden"
+                            >
+                                Ombre
+                                <p class="leading-1.5 font-normal text-sm">
+                                    <br />Lighting for a new generation
+                                </p>
+                            </h2>
+                        </a>
+
+                        <!-- Slide 2 -->
+                        <a
+                            class="heroSlide absolute inset-0 opacity-0"
+                            href="project/conductorIdentity/index.html"
                         >
-                        </p>-->
+                            <img
+                                class="heroImg w-full h-full object-cover"
+                                src="./dev-thumbnailFiles/mainPageImage2.jpeg"
+                            />
+                            <h2
+                                class="heroCaption z-2 text-2xl font-bold text-kWhite absolute bottom-[8.5vh] right-[4vh] text-right lg:block hidden"
+                            >
+                                Conductor
+                                <p class="leading-1.5 font-normal text-sm">
+                                    <br />Orchestrating unforgettable journeys
+                                </p>
+                            </h2>
+                        </a>
+
+                        <!-- Slide 3 -->
+                        <a
+                            class="heroSlide absolute inset-0 opacity-0"
+                            href="project/engineeredNothing/index.html"
+                        >
+                            <video
+                                class="heroImg w-full h-full object-cover"
+                                muted
+                                autoplay
+                                loop
+                                preload="auto"
+                                playsinline
+                            >
+                                <source
+                                    src="dev-thumbnailFiles/auraEffect.mp4"
+                                    type="video/mp4"
+                                />
+                                Swiss Engineered Nothing Project Animation
+                            </video>
+                            <h2
+                                class="heroCaption z-2 text-2xl font-bold text-kWhite absolute bottom-[8.5vh] right-[4vh] text-right lg:block hidden"
+                            >
+                                Swiss-engineered Nothing
+                                <p class="leading-1.5 text-sm font-normal">
+                                    <br />We give Nothing. You bring Everything
+                                </p>
+                            </h2>
+                        </a>
+
+                        <!-- Indicators -->
+                        <div
+                            class="absolute right-[2vh] z-1 bottom-12 gap-1.5 items-center hidden lg:flex bg-kWhite/10 p-5 pt-20 pl-52 rounded-2xl backdrop-blur-2xl"
+                        >
+                            <div class="h-1">
+                                <div
+                                    class="heroPill h-1 w-2 bg-white/30 rounded-full overflow-hidden"
+                                >
+                                    <div
+                                        class="heroFill h-full w-0 bg-white rounded-full"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="h-1">
+                                <div
+                                    class="heroPill h-1 w-2 bg-white/30 rounded-full overflow-hidden"
+                                >
+                                    <div
+                                        class="heroFill h-full w-0 bg-white rounded-full"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="h-1">
+                                <div
+                                    class="heroPill h-1 w-2 bg-white/30 rounded-full overflow-hidden"
+                                >
+                                    <div
+                                        class="heroFill h-full w-0 bg-white rounded-full"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section
                     class="flex flex-col flex-wrap mx-12 mt-30 align-bottom font-medium text-4xl"
                 >
                     <p
-                        class="font-light text-kBlack text-4xl w-full text-center mb-12 mt-20 leading-relaxed cus-aboutFadeOn"
+                        class="font-light text-kBlack text-lg w-full text-left mb-12 mt-20 leading-relaxed cus-aboutFadeOn"
                     >
                         <span class="text-kBlue font-medium">Hello!</span>
-                        I'm Jacob, I'm a London-based graphics/motion designer.
-                        <br />Thank's so much for taking the time to stop by.
+                        I'm Jacob, I'm a London-based designer.
+                        <br />I enjoy creating brands with thought and helping them<br />come alive using motion, creative code and 3D design.<br /><br />Thank's so much for taking the time to stop by.
                         <span class="text-kBlue font-medium"> ⌃J⌃</span>
                     </p>
-                    <h2
+                    <!--<h2
                         class="font-medium text-kBlack w-full text-center text-3xl mb-12 leading-relaxed cus-aboutFadeOn"
                     >
                         Below are my favourite projects that I think you will
                         like:
-                    </h2>
+                    </h2>-->
                 </section>
 
                 <section
