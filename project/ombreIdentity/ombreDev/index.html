@@ -1,0 +1,24 @@
+<!DOCTYPE html><meta charset=utf-8><meta name=viewport content="width=device-width, height=device-height, initial-scale=1"><link rel=stylesheet href=/project/ombreIdentity/ombreDev/index.1f5e88b5.css><script src=/project/ombreIdentity/ombreDev/index.294083a5.js></script><script src=https://unpkg.com/p5.js-svg@1.6.0></script><script src=/project/ombreIdentity/ombreDev/index.5899d492.js></script><body>
+        
+
+        <div style=width:100vw;display:flex;position:absolute>
+            <h1 style=text-align:center;flex-basis:100%;font-family:FilsonPro,sans-serif;font-size:1vw>
+                Import and export images using the buttons below. For results
+                with variable circle sizes: Import an SVG with varying alpha
+                values: e.g. A gradient that fades from 100% to 0% opacity.
+            </h1>
+        </div>
+
+        <script src=https://unpkg.com/p5.js-svg@1.6.0 defer></script>
+
+        <label for=getImgButton class="defLabel pickImgLabel">Pick Img
+            <input id=getImgButton name=getImgButton type=file style=display:none accept=image/*></label>
+
+        <label class="defLabel playPauseLabel" id=exportLabel for=exportSVG>Export SVG
+            <input id=exportSVG type=button style=display:none>
+        </label>
+
+        <label for=sizeSlider class="defLabel sliderLabel"><input type=range id=sizeSlider min=0 max=100 value=0 step=1 style=width:100%>
+        </label>
+    
+
