@@ -7,7 +7,7 @@
 
     /* Also change in styleSetup.ts */
     --color-kBlue: #2560e0;
-    --color-kWhite: #eff1f3;
+    --color-kWhite: #eef3f9;
     --color-kBlack: #0a1a30;
     --color-klBlue: #bfc8e8;
     --color-kdBlue: #1a3fa0;
@@ -41,6 +41,18 @@
         .cus-blurContainer {
             height: 100%;
         }
+    }
+
+    img {
+        border-radius: 20px;
+    }
+
+    video {
+        border-radius: 20px;
+    }
+
+    .edgeExclude {
+        border-radius: 0px;
     }
 
     /*
